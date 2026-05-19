@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>POWER APP - Login</title>
+</head>
+
+<body style="background-color: #1a1a1a; color: white; font-family: Arial, sans-serif; text-align: center;">
+
+    <br><br><br>
+    
+    <header>
+        <img src="img/logo.png" alt="Logo de POWER APP" style="width: 500px;">
+        <br>
+        <p style="color: #cccccc; font-size: 28px;">Tu plataforma de entrenamiento de powerlifting</p>
+    </header>
+
+    <main>
+        <br><br>
+        <section style="background-color: #242424;">
+            <br><br>
+            <h2 style="font-size: 42px;">Inicia sesión en tu cuenta</h2>
+            <br>
+            
+            <form action="/pages/dashboard/dashboard.html" method="GET">
+                
+                <label style="font-size: 28px; color: #cccccc;">Correo Electrónico</label>
+                <br><br>
+                <input type="email" name="correo" placeholder="tu@email.com" required style="font-size: 26px; width: 400px;">
+                
+                <br><br><br>
+
+                <label style="font-size: 28px; color: #cccccc;">Contraseña</label>
+                <br><br>
+                <input type="password" name="password" placeholder="********" required style="font-size: 26px; width: 400px;">
+                
+                <br><br><br>
+
+                <input type="checkbox" name="recordar" style="width: 20px; height: 20px;" >
+                <label style="font-size: 24px; color: #cccccc;"> Recordarme </label>
+                
+                <br><br><br>
+
+                <button type="submit" style="font-size: 32px; color: #e53935;">
+                    Ingresar
+                </button>
+            </form>
+
+            <br>
+            
+            <p style="font-size: 24px; color: #cccccc;">
+                ¿No tienes cuenta? <a href="https://workspace.google.com/intl/es/gmail/" target="_blank"> Registrate </a>
+            </p>
+            <br><br>
+        </section>
+    </main>
+
+</body>
+</html>

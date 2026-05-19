@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Sesión - POWER APP</title>
+</head>
+
+<body style="background-color: #1a1a1a; color: white; font-family: Arial, sans-serif;">
+
+    <header style="text-align: center;">
+
+        <h1 style="color: #e53935; font-size: 90px;">POWER APP</h1>
+
+       <nav>
+            <a href="/pages/dashboard/dashboard.html" style="color: #cccccc;  font-size: 58px;"> Dashboard - </a> 
+
+            <a href="/pages/registros/registro.html" style="color: #e53935;  font-size: 58px;"> Registrar Sesión - </a> 
+
+            <a href="/pages/bloque/bloques.html" style="color: #cccccc; font-size: 58px;"> Mis Bloques -</a> 
+
+            <a href="/pages/tecnicas/tecnica.html" style="color: #cccccc; font-size: 58px;"> Técnica - </a> 
+
+            <a href="/pages/historial/historial.html" style="color: #cccccc; font-size: 58px;"> Historial  </a>
+            <br><br><br><br>
+        </nav>
+       <div style="text-align: justify;">
+            <p style="font-size: 35px; color: #888;"> Cristhian (-74 kg)</p>
+            <a href="../../index.html" style="color: #e53935; font-size: 45px;">Cerrar Sesión </a>
+        </div>
+        <br>
+    </header>
+
+    <main>
+        <br>
+        <header style="text-align: center;">
+            <h1 style="font-size: 75px;">Registrar Entrenamiento</h1>
+        </header>
+        <br>
+
+        <section style="text-align: center;">
+            <br>
+            <form action="/pages/historial/historial.html" method="GET">
+                
+                <label style="font-size: 40px; color: #cccccc;">Fecha de la sesión:</label>
+                <br>
+                <input type="date" name="fecha" required style="font-size: 35px;">
+                
+                <br><br><br>
+
+                <label style="font-size: 40px; color: #cccccc;">Selecciona el Movimiento:</label>
+                <br>
+                <select name="movimiento" required style="font-size: 35px;">
+                    <option value="">-- Elige un ejercicio --</option>
+                    <option value="squat">Low-bar Squat</option>
+                    <option value="bench">Bench Press</option>
+                    <option value="deadlift">Sumo Deadlift</option>
+                </select>
+
+                <br><br><br>
+
+                <h3 style="font-size: 40px; color: #e53935;">Registro de Series</h3>
+                
+                <table style="width: 100%; font-size: 35px; text-align: center;">
+                    <tr>
+                        <th>Serie</th>
+                        <th>Peso (kg)</th>
+                        <th>Reps</th>
+                        <th>RPE (1-10)</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><input type="number" name="peso1" min="0" step="2.5" style="font-size: 30px;"></td>
+                        <td><input type="number" name="reps1" min="1" style="font-size: 30px;"></td>
+                        <td><input type="number" name="rpe1" min="1" max="10" step="0.5" style="font-size: 30px;"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><input type="number" name="peso2" min="0" step="2.5" style="font-size: 30px;"></td>
+                        <td><input type="number" name="reps2" min="1" style="font-size: 30px;"></td>
+                        <td><input type="number" name="rpe2" min="1" max="10" step="0.5" style="font-size: 30px;"></td>
+                    </tr>
+                     <tr>
+                        <td>3</td>
+                        <td><input type="number" name="peso3" min="0" step="2.5" style="font-size: 30px;"></td>
+                        <td><input type="number" name="reps3" min="1" style="font-size: 30px;"></td>
+                        <td><input type="number" name="rpe3" min="1" max="10" step="0.5" style="font-size: 30px;"></td>
+                    </tr>
+                </table>
+
+                <br><br><br>
+
+                <label style="font-size: 40px; color: #cccccc;">Comentarios del entrenamiento:</label>
+                <br>
+                <input type="text" name="notas" style="font-size: 35px;">
+
+                <br><br><br><br>
+
+                <button type="submit" style="font-size: 45px; color: #e53935;">
+                     Guardar Entrenamiento
+                </button>
+                <br><br><br>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
