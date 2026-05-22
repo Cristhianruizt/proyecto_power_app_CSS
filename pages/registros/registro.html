@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Registrar Sesión - POWER APP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body style="background-color: #1a1a1a; color: white; font-family: Arial, sans-serif;">
@@ -12,19 +14,27 @@
 
         <h1 style="color: #e53935; font-size: 90px;">POWER APP</h1>
 
-       <nav>
-            <a href="/pages/dashboard/dashboard.html" style="color: #cccccc;  font-size: 58px;"> Dashboard - </a> 
+        <nav>
+            <i class="fa-solid fa-house" style="font-size: 40px;"></i> <!-- Casa -->
+            <a href="/pages/dashboard/dashboard.html" style="color: #cccccc;  font-size: 58px;"> Dashboard - </a>
 
-            <a href="/pages/registros/registro.html" style="color: #e53935;  font-size: 58px;"> Registrar Sesión - </a> 
 
-            <a href="/pages/bloque/bloques.html" style="color: #cccccc; font-size: 58px;"> Mis Bloques -</a> 
+            <i class="fa-solid fa-user-plus" style="font-size: 40px;"></i> <!-- REGISTRAR SESIÓN -->
+            <a href="/pages/registros/registro.html" style="color: #e53935;  font-size: 58px;"> Registrar Sesión - </a>
 
-            <a href="/pages/tecnicas/tecnica.html" style="color: #cccccc; font-size: 58px;"> Técnica - </a> 
 
-            <a href="/pages/historial/historial.html" style="color: #cccccc; font-size: 58px;"> Historial  </a>
+            <i class="fa-solid fa-dumbbell" style="font-size: 40px;"></i> <!-- BLOQUES DE ENTRENAMIENTO -->
+            <a href="/pages/bloque/bloques.html" style="color: #cccccc; font-size: 58px;"> Mis Bloques -</a>
+
+            <i class="fa-solid fa-gears" style="font-size: 40px;"></i><!-- TÉCNICA -->
+            <a href="/pages/tecnicas/tecnica.html" style="color: #cccccc; font-size: 58px;"> Técnica - </a>
+
+            <i class="fa-solid fa-clock-rotate-left" style="font-size: 40px;"></i><!-- HISTORIAL -->
+            <a href="/pages/historial/historial.html" style="color: #cccccc; font-size: 58px;"> Historial </a>
+       
             <br><br><br><br>
         </nav>
-       <div style="text-align: justify;">
+        <div style="text-align: justify;">
             <p style="font-size: 35px; color: #888;"> Cristhian (-74 kg)</p>
             <a href="../../index.html" style="color: #e53935; font-size: 45px;">Cerrar Sesión </a>
         </div>
@@ -41,11 +51,11 @@
         <section style="text-align: center;">
             <br>
             <form action="/pages/historial/historial.html" method="GET">
-                
+
                 <label style="font-size: 40px; color: #cccccc;">Fecha de la sesión:</label>
                 <br>
                 <input type="date" name="fecha" required style="font-size: 35px;">
-                
+
                 <br><br><br>
 
                 <label style="font-size: 40px; color: #cccccc;">Selecciona el Movimiento:</label>
@@ -60,7 +70,7 @@
                 <br><br><br>
 
                 <h3 style="font-size: 40px; color: #e53935;">Registro de Series</h3>
-                
+
                 <table style="width: 100%; font-size: 35px; text-align: center;">
                     <tr>
                         <th>Serie</th>
@@ -80,7 +90,7 @@
                         <td><input type="number" name="reps2" min="1" style="font-size: 30px;"></td>
                         <td><input type="number" name="rpe2" min="1" max="10" step="0.5" style="font-size: 30px;"></td>
                     </tr>
-                     <tr>
+                    <tr>
                         <td>3</td>
                         <td><input type="number" name="peso3" min="0" step="2.5" style="font-size: 30px;"></td>
                         <td><input type="number" name="reps3" min="1" style="font-size: 30px;"></td>
@@ -97,7 +107,7 @@
                 <br><br><br><br>
 
                 <button type="submit" style="font-size: 45px; color: #e53935;">
-                     Guardar Entrenamiento
+                    Guardar Entrenamiento
                 </button>
                 <br><br><br>
             </form>
@@ -105,4 +115,5 @@
     </main>
 
 </body>
+
 </html>
