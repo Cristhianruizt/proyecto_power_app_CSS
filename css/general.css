@@ -1,0 +1,301 @@
+/* ============================================================
+   BLOQUE 1: CONFIGURACIÓN GENERAL
+   Selector universal, body, fuente, fondo, color e interlineado.
+   ============================================================ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* ============================================================
+   BLOQUE 2: TÍTULOS, PÁRRAFOS Y ENLACES
+   Estilos para h1, h2, h3, p, a y a:hover.
+   ============================================================ */
+h1 {
+    font-size: 75px;
+    color: #e53935;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 55px;
+    color: #e53935;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 35px;
+    color: #cccccc;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e53935;
+}
+
+/* ============================================================
+   BLOQUE 3: ELEMENTOS SEMÁNTICOS PRINCIPALES
+   Estilos para header, nav, main, section, article, aside y footer.
+   ============================================================ */
+header {
+    background-color: #242424;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+main {
+    padding: 40px;
+}
+
+section {
+    background-color: #242424;
+    padding: 40px;
+    margin: 30px 0;
+}
+
+article {
+    background-color: #242424;
+    padding: 30px;
+    margin: 30px 0;
+}
+
+aside {
+    font-size: 30px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #711b19;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+/* ============================================================
+   BLOQUE 4: MENÚ DE NAVEGACIÓN
+   Estilos para nav, nav a, nav i y nav a:hover.
+   ============================================================ */
+nav {
+    background-color: #1a1a1a;
+    padding: 30px; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+    gap: 25px; 
+}
+
+nav i {
+    font-size: 38px; 
+    color: #e53935; 
+}
+
+nav a {
+    background-color: #333333;
+    color: #cccccc;
+    font-size: 36px; 
+    padding: 25px 35px; 
+    border-radius: 8px;
+    text-decoration: none; 
+}
+
+nav a:hover {
+    background-color: #e53935;
+    color: white;
+}
+
+/* ============================================================
+   BLOQUE 5: CONTENIDO Y SECCIONES
+   Estilos para main, section, article y aside.
+   ============================================================ */
+main header {
+    text-align: center;
+    background-color: transparent;
+    padding: 10px;
+}
+
+section article {
+    border: 2px solid #333;
+}
+
+aside i {
+    margin: 0 10px;
+}
+
+/* --- NUEVAS REGLAS PARA DETAILS Y SUMMARY --- */
+
+details {
+    margin: 20px 0;
+    text-align: center; /* Mantiene todo centrado */
+}
+
+summary {
+    font-size: 45px;
+    color: #e53935;
+    font-weight: bold;
+    cursor: pointer; /* Cambia el cursor a manito */
+    margin-bottom: 15px;
+}
+
+details p {
+    font-size: 35px;
+    color: #cccccc;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* ============================================================
+   BLOQUE 6: IMÁGENES Y MULTIMEDIA
+   Estilos para img, figure, figcaption, video, audio e iframe.
+   ============================================================ */
+img {
+    width: 400px;
+    margin: 20px;
+}
+
+figure {
+    text-align: center;
+    margin: 30px 0;
+}
+
+figure img {
+    width: 80%;
+}
+
+figcaption {
+    color: #cccccc;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+video {
+    width: 50%;
+    margin: 20px;
+    border: 3px solid #e53935;
+}
+
+iframe {
+    margin: 30px 0;
+    border: none;
+}
+
+/* ============================================================
+   BLOQUE 7: LISTAS
+   Estilos para ul, ol y li.
+   ============================================================ */
+ul, ol {
+    font-size: 40px;
+    color: white;
+    text-align: left;
+    margin: 20px 0 20px 80px;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+/* ============================================================
+   BLOQUE 8: FORMULARIOS
+   Estilos para form, label, input, textarea, select y button.
+   ============================================================ */
+form {
+    margin: 30px 0;
+}
+
+label {
+    font-size: 28px;
+    color: #cccccc;
+}
+
+input, select, textarea {
+    font-size: 26px;
+    width: 400px;
+    padding: 10px;
+    margin: 15px 0;
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+button {
+    font-size: 32px;
+    color: white;
+    background-color: #b62927;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #e53935;
+}
+
+/* ============================================================
+   BLOQUE 9: TABLAS
+   Estilos para table, thead, tbody, tr, th y td.
+   ============================================================ */
+table {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+thead {
+    color: #e53935;
+}
+
+tbody {
+    color: #cccccc;
+}
+
+th, td {
+    padding: 20px;
+    border: 1px solid #444;
+}
+/* ============================================================
+   BLOQUE 10: PIE DE PÁGINA
+   Estilos para footer, footer p, footer a y footer i.
+   ============================================================ */
+footer p {
+    font-size: 38px;
+    text-align: center;
+    color: #cccccc;
+    margin-bottom: 10px;
+}
+
+footer a {
+    font-size: 45px;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e53935;
+}
+
+/* --- PARA EL ÍCONO DE UBICACIÓN --- */
+footer i {
+    font-size: 45px;     
+    color: #e53935;        
+    margin-right: 15px;    
+}
