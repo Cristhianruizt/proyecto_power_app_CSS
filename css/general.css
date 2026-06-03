@@ -11,8 +11,12 @@ body {
     background-color: #1a1a1a;
     color: white;
     font-family: Arial, sans-serif;
-    text-align: center;
+    /*text-align: center;*/
     line-height: 1.5;
+}
+
+body main{
+    text-align: center;
 }
 
 /* ============================================================
@@ -20,24 +24,25 @@ body {
    Estilos para h1, h2, h3, p, a y a:hover.
    ============================================================ */
 h1 {
-    font-size: 75px;
+    font-size: 64px;
     color: #e53935;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 h2 {
-    font-size: 55px;
+    font-size: 34px;
     color: #e53935;
     margin-bottom: 15px;
 }
 
 h3 {
-    font-size: 45px;
+    font-size: 34px;
     margin-bottom: 10px;
 }
 
 p {
-    font-size: 35px;
+    font-size: 34px;
     color: #cccccc;
     margin-bottom: 15px;
 }
@@ -59,7 +64,14 @@ header {
     background-color: #242424;
     padding: 30px;
     margin-bottom: 30px;
+    text-align: center;
 }
+/*
+header div {
+    text-align: center;
+    
+}*/
+
 
 main {
     padding: 40px;
@@ -87,6 +99,19 @@ footer {
     padding: 40px;
     margin-top: 50px;
 }
+
+/*
+header div{
+    align-items: center;
+    gap: 20px;
+     background-color: #320303;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+    margin-bottom: 10px;
+    width: 15%;
+}
+    */
 
 /* ============================================================
    BLOQUE 4: MENÚ DE NAVEGACIÓN
@@ -139,7 +164,7 @@ aside i {
     margin: 0 10px;
 }
 
-/* --- NUEVAS REGLAS PARA DETAILS Y SUMMARY --- */
+/* ---  PARA DETAILS Y SUMMARY --- */
 
 details {
     margin: 20px 0;
@@ -168,6 +193,7 @@ details p {
 img {
     width: 400px;
     margin: 20px;
+    
 }
 
 figure {
@@ -203,12 +229,21 @@ iframe {
 ul, ol {
     font-size: 40px;
     color: white;
-    text-align: left;
+    text-align: center;
     margin: 20px 0 20px 80px;
 }
 
 li {
+    text-align: left;
     margin-bottom: 15px;
+    list-style-position: inside;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(24, 23, 23);
+  
 }
 
 /* ============================================================
@@ -217,6 +252,8 @@ li {
    ============================================================ */
 form {
     margin: 30px 0;
+    width: 100%;
+    
 }
 
 label {
@@ -245,7 +282,7 @@ button {
 }
 
 button:hover {
-    background-color: #e53935;
+    background-color: #ed9c24;
 }
 
 /* ============================================================
@@ -298,4 +335,16 @@ footer i {
     font-size: 45px;     
     color: #e53935;        
     margin-right: 15px;    
+}
+
+/* ============================================================
+   BLOQUE 11: Barra de progreso
+   
+   ============================================================ */
+
+progress {
+    width: 300px;
+    height: 50px;
+    accent-color: #e98707;
+
 }
