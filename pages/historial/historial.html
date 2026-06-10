@@ -5,26 +5,20 @@
     <meta charset="UTF-8">
     <title>Historial - POWER APP</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
     <link rel="stylesheet" href="../../css/general.css">
-</head>
+    <link rel="stylesheet" href="../../css/historial.css"> </head>
 
 <body>
 
     <header>
-
         <h1>POWER APP</h1>
-
         <nav>
             <i class="fa-solid fa-house"></i> <a href="/pages/dashboard/dashboard.html"> Dashboard - </a>
-
             <i class="fa-solid fa-user-plus"></i> <a href="/pages/registros/registro.html"> Registrar Sesión - </a>
-
             <i class="fa-solid fa-dumbbell"></i> <a href="/pages/bloque/bloques.html"> Mis Bloques -</a>
-
             <i class="fa-solid fa-gears"></i><a href="/pages/tecnicas/tecnica.html"> Técnica - </a>
-
             <i class="fa-solid fa-clock-rotate-left"></i><a href="/pages/historial/historial.html"> Historial </a>
-            <br><br><br>
         </nav>
 
         <div>
@@ -33,21 +27,18 @@
                 <button type="submit">Cerrar sesión</button>
             </form>
         </div>
-        <br>
     </header>
 
     <main>
-        <br>
+        
         <header>
             <h1>Historial de Entrenamientos</h1>
             <p>Tus últimos registros guardados</p>
         </header>
-        <br>
-
-        <article>
-            <br><br>
-
-            <table>
+        
+        <section id="panel-historial">
+            
+            <table class="tabla-registros">
                 <thead>
                     <tr>
                         <th>Fecha</th>
@@ -58,28 +49,28 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr class="fila-dato">
                         <td>15/05/2026</td>
                         <td>Low-bar Squat</td>
                         <td>120 kg</td>
                         <td>3 x 3</td>
                         <td>9.0</td>
                     </tr>
-                    <tr>
+                    <tr class="fila-dato">
                         <td>15/05/2026</td>
                         <td>Sumo Deadlift</td>
                         <td>115 kg</td>
                         <td>3 x 3</td>
                         <td>9.5</td>
                     </tr>
-                    <tr>
+                    <tr class="fila-dato">
                         <td>12/05/2026</td>
                         <td>Bench Press</td>
                         <td>100 kg</td>
                         <td>5 x 5</td>
                         <td>8.5</td>
                     </tr>
-                    <tr>
+                    <tr class="fila-dato">
                         <td>10/05/2026</td>
                         <td>Low-bar Squat</td>
                         <td>115 kg</td>
@@ -89,8 +80,7 @@
                 </tbody>
             </table>
 
-            <br><br>
-        </article>
+        </section>
         <br>
 
     </main>

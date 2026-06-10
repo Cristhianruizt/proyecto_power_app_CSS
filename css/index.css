@@ -1,0 +1,124 @@
+/* ============================================================
+   BLOQUE 1: PRESENTACIÓN PRINCIPAL (LOGIN)
+   Estilos exclusivos para la pantalla de inicio de sesión.
+   ============================================================ */
+
+/* Selector de Identificador (#) */
+#panel-login {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #1f1f1f;
+    border-top: 4px solid #e53935; /* Borde superior decorativo */
+}
+
+/* ============================================================
+   BLOQUE 2: FORMULARIOS ESPECÍFICOS
+   Estilos mediante clases para los inputs y botones del login.
+   ============================================================ */
+
+/* Selector de clase (.) */
+.formulario-acceso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+/* Selector por descendencia (Busca input-texto dentro de formulario-acceso) */
+.formulario-acceso .input-texto {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 4px;
+    /* Transición eliminada para cumplir la rúbrica */
+}
+
+/* Estado Focus/Hover en clases */
+.formulario-acceso .input-texto:focus {
+    border: 1px solid #e53935;
+    outline: none;
+}
+
+/* Selector de identificador para el botón */
+#btn-ingreso {
+    font-size: 16px;        
+    padding: 12px 25px;    
+    width: 100%;
+    max-width: 280px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #b62927; /* Color inicial del botón */
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* Estado :hover añadido para cumplir con la rúbrica */
+#btn-ingreso:hover {
+    background-color: #ed9c24; /* Cambia de color al pasar el mouse */
+}
+
+.nota-registro {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* ============================================================
+   BLOQUE 5: LAYOUT DE PANTALLA DIVIDIDA (SPLIT SCREEN)
+   Uso de Flexbox para alinear elementos lado a lado sin scroll.
+   ============================================================ */
+
+.contenedor-split {
+    display: flex;
+    flex-direction: row;
+    align-items: center;      /* Centra los elementos verticalmente */
+    justify-content: center;  /* Centra los elementos horizontalmente */
+    min-height: 85vh;         /* Ocupa el alto de la pantalla (evita el scroll) */
+    max-width: 1200px;
+    margin: 0 auto;           /* Centra el contenedor en la pantalla */
+    gap: 40px;                /* Espacio de separación entre el logo y el formulario */
+    padding: 20px;
+}
+
+/* Sobrescribimos estilos de general.css para adaptarlos a esta vista */
+.mitad-logo {
+    flex: 1;                  /* Toma el 50% del espacio disponible */
+    background-color: transparent; /* Quitamos el fondo oscuro del header general */
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.mitad-logo p {
+    font-size: 28px;
+    color: #cccccc;
+    margin-top: 20px;
+}
+
+.mitad-login {
+    flex: 1;                  /* Toma el otro 50% del espacio disponible */
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Ajuste necesario al panel que hicimos antes */
+#panel-login {
+    margin: 0; /* Quitamos el auto-margin porque flexbox ya se encarga de centrar */
+    width: 100%;
+}
+
+/* ============================================================
+   RESPONSIVE ESPECÍFICO DE ESTA PÁGINA
+   ============================================================ */
+@media (max-width: 700px) {
+    .contenedor-split {
+        flex-direction: column; /* Apila el logo arriba y el login abajo */
+        gap: 20px;
+    }
+}

@@ -7,64 +7,54 @@
     <link rel="icon" href="/iconos/world.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
-<aside>
-    <i class="fa-solid fa-house"></i> <!-- Casa -->
-    <i class="fa-solid fa-user"></i> <!-- Usuario -->
-    <i class="fa-solid fa-envelope"></i> <!-- Correo -->
-    <i class="fa-solid fa-phone"></i> <!-- Teléfono -->
-    <i class="fa-solid fa-cart-shopping"></i> <!-- Carrito -->
-    <i class="fa-solid fa-heart"></i> <!-- Corazón -->
-    <i class="fa-brands fa-facebook"></i> <!-- Facebook -->
-    <i class="fa-brands fa-instagram"></i> <!-- Instagram -->
-</aside>
+<body class="login">
 
-<body>
+    <aside class="iconos-superiores">
+        <i class="fa-solid fa-house"></i> 
+        <i class="fa-solid fa-user"></i> 
+        <i class="fa-solid fa-envelope"></i> 
+        <i class="fa-solid fa-phone"></i> 
+        <i class="fa-solid fa-cart-shopping"></i> 
+        <i class="fa-solid fa-heart"></i> 
+        <i class="fa-brands fa-facebook"></i> 
+        <i class="fa-brands fa-instagram"></i> 
+    </aside>
 
-    <br><br><br>
+    <div class="contenedor-split">
+        
+        <header class="mitad-logo">
+            <img src="img/logo.png" alt="Logo de POWER APP">
+            <p>Tu plataforma de entrenamiento de powerlifting</p>
+        </header>
 
-    <header>
-        <img src="img/logo.png" alt="Logo de POWER APP" style="width: 500px;">
-        <br>
-        <p style="color: #cccccc; font-size: 28px;">Tu plataforma de entrenamiento de powerlifting</p>
-    </header>
+        <main class="mitad-login">
+            
+            <section id="panel-login">
+                <h2>Inicia sesión en tu cuenta</h2>
 
-    <main>
-        <br><br>
-        <section>
-            <br><br>
-            <h2>Inicia sesión en tu cuenta</h2>
-            <br>
+                <form class="formulario-acceso" action="/pages/dashboard/dashboard.html" method="GET">
+                    <label>Correo Electrónico</label>
+                    <input type="email" class="input-texto" name="correo" placeholder="tu@email.com" required>
 
-            <form action="/pages/dashboard/dashboard.html" method="GET">
+                    <label>Contraseña</label>
+                    <input type="password" class="input-texto" name="password" placeholder="********" required>
 
-                <label>Correo Electrónico</label>
-                <br><br>
-                <input type="email" name="correo" placeholder="tu@email.com" required>
+                    <button type="submit" id="btn-ingreso">
+                        Ingresar
+                    </button>
+                </form>
 
-                <br><br><br>
+                <p class="nota-registro">
+                    ¿No tienes cuenta? <a href="https://workspace.google.com/intl/es/gmail/" target="_blank"> Regístrate </a>
+                </p>
+            </section>
+            
+        </main>
 
-                <label>Contraseña</label>
-                <br><br>
-                <input type="password" name="password" placeholder="********" required>
-
-                <br><br><br>
-
-                <button type="submit">
-                    Ingresar
-                </button>
-            </form>
-
-            <br>
-
-            <p>
-                ¿No tienes cuenta? <a href="https://workspace.google.com/intl/es/gmail/" target="_blank"> Registrate
-                </a>
-            </p>
-            <br><br>
-        </section>
-    </main>
+    </div>
 
 </body>
 

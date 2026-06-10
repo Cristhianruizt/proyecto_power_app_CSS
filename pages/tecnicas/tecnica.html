@@ -6,167 +6,135 @@
     <title>Técnica - POWER APP</title>
     <link rel="icon" href="/iconos/weight.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
     <link rel="stylesheet" href="../../css/general.css">
-</head>
+    <link rel="stylesheet" href="../../css/tecnica.css"> </head>
 
 <body>
 
     <header>
-
         <h1>POWER APP</h1>
-
         <nav>
-            <i class="fa-solid fa-house"></i> <!-- Casa -->
-            <a href="/pages/dashboard/dashboard.html"> Dashboard - </a>
-
-
-            <i class="fa-solid fa-user-plus"></i> <!-- REGISTRAR SESIÓN -->
-            <a href="/pages/registros/registro.html"> Registrar Sesión - </a>
-
-            <i class="fa-solid fa-dumbbell"></i> <!-- BLOQUES DE ENTRENAMIENTO -->
-            <a href="/pages/bloque/bloques.html"> Mis Bloques -</a>
-
-
-            <i class="fa-solid fa-gears"></i><!-- TÉCNICA -->
-            <a href="/pages/tecnicas/tecnica.html"> Técnica - </a>
-
-            <i class="fa-solid fa-clock-rotate-left"></i><!-- HISTORIAL -->
-            <a href="/pages/historial/historial.html"> Historial </a>
-            <br><br><br><br>
+            <i class="fa-solid fa-house"></i> <a href="/pages/dashboard/dashboard.html"> Dashboard - </a>
+            <i class="fa-solid fa-user-plus"></i> <a href="/pages/registros/registro.html"> Registrar Sesión - </a>
+            <i class="fa-solid fa-dumbbell"></i> <a href="/pages/bloque/bloques.html"> Mis Bloques -</a>
+            <i class="fa-solid fa-gears"></i><a href="/pages/tecnicas/tecnica.html"> Técnica - </a>
+            <i class="fa-solid fa-clock-rotate-left"></i><a href="/pages/historial/historial.html"> Historial </a>
         </nav>
-
         <div>
             <p> Cristhian (-74 kg)</p>
             <form action="../../index.html">
                 <button type="submit">Cerrar sesión</button>
             </form>
         </div>
-
     </header>
 
-    <main>
+    <main id="contenedor-tecnicas">
 
         <header>
             <h1>Técnica de Competición</h1>
             <p>Estándares y ejecución de los 3 grandes</p>
         </header>
-        <br>
+    
+        <article class="tarjeta-tecnica" id="squat-section">
+            <h2 class="titulo-movimiento">1. Low-bar Squat (Sentadilla Barra Baja)</h2>
 
-        <article>
-            <h2>1. Low-bar Squat (Sentadilla Barra Baja)</h2>
-
-            <table border="1">
+            <table class="tabla-ejecucion">
                 <tr>
                     <td>
                         <p>Puntos clave para la ejecución:</p>
-                        <ul>
+                        <ul class="lista-claves">
                             <li>Colocar la barra sobre los deltoides posteriores.</li>
                             <li>Respiración diafragmática (Bracing) antes de bajar.</li>
                             <li>Romper la paralela (la cadera debe bajar más que la rodilla).</li>
-                            <br>
-
-                            <details>
-                                <summary> Nivel de Dificultad</summary>
-                                <p>Intermedio</p>
-                                <progress id="NivelD1" value="50" max="100"></progress>
-                            </details>
-
-                            <br>
-
-                            <img src="../../img/squat.png" alt="Demostración de Low-bar Squat">
                         </ul>
 
+                        <details class="detalle-dificultad">
+                            <summary> Nivel de Dificultad</summary>
+                            <p>Intermedio</p>
+                            <progress value="50" max="100"></progress>
+                        </details>
 
+                        <img src="../../img/squat.png" alt="Demostración de Low-bar Squat" class="img-demostracion">
                     </td>
                     <td>
                         <h3>Video de Ejemplo</h3>
-                        <br><br>
-                        <video src="../../video/squat.mp4" controls></video>
+                        <video src="../../video/squat.mp4" controls class="video-demostracion"></video>
                     </td>
                 </tr>
             </table>
-            <br>
         </article>
-        <br>
+    
+        <article class="tarjeta-tecnica" id="bench-section">
+            <h2 class="titulo-movimiento">2. Bench Press (Press de Banca)</h2>
 
-        <article>
-            <h2>2. Bench Press (Press de Banca)</h2>
-
-            <table border="1">
+            <table class="tabla-ejecucion">
                 <tr>
                     <td>
                         <p>Puntos clave para la ejecución:</p>
-                        <ul>
+                        <ul class="lista-claves">
                             <li>Retracción y depresión escapular.</li>
                             <li>Mantener los glúteos pegados al banco en todo momento.</li>
                             <li>Uso activo del "Leg Drive" (empuje de piernas).</li>
                             <li>Pausa visible en el pecho antes de subir.</li>
-                            <br>
-                            <details>
-                                <summary> Nivel de Dificultad</summary>
-                                <p>Intermedio</p>
-                                <progress value="50" max="100"></progress>
-                            </details>
-
-                            <br>
-                            <img src="../../img/bench.png" alt="Demostración de Bench Press">
                         </ul>
+                    
+                        <details class="detalle-dificultad">
+                            <summary> Nivel de Dificultad</summary>
+                            <p>Intermedio</p>
+                            <progress value="50" max="100"></progress>
+                        </details>
+
+                        <img src="../../img/bench.png" alt="Demostración de Bench Press" class="img-demostracion">
                     </td>
                     <td>
                         <h3>Video de Ejemplo</h3>
-                        <br><br>
-                        <video src="../../video/bench.mp4" controls></video>
+                        <video src="../../video/bench.mp4" controls class="video-demostracion"></video>
                     </td>
                 </tr>
             </table>
-            <br>
         </article>
-        <br>
+    
+        <article class="tarjeta-tecnica" id="deadlift-section">
+            <h2 class="titulo-movimiento">3. Sumo Deadlift (Peso Muerto Sumo)</h2>
 
-        <article>
-            <h2>3. Sumo Deadlift (Peso Muerto Sumo)</h2>
-
-            <table border="1">
+            <table class="tabla-ejecucion">
                 <tr>
                     <td>
                         <p>Puntos clave para la ejecución:</p>
-                        <ul>
+                        <ul class="lista-claves">
                             <li>Abrir la cadera y acercarla a la barra.</li>
                             <li>Tensión previa (pull the slack) antes de despegar.</li>
                             <li>Empujar el piso con las piernas, no jalar con la espalda.</li>
                             <li>Bloqueo completo de rodillas y cadera al final.</li>
-                            <br>
-                            <details>
-                                <summary> Nivel de Dificultad</summary>
-                                <p>Intermedio</p>
-                                <progress value="50" max="100"></progress>
-                            </details>
-                            <br>
-                            <img src="../../img/deadlift.png" alt="Demostración de Sumo Deadlift">
                         </ul>
+                        
+                        <details class="detalle-dificultad">
+                            <summary> Nivel de Dificultad</summary>
+                            <p>Intermedio</p>
+                            <progress value="50" max="100"></progress>
+                        </details>
+                        
+                        <img src="../../img/deadlift.png" alt="Demostración de Sumo Deadlift" class="img-demostracion">
                     </td>
                     <td>
                         <h3>Video de Ejemplo</h3>
-                        <br><br>
-                        <video src="../../video/deadlift.mp4" controls></video>
+                        <video src="../../video/deadlift.mp4" controls class="video-demostracion"></video>
                     </td>
                 </tr>
             </table>
-            <br>
         </article>
-        <br>
-
+        
         <hr>
-        <article>
-            <br>
-            <h2> Video Tutorial Recomendado</h2>
+        
+        <article id="tutorial-destacado">
+            <h2>Video Tutorial Recomendado</h2>
             <p>Errores comunes en el Powerlifting</p>
 
-            <iframe width="960" height="515" src="https://www.youtube.com/embed/F91KfDdUGQ8?si=Ss95QZvn0UqnmvOk"
+            <iframe class="video-youtube" src="https://www.youtube.com/embed/F91KfDdUGQ8?si=Ss95QZvn0UqnmvOk"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <br><br>
         </article>
 
     </main>

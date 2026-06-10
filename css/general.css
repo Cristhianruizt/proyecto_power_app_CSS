@@ -5,17 +5,18 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
+    margin: 0;
     background-color: #1a1a1a;
     color: white;
     font-family: Arial, sans-serif;
-    /*text-align: center;*/
     line-height: 1.5;
 }
 
-body main{
+body main {
     text-align: center;
 }
 
@@ -24,25 +25,25 @@ body main{
    Estilos para h1, h2, h3, p, a y a:hover.
    ============================================================ */
 h1 {
-    font-size: 64px;
+    font-size: 28px;
     color: #e53935;
     margin-bottom: 20px;
     text-align: center;
 }
 
 h2 {
-    font-size: 34px;
+    font-size: 22px;
     color: #e53935;
     margin-bottom: 15px;
 }
 
 h3 {
-    font-size: 34px;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
 p {
-    font-size: 34px;
+    font-size: 16px;
     color: #cccccc;
     margin-bottom: 15px;
 }
@@ -62,36 +63,54 @@ a:hover {
    ============================================================ */
 header {
     background-color: #242424;
-    padding: 30px;
+    padding: 18px 10px;
     margin-bottom: 30px;
     text-align: center;
 }
-/*
-header div {
-    text-align: center;
-    
-}*/
 
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+header div form {
+    width: auto;
+    margin: 0;
+}
+
+header div button {
+    width: auto;
+    padding: 6px 12px;
+    font-size: 14px;
+}
 
 main {
-    padding: 40px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 section {
     background-color: #242424;
-    padding: 40px;
-    margin: 30px 0;
+    padding: 18px;
+    margin: 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 article {
     background-color: #242424;
-    padding: 30px;
-    margin: 30px 0;
+    padding: 18px;
+    margin: 30px 0 20px 0;
 }
 
 aside {
-    font-size: 30px;
-    padding: 20px;
+    font-size: 16px;
+    padding: 18px;
+    margin-bottom: 12px;
 }
 
 footer {
@@ -100,43 +119,30 @@ footer {
     margin-top: 50px;
 }
 
-/*
-header div{
-    align-items: center;
-    gap: 20px;
-     background-color: #320303;
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px solid #dddddd;
-    margin-bottom: 10px;
-    width: 15%;
-}
-    */
-
 /* ============================================================
    BLOQUE 4: MENÚ DE NAVEGACIÓN
    Estilos para nav, nav a, nav i y nav a:hover.
    ============================================================ */
 nav {
     background-color: #1a1a1a;
-    padding: 30px; 
+    padding: 15px; 
     display: flex;
     justify-content: center;
     align-items: center; 
     flex-wrap: wrap;
-    gap: 25px; 
+    gap: 15px; 
 }
 
 nav i {
-    font-size: 38px; 
+    font-size: 20px; 
     color: #e53935; 
 }
 
 nav a {
     background-color: #333333;
     color: #cccccc;
-    font-size: 36px; 
-    padding: 25px 35px; 
+    font-size: 14px; 
+    padding: 8px 12px; 
     border-radius: 8px;
     text-decoration: none; 
 }
@@ -164,23 +170,21 @@ aside i {
     margin: 0 10px;
 }
 
-/* ---  PARA DETAILS Y SUMMARY --- */
-
 details {
     margin: 20px 0;
-    text-align: center; /* Mantiene todo centrado */
+    text-align: center; 
 }
 
 summary {
-    font-size: 45px;
+    font-size: 16px;
     color: #e53935;
     font-weight: bold;
-    cursor: pointer; /* Cambia el cursor a manito */
+    cursor: pointer; 
     margin-bottom: 15px;
 }
 
 details p {
-    font-size: 35px;
+    font-size: 15px;
     color: #cccccc;
     margin-top: 10px;
     line-height: 1.6;
@@ -191,9 +195,18 @@ details p {
    Estilos para img, figure, figcaption, video, audio e iframe.
    ============================================================ */
 img {
-    width: 400px;
-    margin: 20px;
-    
+    max-width: 60%;
+    margin: 15px auto;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+header img {
+    max-width: 180px;
+    width: 100%;
+    margin: 10px auto;
+    display: block;
 }
 
 figure {
@@ -207,18 +220,24 @@ figure img {
 
 figcaption {
     color: #cccccc;
-    font-size: 20px;
+    font-size: 14px;
     margin-top: 10px;
 }
 
 video {
-    width: 50%;
-    margin: 20px;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 20px auto;
     border: 3px solid #e53935;
 }
 
 iframe {
-    margin: 30px 0;
+    width: 100%;
+    max-width: 860px;
+    aspect-ratio: 16 / 9;
+    margin: 30px auto;
+    display: block;
     border: none;
 }
 
@@ -227,10 +246,10 @@ iframe {
    Estilos para ul, ol y li.
    ============================================================ */
 ul, ol {
-    font-size: 40px;
+    font-size: 15px;
     color: white;
     text-align: center;
-    margin: 20px 0 20px 80px;
+    margin: 20px;
 }
 
 li {
@@ -239,46 +258,42 @@ li {
     list-style-position: inside;
 }
 
-table{
-    width: 100%;
-    border-collapse: collapse;
-    background-color: rgb(24, 23, 23);
-  
-}
-
 /* ============================================================
    BLOQUE 8: FORMULARIOS
    Estilos para form, label, input, textarea, select y button.
    ============================================================ */
 form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin: 30px 0;
     width: 100%;
-    
 }
 
 label {
-    font-size: 28px;
+    font-size: 15px;
     color: #cccccc;
 }
 
 input, select, textarea {
-    font-size: 26px;
-    width: 400px;
+    font-size: 15px;
+    width: 100%;
     padding: 10px;
-    margin: 15px 0;
+    margin: 10px 0;
     background-color: #333;
     color: white;
     border: 1px solid #555;
 }
 
 button {
-    font-size: 32px;
+    font-size: 16px;
     color: white;
     background-color: #b62927;
-    padding: 15px 30px;
+    padding: 12px 24px;
     border: none;
     cursor: pointer;
     margin-top: 20px;
+    border-radius: 5px;
 }
 
 button:hover {
@@ -286,15 +301,16 @@ button:hover {
 }
 
 /* ============================================================
-   BLOQUE 9: TABLAS
+   BLOQUE 9: TABLAS GENERALES
    Estilos para table, thead, tbody, tr, th y td.
    ============================================================ */
 table {
     width: 100%;
     text-align: center;
-    font-size: 35px;
+    font-size: 15px;
     border-collapse: collapse;
-    margin: 30px 0;
+    margin: 2% 0;
+    background-color: rgb(24, 23, 23);
 }
 
 thead {
@@ -306,22 +322,24 @@ tbody {
 }
 
 th, td {
-    padding: 20px;
+    padding: 14px;
     border: 1px solid #444;
+    word-wrap: break-word;
 }
+
 /* ============================================================
    BLOQUE 10: PIE DE PÁGINA
    Estilos para footer, footer p, footer a y footer i.
    ============================================================ */
 footer p {
-    font-size: 38px;
+    font-size: 15px;
     text-align: center;
     color: #cccccc;
     margin-bottom: 10px;
 }
 
 footer a {
-    font-size: 45px;
+    font-size: 16px;
     color: white;
     text-decoration: none;
 }
@@ -330,21 +348,65 @@ footer a:hover {
     color: #e53935;
 }
 
-/* --- PARA EL ÍCONO DE UBICACIÓN --- */
 footer i {
-    font-size: 45px;     
+    font-size: 18px;     
     color: #e53935;        
-    margin-right: 15px;    
+    margin-right: 10px;    
 }
 
 /* ============================================================
-   BLOQUE 11: Barra de progreso
-   
+   BLOQUE 11: BARRA DE PROGRESO
    ============================================================ */
-
 progress {
-    width: 300px;
-    height: 50px;
+    width: 100%;
+    max-width: 300px;
+    height: 24px;
     accent-color: #e98707;
+}
 
+/* ============================================================
+   BLOQUE 12: RESPONSIVE BÁSICO (MOBILE FIRST / ADAPTACIÓN)
+   ============================================================ */
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    main,
+    aside {
+        width: 95%;
+    }
+
+    section,
+    article,
+    aside {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    input,
+    select,
+    textarea,
+    button,
+    meter,
+    progress,
+    audio {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
 }

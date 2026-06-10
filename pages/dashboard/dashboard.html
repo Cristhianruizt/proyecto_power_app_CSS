@@ -6,7 +6,9 @@
     <title>Dashboard - POWER APP</title>
     <link rel="icon" href="/iconos/world.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
     <link rel="stylesheet" href="../../css/general.css">
+    <link rel="stylesheet" href="../../css/dashboard.css">
 </head>
 
 <body>
@@ -16,25 +18,11 @@
         <h1>POWER APP</h1>
 
         <nav>
-            <i class="fa-solid fa-house"></i> <!-- Casa -->
-            <a href="/pages/dashboard/dashboard.html"> Dashboard - </a>
-
-
-            <i class="fa-solid fa-user-plus"></i> <!-- REGISTRAR SESIÓN -->
-            <a href="/pages/registros/registro.html"> Registrar Sesión - </a>
-
-
-            <i class="fa-solid fa-dumbbell"></i> <!-- BLOQUES DE ENTRENAMIENTO -->
-            <a href="/pages/bloque/bloques.html"> Mis Bloques -</a>
-
-
-            <i class="fa-solid fa-gears"></i><!-- TÉCNICA -->
-            <a href="/pages/tecnicas/tecnica.html"> Técnica - </a>
-
-
-            <i class="fa-solid fa-clock-rotate-left"></i><!-- HISTORIAL -->
-            <a href="/pages/historial/historial.html"> Historial </a>
-            <br><br><br><br>
+            <i class="fa-solid fa-house"></i> <a href="/pages/dashboard/dashboard.html"> Dashboard - </a>
+            <i class="fa-solid fa-user-plus"></i> <a href="/pages/registros/registro.html"> Registrar Sesión - </a>
+            <i class="fa-solid fa-dumbbell"></i> <a href="/pages/bloque/bloques.html"> Mis Bloques -</a>
+            <i class="fa-solid fa-gears"></i><a href="/pages/tecnicas/tecnica.html"> Técnica - </a>
+            <i class="fa-solid fa-clock-rotate-left"></i><a href="/pages/historial/historial.html"> Historial </a>
         </nav>
 
          <div>
@@ -48,94 +36,78 @@
 
     <main>
 
-        <header>
+        <header id="cabecera-atleta">
             <h1>Hola, Cristhian</h1>
-            <p>Categoría: -74 kg</p>
+            <p class="etiqueta-categoria">Categoría: -74 kg</p>
         </header>
 
-        <section>
-            <table>
+        <section id="estadisticas-pr">
+            <table class="tabla-marcas">
                 <tr>
-                    <td>
+                    <td class="tarjeta-pr">
                         <h3>Low-bar Squat</h3>
-                        <b>125 kg</b>
+                        <b class="peso-maximo">125 kg</b>
                         <p>1RM</p>
                     </td>
 
-                    <td>
+                    <td class="tarjeta-pr">
                         <h3>Bench Press</h3>
-                        <b>100 kg</b>
+                        <b class="peso-maximo">100 kg</b>
                         <p>1RM</p>
                     </td>
 
-                    <td>
+                    <td class="tarjeta-pr">
                         <h3>Sumo Deadlift</h3>
-                        <b>135 kg</b>
+                        <b class="peso-maximo">135 kg</b>
                         <p>1RM</p>
                     </td>
 
-                    <td>
+                    <td class="tarjeta-pr">
                         <h3>Total SBD</h3>
-                        <b>360 kg</b>
+                        <b class="peso-maximo">360 kg</b>
                         <p>Total</p>
                     </td>
                 </tr>
             </table>
         </section>
 
-        <section>
+        <section id="progresion-volumen">
             <h3>Progresión de Volumen</h3>
 
             <figure>
-                <img src="../../img/progresion.png" alt="Gráfico de progresión">
+                <img src="../../img/progresion.png" alt="Gráfico de progresión" class="grafico-img">
                 <figcaption></figcaption>
-                <br><br><br>
             </figure>
         </section>
 
         <hr>
-        <br><br><br>
-
-        <details>
+        
+        <details class="caja-pregunta">
             <summary>¿Qué es el powerlifting?</summary>
-
-            <p>El powerlifting es un deporte de fuerza que consiste en levantar el máximo peso
-                posible en tres
-                movimientos:
-                Sentadilla (Squat)
-                Press de banca (Bench Press)
-                Peso muerto (Deadlift)</p>
+            <p>El powerlifting es un deporte de fuerza que consiste en levantar el máximo peso posible en tres movimientos: Sentadilla (Squat), Press de banca (Bench Press) y Peso muerto (Deadlift).</p>
         </details>
 
-        <details>
-            <summary>¿Ques es RPE??</summary>
-            <p>El RPE (por sus siglas en inglés, Rate of Perceived Exertion
-                o Índice de Esfuerzo Percibido) es una escala subjetiva que se utiliza para medir y
-                monitorizar la intensidad de un ejercicio o entrenamiento </p>
+        <details class="caja-pregunta">
+            <summary>¿Qué es RPE?</summary>
+            <p>El RPE (por sus siglas en inglés, Rate of Perceived Exertion o Índice de Esfuerzo Percibido) es una escala subjetiva que se utiliza para medir y monitorizar la intensidad de un ejercicio o entrenamiento.</p>
         </details>
 
-        <details>
-            <summary>¿Cual es la diferencia entre Low bar y High Bar</summary>
-            <p>La diferencia principal entre High Bar (barra alta)
-                y Low Bar (barra baja) es la posición de la barra en la espalda,
-                lo que altera tu biomecánica y cambia qué músculos reciben mayor enfoque.
-                La sentadilla high bar enfatiza más los cuádriceps, mientras que la low bar
-                se centra más en los glúteos y lumbares, permitiendo levantar más peso. </p>
+        <details class="caja-pregunta">
+            <summary>¿Cuál es la diferencia entre Low bar y High Bar?</summary>
+            <p>La diferencia principal entre High Bar (barra alta) y Low Bar (barra baja) es la posición de la barra en la espalda, lo que altera tu biomecánica y cambia qué músculos reciben mayor enfoque. La sentadilla high bar enfatiza más los cuádriceps, mientras que la low bar se centra más en los glúteos y lumbares, permitiendo levantar más peso.</p>
         </details>
 
-        <details>
-            <summary>¿En semana de descarga en que porcentaje se entrena?
-            </summary>
-            <p>Se entrena al 60% de la intensidad habitual. </p>
+        <details class="caja-pregunta">
+            <summary>¿En semana de descarga en qué porcentaje se entrena?</summary>
+            <p>Se entrena al 60% de la intensidad habitual.</p>
             <h3>Intensidad</h3>
             <progress value="60" max="100" title="Nivel de intensidad 60%">60%</progress>
             <span>60%</span>
         </details>
 
-        <br><br><br>
         <hr>
 
-        <section>
+        <section class="seccion-metricas">
             <h3>Intensidad</h3>
             <progress value="65" max="100" title="Nivel de intensidad 65%">65%</progress>
             <span>65%</span>
@@ -145,17 +117,12 @@
             <span>20%</span>
         </section>
 
-        <br><br><br>
-
         <footer>
-            <br><br>
             <h3>Ubicación</h3>
-            <i class="fa-solid fa-location-dot"></i> <!-- Ubicación -->
-
+            <i class="fa-solid fa-location-dot"></i>
             <a href="https://maps.app.goo.gl/vB2D4nD3vkovyjD18" target="_blank"> Gimnasio Powerlifting </a>
-            <br><br><br><br><br><br><br>
-            <p> &copy; CRISTHIAN RUIZ</p>
-            <p>&reg; POWER APP </p>
+            <p> © CRISTHIAN RUIZ</p>
+            <p>® POWER APP </p>
         </footer>
 
     </main>

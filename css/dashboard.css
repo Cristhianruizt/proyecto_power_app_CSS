@@ -1,0 +1,96 @@
+/* ============================================================
+   BLOQUE 1: CABECERA DEL ATLETA
+   Uso de identificadores, bordes, padding y tipografía.
+   ============================================================ */
+#cabecera-atleta {
+    border-bottom: 2px dashed #444444;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.etiqueta-categoria {
+    color: #e98707;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* ============================================================
+   BLOQUE 2: ESTADÍSTICAS Y TARJETAS PR
+   ============================================================ */
+#estadisticas-pr {
+    background-color: transparent; /* Sobrescribe el fondo general */
+    padding: 0;
+}
+
+.tabla-marcas {
+    border-collapse: separate;
+    border-spacing: 15px;
+    background-color: transparent;
+    width: 100%;
+}
+
+.tarjeta-pr {
+    background-color: #242424;
+    border: 2px solid #555555;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+/* ESTADO HOVER: Cambia solo el fondo y el borde (Sin transformaciones) */
+.tarjeta-pr:hover {
+    background-color: #2a2a2a; 
+    border-color: #e53935;
+}
+
+.peso-maximo {
+    font-size: 24px;
+    color: #ffffff;
+    display: block;
+    margin: 10px 0;
+}
+
+/* ============================================================
+   BLOQUE 3: PROGRESIÓN DE VOLUMEN
+   Control de anchos y altos.
+   ============================================================ */
+#progresion-volumen {
+    background-color: #1f1f1f;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.grafico-img {
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #555555;
+    border-radius: 5px;
+}
+
+/* ============================================================
+   BLOQUE 4: CAJAS DE PREGUNTAS (DETAILS) Y MÉTRICAS
+   Uso de clases para personalizar las etiquetas details.
+   ============================================================ */
+.caja-pregunta {
+    background-color: #242424;
+    border-left: 5px solid #e53935;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    text-align: left;
+}
+
+/* Selector por descendencia */
+.caja-pregunta summary {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.seccion-metricas {
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #333333;
+}

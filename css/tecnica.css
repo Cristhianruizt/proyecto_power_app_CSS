@@ -1,0 +1,120 @@
+/* ============================================================
+   BLOQUE 1: CONTENEDOR PRINCIPAL DE TÉCNICA
+   Estilos específicos de la página mediante el ID principal.
+   ============================================================ */
+
+/* Selector de identificador (#) */
+#contenedor-tecnicas {
+    max-width: 1000px; /* Ancho específico mayor para que quepan los videos */
+    margin: 0 auto;    /* Centrado de la página */
+    padding: 20px;
+}
+
+/* ============================================================
+   BLOQUE 2: TARJETAS DE LEVANTAMIENTO (SBD)
+   Estilos reutilizables aplicados a clases.
+   ============================================================ */
+
+/* Selector de clase (.) */
+.tarjeta-tecnica {
+    /* Fondos, bordes, padding y márgenes (Requisitos de la rúbrica) */
+    background-color: #1f1f1f;
+    border-left: 6px solid #e53935;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 40px; 
+}
+
+/* 8. Estados como hover (Aplicando solo cambios de color y fondo requeridos) */
+.tarjeta-tecnica:hover {
+    background-color: #2a2a2a; /* El fondo se vuelve un poco más claro */
+    border-left-color: #ed9c24; /* El borde cambia a naranja */
+}
+
+/* Selector por descendencia */
+.tarjeta-tecnica .titulo-movimiento {
+    color: #ffffff;
+    font-size: 24px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* ============================================================
+   BLOQUE 3: TABLA DE LAYOUT (TEXTO VS VIDEO)
+   ============================================================ */
+
+.tabla-ejecucion {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: transparent;
+}
+
+/* Selectores por descendencia para las celdas */
+.tabla-ejecucion td {
+    vertical-align: top; /* Alinea el contenido arriba */
+    padding: 15px;
+    border: none; /* Quitamos los bordes feos por defecto */
+    width: 50%;   /* Divide la pantalla mitad texto, mitad video */
+}
+
+.lista-claves {
+    text-align: left;
+    margin-left: 20px;
+    color: #cccccc;
+    font-size: 16px;
+}
+
+/* ============================================================
+   BLOQUE 4: MULTIMEDIA (IMÁGENES Y VIDEOS)
+   ============================================================ */
+
+.img-demostracion {
+    max-width: 250px; /* <-- Aumenta este número a tu gusto (250px, 300px, etc.) */
+    width: 100%;      /* Añade esto para que sea responsiva si la pantalla es pequeña */
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.video-demostracion {
+    width: 100%;
+    max-width: 300px;
+    border: 3px solid #333;
+    border-radius: 8px;
+}
+
+/* ============================================================
+   BLOQUE 5: SECCIÓN DE TUTORIAL DESTACADO
+   ============================================================ */
+
+/* Selector de identificador único */
+#tutorial-destacado {
+    background-color: #242424;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px dashed #555; /* Estilo diferenciado */
+}
+
+.video-youtube {
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9; /* Mantiene la proporción del video de YouTube */
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* ============================================================
+   RESPONSIVE ESPECÍFICO DE ESTA PÁGINA
+   ============================================================ */
+@media (max-width: 700px) {
+    .tabla-ejecucion td {
+        display: block; /* Rompe la estructura de tabla en móviles */
+        width: 100%;    /* Ocupa todo el ancho disponible */
+    }
+    
+    .img-demostracion {
+        max-width: 100%;
+    }
+}

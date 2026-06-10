@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <title>Registrar Sesión - POWER APP</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
     <link rel="stylesheet" href="../../css/general.css">
-</head>
+    <link rel="stylesheet" href="../../css/registro.css"> </head>
 
 <body>
 
@@ -16,59 +17,45 @@
 
         <nav>
             <i class="fa-solid fa-house"></i> <a href="/pages/dashboard/dashboard.html"> Dashboard - </a>
-
-
             <i class="fa-solid fa-user-plus"></i> <a href="/pages/registros/registro.html"> Registrar Sesión - </a>
-
-
             <i class="fa-solid fa-dumbbell"></i> <a href="/pages/bloque/bloques.html"> Mis Bloques -</a>
-
             <i class="fa-solid fa-gears"></i><a href="/pages/tecnicas/tecnica.html"> Técnica - </a>
-
             <i class="fa-solid fa-clock-rotate-left"></i><a href="/pages/historial/historial.html"> Historial </a>
-
-            <br><br><br><br>
         </nav>
+        
         <div>
             <p> Cristhian (-74 kg)</p>
             <form action="../../index.html">
                 <button type="submit">Cerrar sesión</button>
             </form>
         </div>
-        <br>
+      
     </header>
 
     <main>
-        <br>
+      
         <header>
             <h1>Registrar Entrenamiento</h1>
         </header>
-        <br>
 
-        <section>
-            <br>
-            <form action="/pages/historial/historial.html" method="GET">
+        <section id="panel-registro">
+    
+            <form class="formulario-entrenamiento" action="/pages/historial/historial.html" method="GET">
 
                 <label>Fecha de la sesión:</label>
-                <br>
-                <input type="date" name="fecha" required>
-
-                <br><br><br>
+                <input type="date" name="fecha" class="input-general" required>
 
                 <label>Selecciona el Movimiento:</label>
-                <br>
-                <select name="movimiento" required>
+                <select name="movimiento" class="input-general" required>
                     <option value="">-- Elige un ejercicio --</option>
                     <option value="squat">Low-bar Squat</option>
                     <option value="bench">Bench Press</option>
                     <option value="deadlift">Sumo Deadlift</option>
                 </select>
 
-                <br><br><br>
-
                 <h3>Registro de Series</h3>
 
-                <table>
+                <table class="tabla-series">
                     <tr>
                         <th>Serie</th>
                         <th>Peso (kg)</th>
@@ -77,36 +64,31 @@
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td><input type="number" name="peso1" min="0" step="2.5"></td>
-                        <td><input type="number" name="reps1" min="1"></td>
-                        <td><input type="number" name="rpe1" min="1" max="10" step="0.5"></td>
+                        <td><input type="number" name="peso1" min="0" step="2.5" class="input-celda"></td>
+                        <td><input type="number" name="reps1" min="1" class="input-celda"></td>
+                        <td><input type="number" name="rpe1" min="1" max="10" step="0.5" class="input-celda"></td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td><input type="number" name="peso2" min="0" step="2.5"></td>
-                        <td><input type="number" name="reps2" min="1"></td>
-                        <td><input type="number" name="rpe2" min="1" max="10" step="0.5"></td>
+                        <td><input type="number" name="peso2" min="0" step="2.5" class="input-celda"></td>
+                        <td><input type="number" name="reps2" min="1" class="input-celda"></td>
+                        <td><input type="number" name="rpe2" min="1" max="10" step="0.5" class="input-celda"></td>
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td><input type="number" name="peso3" min="0" step="2.5"></td>
-                        <td><input type="number" name="reps3" min="1"></td>
-                        <td><input type="number" name="rpe3" min="1" max="10" step="0.5"></td>
+                        <td><input type="number" name="peso3" min="0" step="2.5" class="input-celda"></td>
+                        <td><input type="number" name="reps3" min="1" class="input-celda"></td>
+                        <td><input type="number" name="rpe3" min="1" max="10" step="0.5" class="input-celda"></td>
                     </tr>
                 </table>
 
-                <br><br><br>
-
                 <label>Comentarios del entrenamiento:</label>
-                <br>
-                <input type="text" name="notas">
+                <input type="text" name="notas" class="input-general">
 
-                <br><br><br><br>
-
-                <button type="submit">
+                <button type="submit" id="btn-guardar">
                     Guardar Entrenamiento
                 </button>
-                <br><br><br>
+               
             </form>
         </section>
     </main>

@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <title>Mis Bloques - POWER APP</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
     <link rel="stylesheet" href="../../css/general.css">
-</head>
+    <link rel="stylesheet" href="../../css/bloques.css"> </head>
 
 <body>
 
@@ -16,15 +17,10 @@
 
         <nav>
             <i class="fa-solid fa-house"></i> <a href="/pages/dashboard/dashboard.html"> Dashboard - </a>
-
             <i class="fa-solid fa-user-plus"></i> <a href="/pages/registros/registro.html"> Registrar Sesión - </a>
-
             <i class="fa-solid fa-dumbbell"></i> <a href="/pages/bloque/bloques.html"> Mis Bloques -</a>
-
             <i class="fa-solid fa-gears"></i><a href="/pages/tecnicas/tecnica.html"> Técnica - </a>
-
             <i class="fa-solid fa-clock-rotate-left"></i><a href="/pages/historial/historial.html"> Historial </a>
-            <br><br><br><br>
         </nav>
 
         <div>
@@ -36,53 +32,43 @@
 
     </header>
 
-    <main>
-        <br>
+    <main id="panel-bloques">
+    
         <header>
             <h1>Mis Bloques de Entrenamiento</h1>
             <p>Planificación y periodización</p>
         </header>
-        <br>
-
+        
         <section>
-            <br>
-            <article>
-                <h2> Bloque Actual: Fuerza Máxima (Peaking)</h2>
-                <p>Objetivo: Adaptación del sistema nervioso para mover cargas
-                    máximas. Duración: 4 semanas.</p>
+            <article class="tarjeta-bloque">
+                <h2 class="titulo-fase"> Bloque Actual: Fuerza Máxima (Peaking)</h2>
+                <p class="objetivo-fase">Objetivo: Adaptación del sistema nervioso para mover cargas máximas. Duración: 4 semanas.</p>
 
                 <h3>Estructura del microciclo:</h3>
 
-                <ol>
+                <ol class="lista-planificacion">
                     <li><strong>Semana 1:</strong> Acumulación de volumen moderado a RPE 7.</li>
                     <li><strong>Semana 2:</strong> Transición a intensidad. Triples a RPE 8.</li>
                     <li><strong>Semana 3:</strong> Sencillos pesados (Singles) a RPE 9.</li>
-                    <li><strong>Semana 4: Toma de Marcas (Simulación de competencia).</strong>
-                    </li>
+                    <li class="semana-destacada"><strong>Semana 4: Toma de Marcas (Simulación de competencia).</strong></li>
                 </ol>
             </article>
-            <br>
         </section>
-        <br>
-
+    
         <section>
-            <br>
-            <article>
-                <h2> Bloque Anterior: Hipertrofia Base</h2>
-                <p>Objetivo: Creación de masa muscular y trabajo de
-                    debilidades. Finalizado exitosamente.</p>
+            <article class="tarjeta-bloque">
+                <h2 class="titulo-fase"> Bloque Anterior: Hipertrofia Base</h2>
+                <p class="objetivo-fase">Objetivo: Creación de masa muscular y trabajo de debilidades. Finalizado exitosamente.</p>
 
                 <h3>Características principales:</h3>
 
-                <ul>
+                <ul class="lista-planificacion">
                     <li>Volumen alto: 4 a 5 series efectivas por ejercicio principal.</li>
                     <li>Rango de repeticiones: 8 a 12 reps.</li>
                     <li>Ejercicios accesorios: Paused Squat, Spoto Press, Deficit Deadlift.</li>
                 </ul>
             </article>
-            <br>
         </section>
-        <br>
 
     </main>
 

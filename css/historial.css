@@ -1,0 +1,57 @@
+/* ============================================================
+   BLOQUE 1: CONTENEDOR PRINCIPAL DEL HISTORIAL
+   Uso de identificador para modificar la caja principal.
+   ============================================================ */
+
+/* Selector de identificador (#) */
+#panel-historial {
+    background-color: #1f1f1f;
+    border: 1px solid #444444;
+    border-top: 5px solid #e98707; 
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 900px;
+    
+    overflow-x: auto; 
+}
+/* ============================================================
+   BLOQUE 2: TABLA DE REGISTROS
+   Uso de clases y descendencia.
+   ============================================================ */
+
+/* Selector de clase (.) */
+.tabla-registros {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #242424;
+    font-family: Arial, sans-serif; /* Tipografía requerida */
+}
+
+/* Selector por descendencia (cabeceras dentro de la tabla) */
+#panel-historial .tabla-registros th {
+    background-color: #e98707; /* Fondo naranja para la cabecera */
+    color: #ffffff;
+    padding: 15px;
+    border: 1px solid #555555;
+    font-size: 16px;
+}
+
+/* Selector por descendencia (celdas de datos dentro de la tabla) */
+#panel-historial .tabla-registros td {
+    padding: 12px;
+    border: 1px solid #444444;
+    color: #cccccc;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* ============================================================
+   BLOQUE 3: INTERACTIVIDAD DE LAS FILAS
+   Uso del estado :hover requerido en la rúbrica.
+   ============================================================ */
+
+/* Selector de estado (:hover) aplicado a una clase */
+.fila-dato:hover {
+    background-color: #333333; /* Cambia el color de fondo de toda la fila al pasar el mouse */
+}
