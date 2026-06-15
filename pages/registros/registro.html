@@ -7,14 +7,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
     <link rel="stylesheet" href="../../css/general.css">
-    <link rel="stylesheet" href="../../css/registro.css"> </head>
+    <link rel="stylesheet" href="../../css/registro.css"> 
+</head>
 
 <body>
 
     <header>
-
         <h1>POWER APP</h1>
-
         <nav>
             <i class="fa-solid fa-house"></i> <a href="/pages/dashboard/dashboard.html"> Dashboard - </a>
             <i class="fa-solid fa-user-plus"></i> <a href="/pages/registros/registro.html"> Registrar Sesión - </a>
@@ -29,7 +28,6 @@
                 <button type="submit">Cerrar sesión</button>
             </form>
         </div>
-      
     </header>
 
     <main>
@@ -42,19 +40,25 @@
     
             <form class="formulario-entrenamiento" action="/pages/historial/historial.html" method="GET">
 
-                <label>Fecha de la sesión:</label>
-                <input type="date" name="fecha" class="input-general" required>
+                <!-- Agrupación de formulario con Flexbox -->
+                <div class="grupo-formulario">
+                    <label>Fecha de la sesión:</label>
+                    <input type="date" name="fecha" class="input-general" required>
+                </div>
 
-                <label>Selecciona el Movimiento:</label>
-                <select name="movimiento" class="input-general" required>
-                    <option value="">-- Elige un ejercicio --</option>
-                    <option value="squat">Low-bar Squat</option>
-                    <option value="bench">Bench Press</option>
-                    <option value="deadlift">Sumo Deadlift</option>
-                </select>
+                <div class="grupo-formulario">
+                    <label>Selecciona el Movimiento:</label>
+                    <select name="movimiento" class="input-general" required>
+                        <option value="">-- Elige un ejercicio --</option>
+                        <option value="squat">Low-bar Squat</option>
+                        <option value="bench">Bench Press</option>
+                        <option value="deadlift">Sumo Deadlift</option>
+                    </select>
+                </div>
 
                 <h3>Registro de Series</h3>
 
+                <!-- La tabla se mantiene porque es el uso semántico correcto para estos datos -->
                 <table class="tabla-series">
                     <tr>
                         <th>Serie</th>
@@ -82,8 +86,10 @@
                     </tr>
                 </table>
 
-                <label>Comentarios del entrenamiento:</label>
-                <input type="text" name="notas" class="input-general">
+                <div class="grupo-formulario">
+                    <label>Comentarios del entrenamiento:</label>
+                    <input type="text" name="notas" class="input-general">
+                </div>
 
                 <button type="submit" id="btn-guardar">
                     Guardar Entrenamiento

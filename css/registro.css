@@ -1,42 +1,50 @@
 /* ============================================================
    BLOQUE 1: CONTENEDOR DE REGISTRO
-   Estilos específicos de la página mediante el ID principal.
    ============================================================ */
-
-/* Selector de identificador (#) */
 #panel-registro {
-    /* Fondos, bordes, márgenes y padding */
     background-color: #1f1f1f;
     border: 2px solid #333333;
-    border-top: 5px solid #1b7505; /* Borde superior verde para indicar registro/éxito */
+    border-top: 5px solid #1b7505; 
     border-radius: 8px;
     padding: 30px;
     margin: 20px auto;
-    max-width: 600px; /* Ancho controlado */
+    max-width: 600px; 
+    box-sizing: border-box; 
 }
 
 /* ============================================================
-   BLOQUE 2: FORMULARIO Y CAMPOS GENERALES
+   BLOQUE 2: FORMULARIO ORGANIZADO (FLEXBOX)
    ============================================================ */
-
-/* Selector de clase (.) */
 .formulario-entrenamiento {
-    text-align: left; /* Alineación de la tipografía */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Separación general entre secciones del formulario */
+    text-align: left; 
+}
+
+/* Agrupa el label con su input usando Flexbox */
+.grupo-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Separación específica entre etiqueta y campo */
+}
+
+.grupo-formulario label {
+    font-weight: bold;
+    color: #cccccc;
 }
 
 .input-general {
-    /* Ancho, alto, padding, fondo y bordes */
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 12px;
     background-color: #242424;
     color: #ffffff;
     border: 1px solid #555555;
     border-radius: 4px;
-    font-size: 15px; /* Tipografía */
+    font-size: 15px; 
+    box-sizing: border-box; 
 }
 
-/* Selector de estado (:hover / :focus) */
 .input-general:focus {
     border-color: #e53935;
     outline: none;
@@ -46,36 +54,35 @@
 /* ============================================================
    BLOQUE 3: TABLA DE SERIES (RPE Y PESOS)
    ============================================================ */
-
 .tabla-series {
     width: 100%;
-    margin-bottom: 25px;
     border-collapse: collapse;
+    margin-top: 10px;
 }
 
-/* Selectores por descendencia (Busca th y td dentro de la clase .tabla-series) */
 .tabla-series th {
     background-color: #2a2a2a;
     color: #e53935;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #444444;
 }
 
 .tabla-series td {
-    padding: 8px;
+    padding: 10px;
     border: 1px solid #444444;
     text-align: center;
 }
 
-/* Clase específica para los inputs dentro de la tabla */
 .input-celda {
-    width: 90%;
-    padding: 6px;
+    width: 100%;
+    max-width: 80px;
+    padding: 8px;
     background-color: #333333;
     color: #ffffff;
     border: 1px solid #666666;
     border-radius: 3px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .input-celda:focus {
@@ -86,11 +93,10 @@
 /* ============================================================
    BLOQUE 4: BOTÓN DE GUARDAR
    ============================================================ */
-
 #btn-guardar {
     width: 100%;
     padding: 15px;
-    background-color: #1b7505; /* Fondo verde para diferenciar del login */
+    background-color: #1b7505; 
     color: #ffffff;
     font-size: 16px;
     font-weight: bold;
@@ -98,9 +104,9 @@
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
+    box-sizing: border-box;
 }
 
-/* Estado Hover requerido en las instrucciones */
 #btn-guardar:hover {
-    background-color: #229906; /* Verde más claro al pasar el ratón */
+    background-color: #229906; 
 }

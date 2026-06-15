@@ -1,44 +1,44 @@
 /* ============================================================
    BLOQUE 1: CONTENEDOR PRINCIPAL
-   Uso de identificador, ancho, márgenes y padding.
    ============================================================ */
-
-/* Selector de identificador (#) */
 #panel-bloques {
-    max-width: 850px;
+    max-width: 1000px; /* Aumentamos el ancho para que el Grid respire */
     margin: 20px auto;
     padding: 20px;
-    background-color: transparent; /* Permite que se vea el fondo oscuro general */
+    background-color: transparent; 
+    box-sizing: border-box;
 }
 
 /* ============================================================
-   BLOQUE 2: TARJETAS DE LOS BLOQUES DE ENTRENAMIENTO
-   Uso de clases, bordes, fondos y estado hover.
+   BLOQUE 2: ESTRUCTURA GRID PARA LOS BLOQUES
+   Cumple rúbrica: "Bloque visual organizado con Grid"
    ============================================================ */
+.grid-bloques {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Crea columnas adaptables */
+    gap: 30px; /* Separación visual entre las tarjetas de los bloques */
+    align-items: stretch; /* Ambas tarjetas tendrán la misma altura */
+    margin-top: 20px;
+}
 
-/* Selector de clase (.) */
+/* ============================================================
+   BLOQUE 3: TARJETAS DE LOS BLOQUES DE ENTRENAMIENTO (BOX MODEL)
+   ============================================================ */
 .tarjeta-bloque {
     background-color: #1f1f1f;
     border: 2px solid #333333;
-    border-left: 8px solid #b62927; /* Borde izquierdo rojo más grueso como acento visual */
+    border-left: 8px solid #b62927; 
     border-radius: 8px;
     padding: 25px;
-    margin-bottom: 30px;
+    box-sizing: border-box; 
 }
 
-/* Selector de estado (:hover) - Solo cambia colores y fondos, sin animaciones no pedidas */
 .tarjeta-bloque:hover {
     background-color: #242424;
     border-color: #555555;
-    border-left-color: #ed9c24; /* El borde izquierdo cambia a naranja al pasar el mouse */
+    border-left-color: #ed9c24; 
 }
 
-/* ============================================================
-   BLOQUE 3: TIPOGRAFÍA Y TEXTOS INTERNOS
-   Uso de selectores de descendencia.
-   ============================================================ */
-
-/* Selector por descendencia (Busca la clase dentro de otra clase) */
 .tarjeta-bloque .titulo-fase {
     color: #ffffff;
     font-size: 22px;
@@ -50,24 +50,22 @@
 .tarjeta-bloque .objetivo-fase {
     color: #cccccc;
     font-size: 16px;
-    font-style: italic; /* Evidencia de manipulación tipográfica */
+    font-style: italic; 
     margin-bottom: 20px;
 }
 
 /* ============================================================
    BLOQUE 4: LISTAS DE PLANIFICACIÓN
-   Aplicación de fondos y bordes a elementos internos.
    ============================================================ */
-
 .lista-planificacion {
     background-color: #2a2a2a;
     border: 1px solid #444444;
     border-radius: 5px;
-    padding: 20px 20px 20px 40px; /* Padding ajustado para dejar espacio a las viñetas/números */
+    padding: 20px 20px 20px 40px; 
     margin-top: 15px;
+    box-sizing: border-box;
 }
 
-/* Selector por descendencia usando etiquetas (li dentro de la clase) */
 .lista-planificacion li {
     color: #ffffff;
     font-size: 15px;
@@ -75,7 +73,6 @@
     line-height: 1.6;
 }
 
-/* Selector de clase para destacar una semana en particular */
 .semana-destacada {
-    color: #e98707; /* Texto naranja para resaltar la toma de marcas */
+    color: #e98707; 
 }

@@ -15,38 +15,54 @@
 }
 
 /* ============================================================
-   BLOQUE 2: ESTADÍSTICAS Y TARJETAS PR
+   BLOQUE 2: ESTADÍSTICAS Y TARJETAS PR (MAQUETACIÓN CON FLEXBOX)
    ============================================================ */
 #estadisticas-pr {
-    background-color: transparent; /* Sobrescribe el fondo general */
-    padding: 0;
+    background-color: #1f1f1f;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
 }
 
-.tabla-marcas {
-    border-collapse: separate;
-    border-spacing: 15px;
-    background-color: transparent;
-    width: 100%;
+#estadisticas-pr h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e53935;
 }
 
+/* Contenedor Flexbox para alinear las tarjetas */
+.contenedor-tarjetas-pr {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas bajen de línea en pantallas pequeñas */
+    gap: 20px; /* Separación visual entre las tarjetas */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    align-items: stretch; /* Iguala la altura de todas las tarjetas */
+}
+
+/* Diseño individual de cada tarjeta aplicando Box Model */
 .tarjeta-pr {
     background-color: #242424;
     border: 2px solid #555555;
     border-radius: 8px;
-    padding: 15px;
+    padding: 20px;
+    flex: 1 1 200px; /* Crecen y se encogen con un tamaño base de 200px */
+    box-sizing: border-box; 
+    text-align: center;
 }
 
-/* ESTADO HOVER: Cambia solo el fondo y el borde (Sin transformaciones) */
+/* ESTADO HOVER: Cambia solo el fondo y el borde */
 .tarjeta-pr:hover {
     background-color: #2a2a2a; 
     border-color: #e53935;
 }
 
 .peso-maximo {
-    font-size: 24px;
-    color: #ffffff;
+    font-size: 28px;
+    color: #e98707;
     display: block;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 /* ============================================================
@@ -59,6 +75,7 @@
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 30px;
+    box-sizing: border-box;
 }
 
 .grafico-img {
@@ -79,6 +96,7 @@
     margin-bottom: 15px;
     border-radius: 4px;
     text-align: left;
+    box-sizing: border-box;
 }
 
 /* Selector por descendencia */
@@ -93,4 +111,5 @@
     padding: 20px;
     margin: 20px 0;
     border: 1px solid #333333;
+    box-sizing: border-box;
 }

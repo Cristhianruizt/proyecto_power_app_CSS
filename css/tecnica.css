@@ -1,37 +1,30 @@
 /* ============================================================
    BLOQUE 1: CONTENEDOR PRINCIPAL DE TÉCNICA
-   Estilos específicos de la página mediante el ID principal.
    ============================================================ */
-
-/* Selector de identificador (#) */
 #contenedor-tecnicas {
-    max-width: 1000px; /* Ancho específico mayor para que quepan los videos */
-    margin: 0 auto;    /* Centrado de la página */
+    max-width: 1000px; 
+    margin: 0 auto;    
     padding: 20px;
+    box-sizing: border-box;
 }
 
 /* ============================================================
    BLOQUE 2: TARJETAS DE LEVANTAMIENTO (SBD)
-   Estilos reutilizables aplicados a clases.
    ============================================================ */
-
-/* Selector de clase (.) */
 .tarjeta-tecnica {
-    /* Fondos, bordes, padding y márgenes (Requisitos de la rúbrica) */
     background-color: #1f1f1f;
     border-left: 6px solid #e53935;
     border-radius: 8px;
     padding: 25px;
     margin-bottom: 40px; 
+    box-sizing: border-box;
 }
 
-/* 8. Estados como hover (Aplicando solo cambios de color y fondo requeridos) */
 .tarjeta-tecnica:hover {
-    background-color: #2a2a2a; /* El fondo se vuelve un poco más claro */
-    border-left-color: #ed9c24; /* El borde cambia a naranja */
+    background-color: #2a2a2a; 
+    border-left-color: #ed9c24; 
 }
 
-/* Selector por descendencia */
 .tarjeta-tecnica .titulo-movimiento {
     color: #ffffff;
     font-size: 24px;
@@ -41,21 +34,25 @@
 }
 
 /* ============================================================
-   BLOQUE 3: TABLA DE LAYOUT (TEXTO VS VIDEO)
+   BLOQUE 3: ESTRUCTURA CON CSS GRID (TEXTO VS VIDEO)
+   Evidencia de la rúbrica: "Bloque visual organizado con Grid"
    ============================================================ */
-
-.tabla-ejecucion {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: transparent;
+.grid-ejecucion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crea dos columnas de igual tamaño */
+    gap: 30px; /* Separación limpia y visual entre el texto y el video */
+    align-items: start; /* Alinea los elementos en la parte superior de la celda */
 }
 
-/* Selectores por descendencia para las celdas */
-.tabla-ejecucion td {
-    vertical-align: top; /* Alinea el contenido arriba */
-    padding: 15px;
-    border: none; /* Quitamos los bordes feos por defecto */
-    width: 50%;   /* Divide la pantalla mitad texto, mitad video */
+/* Ajustes de columnas internas del Grid */
+.columna-texto {
+    padding-right: 15px;
+}
+
+.columna-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el video y su título dentro de su área del Grid */
 }
 
 .lista-claves {
@@ -68,13 +65,13 @@
 /* ============================================================
    BLOQUE 4: MULTIMEDIA (IMÁGENES Y VIDEOS)
    ============================================================ */
-
 .img-demostracion {
-    max-width: 250px; /* <-- Aumenta este número a tu gusto (250px, 300px, etc.) */
-    width: 100%;      /* Añade esto para que sea responsiva si la pantalla es pequeña */
+    max-width: 250px; 
+    width: 100%;      
     border-radius: 8px;
     margin-top: 15px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    box-sizing: border-box;
 }
 
 .video-demostracion {
@@ -82,25 +79,25 @@
     max-width: 300px;
     border: 3px solid #333;
     border-radius: 8px;
+    box-sizing: border-box;
 }
 
 /* ============================================================
    BLOQUE 5: SECCIÓN DE TUTORIAL DESTACADO
    ============================================================ */
-
-/* Selector de identificador único */
 #tutorial-destacado {
     background-color: #242424;
     padding: 30px;
     border-radius: 10px;
     text-align: center;
-    border: 2px dashed #555; /* Estilo diferenciado */
+    border: 2px dashed #555; 
+    box-sizing: border-box;
 }
 
 .video-youtube {
     width: 100%;
     max-width: 800px;
-    aspect-ratio: 16 / 9; /* Mantiene la proporción del video de YouTube */
+    aspect-ratio: 16 / 9; 
     border-radius: 10px;
     margin-top: 20px;
 }
@@ -109,9 +106,14 @@
    RESPONSIVE ESPECÍFICO DE ESTA PÁGINA
    ============================================================ */
 @media (max-width: 700px) {
-    .tabla-ejecucion td {
-        display: block; /* Rompe la estructura de tabla en móviles */
-        width: 100%;    /* Ocupa todo el ancho disponible */
+    /* El Grid pasa de tener 2 columnas a tener 1 sola columna en pantallas pequeñas */
+    .grid-ejecucion {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+    
+    .columna-texto {
+        padding-right: 0;
     }
     
     .img-demostracion {
