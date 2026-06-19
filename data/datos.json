@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "fecha": "15/05/2026",
+    "movimiento": "Low-bar Squat",
+    "peso_kg": 120,
+    "series_reps": "3 x 3",
+    "rpe": 9.0
+  },
+  {
+    "id": 2,
+    "fecha": "15/05/2026",
+    "movimiento": "Sumo Deadlift",
+    "peso_kg": 115,
+    "series_reps": "3 x 3",
+    "rpe": 9.5
+  },
+  {
+    "id": 3,
+    "fecha": "12/05/2026",
+    "movimiento": "Bench Press",
+    "peso_kg": 100,
+    "series_reps": "5 x 5",
+    "rpe": 8.5
+  },
+  {
+    "id": 4,
+    "fecha": "10/05/2026",
+    "movimiento": "Low-bar Squat",
+    "peso_kg": 115,
+    "series_reps": "4 x 4",
+    "rpe": 8.0
+  }
+]

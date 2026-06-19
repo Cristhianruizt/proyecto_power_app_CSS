@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<historial_entrenamientos>
+    <entrenamiento>
+        <id>1</id>
+        <fecha>15/05/2026</fecha>
+        <movimiento>Low-bar Squat</movimiento>
+        <peso_kg>120</peso_kg>
+        <series_reps>3 x 3</series_reps>
+        <rpe>9.0</rpe>
+    </entrenamiento>
+
+    <entrenamiento>
+        <id>2</id>
+        <fecha>15/05/2026</fecha>
+        <movimiento>Sumo Deadlift</movimiento>
+        <peso_kg>115</peso_kg>
+        <series_reps>3 x 3</series_reps>
+        <rpe>9.5</rpe>
+    </entrenamiento>
+
+    <entrenamiento>
+        <id>3</id>
+        <fecha>12/05/2026</fecha>
+        <movimiento>Bench Press</movimiento>
+        <peso_kg>100</peso_kg>
+        <series_reps>5 x 5</series_reps>
+        <rpe>8.5</rpe>
+    </entrenamiento>
+
+    <entrenamiento>
+        <id>4</id>
+        <fecha>10/05/2026</fecha>
+        <movimiento>Low-bar Squat</movimiento>
+        <peso_kg>115</peso_kg>
+        <series_reps>4 x 4</series_reps>
+        <rpe>8.0</rpe>
+    </entrenamiento>
+</historial_entrenamientos>

@@ -5,8 +5,9 @@
 
 /* Selector de Identificador (#) */
 #panel-login {
+    width: 100%;
     max-width: 450px;
-    margin: 40px auto;
+    margin: 0; /* Centrado por flexbox */
     padding: 30px;
     background-color: #1f1f1f;
     border-top: 4px solid #e53935; /* Borde superior decorativo */
@@ -22,6 +23,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     max-width: 350px;
     margin: 0 auto;
 }
@@ -29,9 +31,8 @@
 /* Selector por descendencia (Busca input-texto dentro de formulario-acceso) */
 .formulario-acceso .input-texto {
     width: 100%;
-    max-width: 280px;
+    max-width: 100%; /* Permite ocupar todo el ancho en móvil */
     border-radius: 4px;
-    
 }
 
 /* Estado Focus/Hover en clases */
@@ -45,7 +46,7 @@
     font-size: 16px;        
     padding: 12px 25px;    
     width: 100%;
-    max-width: 280px;
+    max-width: 100%; /* Adaptación móvil */
     border-radius: 5px;
     font-weight: bold;
     background-color: #b62927; /* Color inicial del botón */
@@ -68,38 +69,39 @@
 
 /* ============================================================
    BLOQUE 5: LAYOUT DE PANTALLA DIVIDIDA (SPLIT SCREEN)
-   Uso de Flexbox para alinear elementos lado a lado sin scroll.
+   Uso de Flexbox adaptado a Mobile-First.
    ============================================================ */
 
 .contenedor-split {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;   /* MÓVIL: Apila el logo arriba y el login abajo */
     align-items: center;      /* Centra los elementos verticalmente */
     justify-content: center;  /* Centra los elementos horizontalmente */
-    min-height: 85vh;         /* Ocupa el alto de la pantalla (evita el scroll) */
+    min-height: 85vh;         /* Ocupa el alto de la pantalla */
     max-width: 1200px;
     margin: 0 auto;           /* Centra el contenedor en la pantalla */
-    gap: 40px;                /* Espacio de separación entre el logo y el formulario */
+    gap: 20px;                /* MÓVIL: Espacio reducido */
     padding: 20px;
 }
 
 /* Sobrescribimos estilos de general.css para adaptarlos a esta vista */
 .mitad-logo {
-    flex: 1;                  /* Toma el 50% del espacio disponible */
+    flex: 1;                  /* Toma el espacio disponible */
     background-color: transparent; /* Quitamos el fondo oscuro del header general */
     margin-bottom: 0;
     padding: 0;
     text-align: center;
+    width: 100%;
 }
 
 .mitad-logo p {
-    font-size: 28px;
+    font-size: 24px; /* Un poco más pequeño para móvil */
     color: #cccccc;
     margin-top: 20px;
 }
 
 .mitad-login {
-    flex: 1;                  /* Toma el otro 50% del espacio disponible */
+    flex: 1;                  /* Toma el espacio disponible */
     display: flex;
     justify-content: center;
     margin: 0;
@@ -107,18 +109,21 @@
     width: 100%;
 }
 
-/* Ajuste necesario al panel que hicimos antes */
-#panel-login {
-    margin: 0; /* Quitamos el auto-margin porque flexbox ya se encarga de centrar */
-    width: 100%;
-}
-
 /* ============================================================
-   RESPONSIVE ESPECÍFICO DE ESTA PÁGINA
+   RESPONSIVE ESPECÍFICO DE ESTA PÁGINA (ADAPTACIÓN A ESCRITORIO)
    ============================================================ */
-@media (max-width: 700px) {
+@media (min-width: 768px) {
     .contenedor-split {
-        flex-direction: column; /* Apila el logo arriba y el login abajo */
-        gap: 20px;
+        flex-direction: row; /* Lado a lado en PC */
+        gap: 40px;
+    }
+
+    .mitad-logo p {
+        font-size: 28px; /* Tamaño original en PC */
+    }
+
+    .formulario-acceso .input-texto,
+    #btn-ingreso {
+        max-width: 280px; /* Restaura el tamaño máximo en PC */
     }
 }

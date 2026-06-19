@@ -1,17 +1,17 @@
 /* ============================================================
    BLOQUE 1: CABECERA DEL ATLETA
-   Uso de identificadores, bordes, padding y tipografía.
    ============================================================ */
 #cabecera-atleta {
     border-bottom: 2px dashed #444444;
-    padding-bottom: 15px;
-    margin-bottom: 25px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .etiqueta-categoria {
     color: #e98707;
     font-weight: bold;
     letter-spacing: 1px;
+    font-size: 14px;
 }
 
 /* ============================================================
@@ -21,95 +21,168 @@
     background-color: #1f1f1f;
     border: 1px solid #333333;
     border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 30px;
+    padding: 15px;
+    margin-bottom: 25px;
     box-sizing: border-box;
 }
 
 #estadisticas-pr h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: #e53935;
+    font-size: 20px;
 }
 
-/* Contenedor Flexbox para alinear las tarjetas */
 .contenedor-tarjetas-pr {
     display: flex;
-    flex-wrap: wrap; /* Permite que las tarjetas bajen de línea en pantallas pequeñas */
-    gap: 20px; /* Separación visual entre las tarjetas */
-    justify-content: center; /* Centra las tarjetas horizontalmente */
-    align-items: stretch; /* Iguala la altura de todas las tarjetas */
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
 }
 
-/* Diseño individual de cada tarjeta aplicando Box Model */
 .tarjeta-pr {
     background-color: #242424;
     border: 2px solid #555555;
     border-radius: 8px;
-    padding: 20px;
-    flex: 1 1 200px; /* Crecen y se encogen con un tamaño base de 200px */
-    box-sizing: border-box; 
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
     text-align: center;
 }
 
-/* ESTADO HOVER: Cambia solo el fondo y el borde */
 .tarjeta-pr:hover {
-    background-color: #2a2a2a; 
+    background-color: #2a2a2a;
     border-color: #e53935;
 }
 
 .peso-maximo {
-    font-size: 28px;
+    font-size: 24px;
     color: #e98707;
     display: block;
-    margin: 15px 0;
+    margin: 10px 0;
 }
 
 /* ============================================================
    BLOQUE 3: PROGRESIÓN DE VOLUMEN
-   Control de anchos y altos.
    ============================================================ */
 #progresion-volumen {
     background-color: #1f1f1f;
     border: 1px solid #333333;
     border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 30px;
+    padding: 15px;
+    margin-bottom: 25px;
     box-sizing: border-box;
 }
 
 .grafico-img {
     width: 100%;
-    max-width: 600px;
+    max-width: 100%;
     border: 2px solid #555555;
     border-radius: 5px;
 }
 
 /* ============================================================
-   BLOQUE 4: CAJAS DE PREGUNTAS (DETAILS) Y MÉTRICAS
-   Uso de clases para personalizar las etiquetas details.
+   BLOQUE 4: MÉTRICAS Y PREGUNTAS (AHORA ACORDEÓN BOOTSTRAP)
    ============================================================ */
-.caja-pregunta {
-    background-color: #242424;
-    border-left: 5px solid #e53935;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 4px;
-    text-align: left;
-    box-sizing: border-box;
-}
-
-/* Selector por descendencia */
-.caja-pregunta summary {
-    color: #ffffff;
-    font-size: 16px;
-}
-
 .seccion-metricas {
     background-color: #1f1f1f;
     border-radius: 8px;
-    padding: 20px;
+    padding: 15px;
     margin: 20px 0;
     border: 1px solid #333333;
     box-sizing: border-box;
+}
+
+/* PERSONALIZACIÓN BOOTSTRAP: ACORDEÓN (FUERA DEL MEDIA QUERY) */
+.accordion-item {
+    background-color: #242424;
+    border: 1px solid #444444;
+    margin-bottom: 12px;
+    border-radius: 4px !important;
+}
+
+.accordion-button {
+    background-color: #242424;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border-left: 5px solid #e53935;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #2a2a2a;
+    color: #e53935;
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    filter: invert(1);
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: invert(30%) sepia(80%) saturate(3000%) hue-rotate(345deg) brightness(90%) contrast(90%);
+}
+
+.accordion-body {
+    color: #cccccc;
+    font-size: 15px;
+    background-color: #1f1f1f;
+    border-top: 1px dashed #444444;
+}
+
+/* ============================================================
+   BLOQUE 5: MEDIA QUERIES (ADAPTACIÓN A ESCRITORIO)
+   Se activa en pantallas desde 768px en adelante
+   ============================================================ */
+@media (min-width: 768px) {
+    #cabecera-atleta {
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+    }
+
+    .etiqueta-categoria {
+        font-size: 16px;
+    }
+
+    #estadisticas-pr {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    #estadisticas-pr h2 {
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+
+    .contenedor-tarjetas-pr {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .tarjeta-pr {
+        padding: 20px;
+        flex: 1 1 200px;
+        width: auto;
+    }
+
+    .peso-maximo {
+        font-size: 28px;
+        margin: 15px 0;
+    }
+
+    #progresion-volumen {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    .grafico-img {
+        max-width: 600px;
+    }
+
+    .seccion-metricas {
+        padding: 20px;
+    }
 }

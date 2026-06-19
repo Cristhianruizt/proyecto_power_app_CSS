@@ -4,7 +4,7 @@
 #contenedor-tecnicas {
     max-width: 1000px; 
     margin: 0 auto;    
-    padding: 20px;
+    padding: 15px; /* Reducido para móvil */
     box-sizing: border-box;
 }
 
@@ -15,8 +15,8 @@
     background-color: #1f1f1f;
     border-left: 6px solid #e53935;
     border-radius: 8px;
-    padding: 25px;
-    margin-bottom: 40px; 
+    padding: 15px; /* Reducido para móvil */
+    margin-bottom: 25px; /* Reducido para móvil */
     box-sizing: border-box;
 }
 
@@ -27,10 +27,10 @@
 
 .tarjeta-tecnica .titulo-movimiento {
     color: #ffffff;
-    font-size: 24px;
+    font-size: 20px; /* Reducido para móvil */
     border-bottom: 1px solid #444;
     padding-bottom: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 /* ============================================================
@@ -39,34 +39,34 @@
    ============================================================ */
 .grid-ejecucion {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Crea dos columnas de igual tamaño */
-    gap: 30px; /* Separación limpia y visual entre el texto y el video */
-    align-items: start; /* Alinea los elementos en la parte superior de la celda */
+    grid-template-columns: 1fr; /* MÓVIL: 1 sola columna por defecto */
+    gap: 20px; /* Reducido para móvil */
+    align-items: start; 
 }
 
 /* Ajustes de columnas internas del Grid */
 .columna-texto {
-    padding-right: 15px;
+    padding-right: 0; /* MÓVIL: Sin padding porque están apilados */
 }
 
 .columna-video {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra el video y su título dentro de su área del Grid */
+    align-items: center; 
 }
 
 .lista-claves {
     text-align: left;
     margin-left: 20px;
     color: #cccccc;
-    font-size: 16px;
+    font-size: 15px; /* Reducido para móvil */
 }
 
 /* ============================================================
    BLOQUE 4: MULTIMEDIA (IMÁGENES Y VIDEOS)
    ============================================================ */
 .img-demostracion {
-    max-width: 250px; 
+    max-width: 100%; /* MÓVIL: 100% del ancho */
     width: 100%;      
     border-radius: 8px;
     margin-top: 15px;
@@ -76,7 +76,7 @@
 
 .video-demostracion {
     width: 100%;
-    max-width: 300px;
+    max-width: 100%; /* Adaptación móvil */
     border: 3px solid #333;
     border-radius: 8px;
     box-sizing: border-box;
@@ -87,7 +87,7 @@
    ============================================================ */
 #tutorial-destacado {
     background-color: #242424;
-    padding: 30px;
+    padding: 15px; /* Reducido para móvil */
     border-radius: 10px;
     text-align: center;
     border: 2px dashed #555; 
@@ -96,27 +96,88 @@
 
 .video-youtube {
     width: 100%;
-    max-width: 800px;
+    max-width: 100%; /* Adaptación móvil */
     aspect-ratio: 16 / 9; 
     border-radius: 10px;
     margin-top: 20px;
 }
 
 /* ============================================================
-   RESPONSIVE ESPECÍFICO DE ESTA PÁGINA
+   PERSONALIZACIÓN BOOTSTRAP: CARRUSEL
    ============================================================ */
-@media (max-width: 700px) {
-    /* El Grid pasa de tener 2 columnas a tener 1 sola columna en pantallas pequeñas */
+.carousel-indicators [data-bs-target] {
+    background-color: #e53935; /* Indicadores rojos */
+    height: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(229, 57, 53, 0.8); /* Flechas rojas con fondo */
+    border-radius: 50%;
+    padding: 20px;
+}
+
+/* Diseño elegante para los textos del carrusel */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
+    border-radius: 15px;
+    padding: 4px; /* Espaciado interno pequeño */
+    bottom: 25px; /* Lo separa del borde inferior */
+    left: 25%; /* Evita que ocupe todo el ancho de la imagen */
+    right: 25%;
+}
+
+.carousel-caption h5 {
+    margin: 0;
+    font-size: 16px; /* Tamaño de fuente ideal para no invadir la foto */
+    color: #ffffff;
+}
+
+/* ============================================================
+   BLOQUE 6: MEDIA QUERIES (ADAPTACIÓN A ESCRITORIO)
+   Se activa en pantallas desde 768px en adelante
+   ============================================================ */
+@media (min-width: 768px) {
+    #contenedor-tecnicas {
+        padding: 20px;
+    }
+
+    .tarjeta-tecnica {
+        padding: 25px;
+        margin-bottom: 40px; 
+    }
+
+    .tarjeta-tecnica .titulo-movimiento {
+        font-size: 24px;
+    }
+
+    /* El Grid pasa a tener 2 columnas en pantallas grandes */
     .grid-ejecucion {
-        grid-template-columns: 1fr; 
-        gap: 20px;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 30px; 
     }
     
     .columna-texto {
-        padding-right: 0;
+        padding-right: 15px; /* Restaura el padding */
     }
     
+    .lista-claves {
+        font-size: 16px;
+    }
+
     .img-demostracion {
-        max-width: 100%;
+        max-width: 250px; /* Restaura el ancho máximo en PC */
+    }
+
+    .video-demostracion {
+        max-width: 300px;
+    }
+
+    #tutorial-destacado {
+        padding: 30px;
+    }
+
+    .video-youtube {
+        max-width: 800px;
     }
 }

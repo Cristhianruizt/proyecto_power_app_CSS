@@ -1,20 +1,23 @@
 /* ============================================================
    BLOQUE 1: CONTENEDOR PRINCIPAL DEL HISTORIAL (BOX MODEL)
+   Adaptado a Mobile-First
    ============================================================ */
 #panel-historial {
     background-color: #1f1f1f;
     border: 1px solid #444444;
     border-top: 5px solid #e98707; 
     border-radius: 8px;
-    padding: 20px;
-    margin: 30px auto;
+    padding: 10px; /* Reducido para móvil */
+    margin: 15px auto; /* Reducido para móvil */
+    width: 100%;
     max-width: 900px;
     box-sizing: border-box; 
-    overflow-x: auto; 
+    overflow-x: auto; /* Fundamental para que la tabla no rompa la pantalla en celular */
 }
 
 /* ============================================================
    BLOQUE 2: TABLA DE REGISTROS
+   Tamaños de fuente y espaciados base para móvil
    ============================================================ */
 .tabla-registros {
     width: 100%;
@@ -25,17 +28,17 @@
 #panel-historial .tabla-registros th {
     background-color: #e98707; 
     color: #ffffff;
-    padding: 15px;
+    padding: 10px; /* Reducido para móvil */
     border: 1px solid #555555;
-    font-size: 16px;
+    font-size: 14px; /* Reducido para móvil */
 }
 
 #panel-historial .tabla-registros td {
-    padding: 12px;
+    padding: 8px; /* Reducido para móvil */
     border: 1px solid #444444;
     color: #cccccc;
     text-align: center;
-    font-size: 15px;
+    font-size: 13px; /* Reducido para evitar exceso de scroll horizontal */
 }
 
 /* ============================================================
@@ -43,4 +46,24 @@
    ============================================================ */
 .fila-dato:hover {
     background-color: #333333; 
+}
+
+/* ============================================================
+   BLOQUE 4: MEDIA QUERIES (ADAPTACIÓN A ESCRITORIO)
+   ============================================================ */
+@media (min-width: 768px) {
+    #panel-historial {
+        padding: 20px;
+        margin: 30px auto;
+    }
+
+    #panel-historial .tabla-registros th {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    #panel-historial .tabla-registros td {
+        padding: 12px;
+        font-size: 15px;
+    }
 }

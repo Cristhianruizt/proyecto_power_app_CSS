@@ -1,5 +1,5 @@
 /* ============================================================
-   BLOQUE 1: CONFIGURACIÓN GENERAL
+   BLOQUE 1: CONFIGURACIÓN GENERAL (MOBILE-FIRST)
    Selector universal, body, fuente, fondo, color e interlineado.
    ============================================================ */
 * {
@@ -21,11 +21,11 @@ body main {
 }
 
 /* ============================================================
-   BLOQUE 2: TÍTULOS, PÁRRAFOS Y ENLACES
+   BLOQUE 2: TÍTULOS, PÁRRAFOS Y ENLACES (Tamaños base móvil)
    Estilos para h1, h2, h3, p, a y a:hover.
    ============================================================ */
 h1 {
-    font-size: 28px;
+    font-size: 26px; /* Ajuste móvil */
     color: #e53935;
     margin-bottom: 20px;
     text-align: center;
@@ -58,7 +58,7 @@ a:hover {
 }
 
 /* ============================================================
-   BLOQUE 3: ELEMENTOS SEMÁNTICOS PRINCIPALES
+   BLOQUE 3: ELEMENTOS SEMÁNTICOS PRINCIPALES (Anchos móviles)
    Estilos para header, nav, main, section, article, aside y footer.
    ============================================================ */
 header {
@@ -87,15 +87,15 @@ header div button {
 }
 
 main {
-    width: 90%;
+    width: 95%; /* Ajuste móvil */
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 15px; /* Padding móvil */
 }
 
 section {
     background-color: #242424;
-    padding: 18px;
+    padding: 15px; /* Padding móvil */
     margin: 0;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -103,14 +103,15 @@ section {
 
 article {
     background-color: #242424;
-    padding: 18px;
+    padding: 15px; /* Padding móvil */
     margin: 30px 0 20px 0;
 }
 
 aside {
+    width: 95%; /* Ajuste móvil */
     font-size: 16px;
-    padding: 18px;
-    margin-bottom: 12px;
+    padding: 15px; /* Padding móvil */
+    margin: 0 auto 12px auto;
 }
 
 footer {
@@ -120,16 +121,16 @@ footer {
 }
 
 /* ============================================================
-   BLOQUE 4: MENÚ DE NAVEGACIÓN
+   BLOQUE 4: MENÚ DE NAVEGACIÓN (Apilado vertical móvil)
    Estilos para nav, nav a, nav i y nav a:hover.
    ============================================================ */
 nav {
     background-color: #1a1a1a;
     padding: 15px; 
     display: flex;
+    flex-direction: column; /* Apilado en móvil */
     justify-content: center;
     align-items: center; 
-    flex-wrap: wrap;
     gap: 15px; 
 }
 
@@ -144,7 +145,9 @@ nav a {
     font-size: 14px; 
     padding: 8px 12px; 
     border-radius: 8px;
-    text-decoration: none; 
+    text-decoration: none;
+    width: 100%; /* Botones 100% en móvil */
+    text-align: center;
 }
 
 nav a:hover {
@@ -191,11 +194,11 @@ details p {
 }
 
 /* ============================================================
-   BLOQUE 6: IMÁGENES Y MULTIMEDIA
+   BLOQUE 6: IMÁGENES Y MULTIMEDIA (100% en móvil)
    Estilos para img, figure, figcaption, video, audio e iframe.
    ============================================================ */
 img {
-    max-width: 60%;
+    max-width: 100%; /* Ajuste móvil */
     margin: 15px auto;
     height: auto;
     display: block;
@@ -259,7 +262,7 @@ li {
 }
 
 /* ============================================================
-   BLOQUE 8: FORMULARIOS
+   BLOQUE 8: FORMULARIOS (100% de ancho en móvil)
    Estilos para form, label, input, textarea, select y button.
    ============================================================ */
 form {
@@ -276,8 +279,10 @@ label {
 }
 
 input, select, textarea {
-    font-size: 15px;
+    font-size: 16px; /* Ajuste para evitar zoom en móvil */
     width: 100%;
+    max-width: 100%; /* Asegura ajuste móvil */
+    box-sizing: border-box; /* Asegura ajuste móvil */
     padding: 10px;
     margin: 10px 0;
     background-color: #333;
@@ -294,6 +299,9 @@ button {
     cursor: pointer;
     margin-top: 20px;
     border-radius: 5px;
+    width: 100%; /* Botón ancho en móvil */
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 button:hover {
@@ -301,13 +309,13 @@ button:hover {
 }
 
 /* ============================================================
-   BLOQUE 9: TABLAS GENERALES
+   BLOQUE 9: TABLAS GENERALES (Tamaño fuente reducido móvil)
    Estilos para table, thead, tbody, tr, th y td.
    ============================================================ */
 table {
     width: 100%;
     text-align: center;
-    font-size: 15px;
+    font-size: 14px; /* Ajuste móvil */
     border-collapse: collapse;
     margin: 2% 0;
     background-color: rgb(24, 23, 23);
@@ -322,7 +330,7 @@ tbody {
 }
 
 th, td {
-    padding: 14px;
+    padding: 10px; /* Padding reducido móvil */
     border: 1px solid #444;
     word-wrap: break-word;
 }
@@ -359,54 +367,56 @@ footer i {
    ============================================================ */
 progress {
     width: 100%;
-    max-width: 300px;
+    max-width: 100%; /* Ajuste móvil */
+    box-sizing: border-box; /* Ajuste móvil */
     height: 24px;
     accent-color: #e98707;
 }
 
 /* ============================================================
-   BLOQUE 12: RESPONSIVE BÁSICO (MOBILE FIRST / ADAPTACIÓN)
+   BLOQUE 12: MEDIA QUERIES (ADAPTACIÓN TABLET Y ESCRITORIO)
+   Se activa solo en pantallas mayores a 768px (Mobile-First)
    ============================================================ */
-@media (max-width: 700px) {
-
-    nav {
-        flex-direction: column;
-    }
-
-    nav a {
-        width: 100%;
-        text-align: center;
-    }
+@media (min-width: 768px) {
 
     h1 {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     main,
     aside {
-        width: 95%;
+        width: 90%;
     }
 
     section,
     article,
     aside {
-        padding: 15px;
+        padding: 18px;
+    }
+
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        width: auto;
+    }
+
+    img {
+        max-width: 60%;
     }
 
     table {
-        font-size: 14px;
+        font-size: 15px;
     }
 
-    input,
-    select,
-    textarea,
+    th, td {
+        padding: 14px;
+    }
+    
     button,
-    meter,
-    progress,
-    audio {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-        font-size: 16px;
+    progress {
+        width: auto; /* Restaura anchos naturales */
     }
 }

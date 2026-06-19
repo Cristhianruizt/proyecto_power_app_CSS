@@ -6,10 +6,12 @@
     border: 2px solid #333333;
     border-top: 5px solid #1b7505; 
     border-radius: 8px;
-    padding: 30px;
-    margin: 20px auto;
+    padding: 15px; /* Reducido para móvil */
+    margin: 15px auto; /* Reducido para móvil */
+    width: 100%; /* Asegura ajuste en móvil */
     max-width: 600px; 
     box-sizing: border-box; 
+    overflow-x: auto; /* Evita que la tabla rompa la pantalla en celular */
 }
 
 /* ============================================================
@@ -18,7 +20,7 @@
 .formulario-entrenamiento {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Separación general entre secciones del formulario */
+    gap: 15px; /* Separación reducida para móvil */
     text-align: left; 
 }
 
@@ -32,16 +34,17 @@
 .grupo-formulario label {
     font-weight: bold;
     color: #cccccc;
+    font-size: 14px; /* Ajuste móvil */
 }
 
 .input-general {
     width: 100%;
-    padding: 12px;
+    padding: 10px; /* Reducido para móvil */
     background-color: #242424;
     color: #ffffff;
     border: 1px solid #555555;
     border-radius: 4px;
-    font-size: 15px; 
+    font-size: 16px; /* 16px evita que el navegador móvil haga zoom automático al escribir */
     box-sizing: border-box; 
 }
 
@@ -63,19 +66,20 @@
 .tabla-series th {
     background-color: #2a2a2a;
     color: #e53935;
-    padding: 12px;
+    padding: 8px; /* Reducido para móvil */
     border: 1px solid #444444;
+    font-size: 14px; /* Ajuste móvil */
 }
 
 .tabla-series td {
-    padding: 10px;
+    padding: 6px; /* Reducido para móvil */
     border: 1px solid #444444;
     text-align: center;
 }
 
 .input-celda {
     width: 100%;
-    max-width: 80px;
+    max-width: 100%; /* Ocupa toda la celda en móvil */
     padding: 8px;
     background-color: #333333;
     color: #ffffff;
@@ -83,6 +87,7 @@
     border-radius: 3px;
     text-align: center;
     box-sizing: border-box;
+    font-size: 14px; /* Ajuste móvil */
 }
 
 .input-celda:focus {
@@ -95,7 +100,7 @@
    ============================================================ */
 #btn-guardar {
     width: 100%;
-    padding: 15px;
+    padding: 15px; /* Buen tamaño para tocar con el dedo en móvil */
     background-color: #1b7505; 
     color: #ffffff;
     font-size: 16px;
@@ -109,4 +114,57 @@
 
 #btn-guardar:hover {
     background-color: #229906; 
+}
+/* ============================================================
+   PERSONALIZACIÓN BOOTSTRAP: ALERTA DE ÉXITO
+   ============================================================ */
+.alert-custom {
+    background-color: #1b7505; /* Tu verde de los botones */
+    color: #ffffff;
+    border: 1px solid #229906;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.alert-custom i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+/* ============================================================
+   BLOQUE 5: MEDIA QUERIES (ADAPTACIÓN A ESCRITORIO)
+   Se activa en pantallas desde 768px en adelante
+   ============================================================ */
+@media (min-width: 768px) {
+    #panel-registro {
+        padding: 30px;
+        margin: 20px auto;
+    }
+
+    .formulario-entrenamiento {
+        gap: 20px;
+    }
+
+    .grupo-formulario label {
+        font-size: 16px;
+    }
+
+    .input-general {
+        padding: 12px;
+        font-size: 15px; 
+    }
+
+    .tabla-series th {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .tabla-series td {
+        padding: 10px;
+    }
+
+    .input-celda {
+        max-width: 80px; /* Restaura el ancho original en PC para que no ocupe todo el espacio */
+        font-size: 15px;
+    }
 }

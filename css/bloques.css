@@ -2,9 +2,10 @@
    BLOQUE 1: CONTENEDOR PRINCIPAL
    ============================================================ */
 #panel-bloques {
-    max-width: 1000px; /* Aumentamos el ancho para que el Grid respire */
-    margin: 20px auto;
-    padding: 20px;
+    width: 100%;
+    max-width: 1000px; 
+    margin: 15px auto; /* Reducido para móvil */
+    padding: 15px; /* Reducido para móvil */
     background-color: transparent; 
     box-sizing: border-box;
 }
@@ -15,10 +16,10 @@
    ============================================================ */
 .grid-bloques {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Crea columnas adaptables */
-    gap: 30px; /* Separación visual entre las tarjetas de los bloques */
-    align-items: stretch; /* Ambas tarjetas tendrán la misma altura */
-    margin-top: 20px;
+    grid-template-columns: 1fr; /* MÓVIL: 1 sola columna pura para evitar desbordes */
+    gap: 20px; /* Reducido para móvil */
+    align-items: stretch; 
+    margin-top: 15px; /* Reducido para móvil */
 }
 
 /* ============================================================
@@ -29,7 +30,7 @@
     border: 2px solid #333333;
     border-left: 8px solid #b62927; 
     border-radius: 8px;
-    padding: 25px;
+    padding: 15px; /* Reducido para móvil */
     box-sizing: border-box; 
 }
 
@@ -41,7 +42,7 @@
 
 .tarjeta-bloque .titulo-fase {
     color: #ffffff;
-    font-size: 22px;
+    font-size: 20px; /* Reducido para móvil */
     border-bottom: 1px solid #444444;
     padding-bottom: 10px;
     margin-bottom: 15px;
@@ -49,9 +50,9 @@
 
 .tarjeta-bloque .objetivo-fase {
     color: #cccccc;
-    font-size: 16px;
+    font-size: 15px; /* Reducido para móvil */
     font-style: italic; 
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Reducido para móvil */
 }
 
 /* ============================================================
@@ -61,18 +62,106 @@
     background-color: #2a2a2a;
     border: 1px solid #444444;
     border-radius: 5px;
-    padding: 20px 20px 20px 40px; 
+    padding: 15px 15px 15px 30px; /* Reducido para móvil */
     margin-top: 15px;
     box-sizing: border-box;
 }
 
 .lista-planificacion li {
     color: #ffffff;
-    font-size: 15px;
+    font-size: 14px; /* Ajuste móvil */
     margin-bottom: 12px;
     line-height: 1.6;
 }
 
 .semana-destacada {
     color: #e98707; 
+}
+
+/* ============================================================
+   PERSONALIZACIÓN BOOTSTRAP: MODAL Y BOTÓN
+   ============================================================ */
+/* Botón que abre el modal */
+.btn-descarga {
+    background-color: transparent;
+    color: #e98707;
+    border: 2px solid #e98707;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-descarga:hover {
+    background-color: #e98707;
+    color: #1a1a1a;
+}
+
+/* Estructura del Modal */
+.modal-content {
+    background-color: #1f1f1f; /* Fondo oscuro */
+    border: 2px solid #b62927; /* Borde rojo */
+    color: #ffffff;
+}
+
+.modal-header {
+    border-bottom: 1px solid #444444;
+}
+
+.modal-title {
+    color: #e53935;
+    font-weight: bold;
+}
+
+.modal-footer {
+    border-top: 1px solid #444444;
+}
+
+/* Botón cerrar del modal */
+.btn-cerrar-modal {
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-cerrar-modal:hover {
+    background-color: #e53935;
+    color: #ffffff;
+}
+
+/* ============================================================
+   BLOQUE 5: MEDIA QUERIES (ADAPTACIÓN A ESCRITORIO)
+   Se activa en pantallas desde 768px en adelante
+   ============================================================ */
+@media (min-width: 768px) {
+    #panel-bloques {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .grid-bloques {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Restaura tus columnas adaptables */
+        gap: 30px; 
+        margin-top: 20px;
+    }
+
+    .tarjeta-bloque {
+        padding: 25px;
+    }
+
+    .tarjeta-bloque .titulo-fase {
+        font-size: 22px;
+    }
+
+    .tarjeta-bloque .objetivo-fase {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .lista-planificacion {
+        padding: 20px 20px 20px 40px; 
+    }
+
+    .lista-planificacion li {
+        font-size: 15px;
+    }
 }
