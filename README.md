@@ -150,4 +150,4 @@ POWER-APP/
 
 Proyecto desarrollado con fines académicos para la asignatura Fundamentos Web.
 
-© [AÑO] — [NOMBRE DEL ESTUDIANTE]
+© 2026 — Cristhian Ruiz
