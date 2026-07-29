@@ -7,6 +7,12 @@
     margin-bottom: 20px;
 }
 
+.etiqueta-nacionalidad {
+    color: #cccccc;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
 .etiqueta-categoria {
     color: #e98707;
     font-weight: bold;
@@ -91,6 +97,36 @@
     margin: 20px 0;
     border: 1px solid #333333;
     box-sizing: border-box;
+}
+
+.grid-indicadores {
+    display: grid;
+    grid-template-columns: 1fr; /* Móvil: apiladas */
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.tarjeta-indicador {
+    background-color: #242424;
+    border: 1px solid #444444;
+    border-left: 4px solid #0dcaf0;
+    border-radius: 6px;
+    padding: 15px;
+    text-align: center;
+}
+
+.valor-indicador {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    color: #0dcaf0;
+    margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+    .grid-indicadores {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
 }
 
 /* PERSONALIZACIÓN BOOTSTRAP: ACORDEÓN (FUERA DEL MEDIA QUERY) */

@@ -7,6 +7,9 @@
     <title>Historial - POWER APP</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+    <!-- en <head> -->
+    <link rel="icon" href="/iconos/world.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="../../css/general.css">
     <link rel="stylesheet" href="../../css/historial.css">
 </head>
@@ -24,8 +27,8 @@
         </nav>
 
         <div>
-            <p> Cristhian (-74 kg)</p>
-            <form action="../../index.html">
+            <p id="nombre-usuario-header">Cargando...</p>
+            <form class="form-cerrar-sesion" action="../../index.html">
                 <button type="submit">Cerrar sesión</button>
             </form>
         </div>
@@ -40,6 +43,36 @@
 
         <section id="panel-historial">
 
+            <!-- NUEVO: Barra de controles -->
+            <div class="controles-historial">
+                <input type="text" id="buscador-historial" class="input-general"
+                    placeholder="Buscar por movimiento o nota...">
+
+                <select id="filtro-movimiento" class="input-general">
+                    <option value="">Todos los movimientos</option>
+                    <option value="squat">Sentadilla</option>
+                    <option value="bench">Press de banca</option>
+                    <option value="deadlift">Peso muerto</option>
+                </select>
+
+                <select id="filtro-rpe" class="input-general">
+                    <option value="">Cualquier RPE</option>
+                    <option value="bajo">RPE menor a 8</option>
+                    <option value="alto">RPE 8 o más</option>
+                </select>
+
+                <select id="orden-historial" class="input-general">
+                    <option value="fecha-desc">Más reciente primero</option>
+                    <option value="fecha-asc">Más antiguo primero</option>
+                    <option value="peso-desc">Mayor peso primero</option>
+                    <option value="peso-asc">Menor peso primero</option>
+                </select>
+            </div>
+
+            <button id="btn-restablecer-datos" class="btn-restablecer">
+                <i class="fa-solid fa-arrows-rotate"></i> Restablecer datos originales
+            </button>
+
             <table class="tabla-registros">
                 <thead>
                     <tr>
@@ -48,37 +81,11 @@
                         <th>Peso (kg)</th>
                         <th>Series x Reps</th>
                         <th>RPE</th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr class="fila-dato">
-                        <td>15/05/2026</td>
-                        <td>Low-bar Squat</td>
-                        <td>120 kg</td>
-                        <td>3 x 3</td>
-                        <td>9.0</td>
-                    </tr>
-                    <tr class="fila-dato">
-                        <td>15/05/2026</td>
-                        <td>Sumo Deadlift</td>
-                        <td>115 kg</td>
-                        <td>3 x 3</td>
-                        <td>9.5</td>
-                    </tr>
-                    <tr class="fila-dato">
-                        <td>12/05/2026</td>
-                        <td>Bench Press</td>
-                        <td>100 kg</td>
-                        <td>5 x 5</td>
-                        <td>8.5</td>
-                    </tr>
-                    <tr class="fila-dato">
-                        <td>10/05/2026</td>
-                        <td>Low-bar Squat</td>
-                        <td>115 kg</td>
-                        <td>4 x 4</td>
-                        <td>8.0</td>
-                    </tr>
+                <tbody id="cuerpo-tabla-historial">
+                    <!-- JavaScript insertará las filas dinámicamente aquí -->
                 </tbody>
             </table>
 
@@ -86,6 +93,19 @@
         <br>
 
     </main>
+    <!-- antes de storage.js -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script src="../../js/storage.js"></script>
+    <script src="../../js/datos.js"></script>
+    <script src="../../js/componentes.js"></script>
+    <script src="../../js/auth.js"></script>
+    <script src="../../js/crud.js"></script> <!-- NUEVO -->
+    <script src="../../js/filtros.js"></script> <!-- NUEVO -->
+    <script src="../../js/api.js"></script>
+    <script src="../../js/grafico.js"></script>
+    <script src="../../js/main.js"></script>
 
 </body>
 

@@ -137,6 +137,7 @@
    BLOQUE 6: MEDIA QUERIES (ADAPTACIÓN A ESCRITORIO)
    Se activa en pantallas desde 768px en adelante
    ============================================================ */
+
 @media (min-width: 768px) {
     #contenedor-tecnicas {
         padding: 20px;

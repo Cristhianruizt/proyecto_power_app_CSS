@@ -1,0 +1,69 @@
+/* ============================================================
+   REGISTRO DE USUARIO
+   ============================================================ */
+#panel-registro-usuario {
+    background-color: #1f1f1f;
+    border: 2px solid #333333;
+    border-top: 5px solid #0dcaf0;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px auto;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+.formulario-usuario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.grupo-checkbox {
+    flex-direction: row;
+    align-items: center;
+}
+
+.label-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.label-checkbox input {
+    width: auto;
+    margin: 0;
+}
+
+#btn-crear-cuenta {
+    width: 100%;
+    padding: 15px;
+    background-color: #0d8fa6;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#btn-crear-cuenta:hover {
+    background-color: #0dcaf0;
+    color: #1a1a1a;
+}
+
+.mensaje-error {
+    color: #e53935;
+    font-size: 13px;
+}
+
+@media (min-width: 768px) {
+    #panel-registro-usuario {
+        padding: 30px;
+        margin: 30px auto;
+    }
+}

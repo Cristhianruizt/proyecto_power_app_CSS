@@ -25,7 +25,8 @@ body main {
    Estilos para h1, h2, h3, p, a y a:hover.
    ============================================================ */
 h1 {
-    font-size: 26px; /* Ajuste móvil */
+    font-size: 26px;
+    /* Ajuste móvil */
     color: #e53935;
     margin-bottom: 20px;
     text-align: center;
@@ -70,9 +71,17 @@ header {
 
 header div {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #333333;
+    /* Añade una línea sutil separadora */
+}
+
+header div p {
+    margin-bottom: 0;
 }
 
 header div form {
@@ -87,15 +96,18 @@ header div button {
 }
 
 main {
-    width: 95%; /* Ajuste móvil */
+    width: 95%;
+    /* Ajuste móvil */
     max-width: 1200px;
     margin: 0 auto;
-    padding: 15px; /* Padding móvil */
+    padding: 15px;
+    /* Padding móvil */
 }
 
 section {
     background-color: #242424;
-    padding: 15px; /* Padding móvil */
+    padding: 15px;
+    /* Padding móvil */
     margin: 0;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -103,14 +115,17 @@ section {
 
 article {
     background-color: #242424;
-    padding: 15px; /* Padding móvil */
+    padding: 15px;
+    /* Padding móvil */
     margin: 30px 0 20px 0;
 }
 
 aside {
-    width: 95%; /* Ajuste móvil */
+    width: 95%;
+    /* Ajuste móvil */
     font-size: 16px;
-    padding: 15px; /* Padding móvil */
+    padding: 15px;
+    /* Padding móvil */
     margin: 0 auto 12px auto;
 }
 
@@ -125,29 +140,35 @@ footer {
    Estilos para nav, nav a, nav i y nav a:hover.
    ============================================================ */
 nav {
-    background-color: #1a1a1a;
-    padding: 15px; 
+    background-color: transparent;
+    /* Hace que tome el color gris oscuro del header */
+    padding: 10px 0;
+    /* Reducimos el padding para que no se vea tan separado */
     display: flex;
-    flex-direction: column; /* Apilado en móvil */
+    flex-direction: column;
     justify-content: center;
-    align-items: center; 
-    gap: 15px; 
+    align-items: center;
+    gap: 15px;
 }
 
 nav i {
-    font-size: 20px; 
-    color: #e53935; 
+    font-size: 20px;
+    color: #e53935;
 }
 
 nav a {
     background-color: #333333;
     color: #cccccc;
-    font-size: 14px; 
-    padding: 8px 12px; 
+    font-size: 16px;
+    /* Letra más grande y legible */
+    padding: 10px 16px;
+    /* Un poquito más de espacio interno para que no quede apretado */
     border-radius: 8px;
     text-decoration: none;
-    width: 100%; /* Botones 100% en móvil */
+    width: 100%;
     text-align: center;
+    font-weight: 500;
+    /* Opcional: hace la letra un poquitito más gruesa para que resalte */
 }
 
 nav a:hover {
@@ -175,14 +196,14 @@ aside i {
 
 details {
     margin: 20px 0;
-    text-align: center; 
+    text-align: center;
 }
 
 summary {
     font-size: 16px;
     color: #e53935;
     font-weight: bold;
-    cursor: pointer; 
+    cursor: pointer;
     margin-bottom: 15px;
 }
 
@@ -198,7 +219,8 @@ details p {
    Estilos para img, figure, figcaption, video, audio e iframe.
    ============================================================ */
 img {
-    max-width: 100%; /* Ajuste móvil */
+    max-width: 100%;
+    /* Ajuste móvil */
     margin: 15px auto;
     height: auto;
     display: block;
@@ -248,7 +270,8 @@ iframe {
    BLOQUE 7: LISTAS
    Estilos para ul, ol y li.
    ============================================================ */
-ul, ol {
+ul,
+ol {
     font-size: 15px;
     color: white;
     text-align: center;
@@ -278,11 +301,16 @@ label {
     color: #cccccc;
 }
 
-input, select, textarea {
-    font-size: 16px; /* Ajuste para evitar zoom en móvil */
+input,
+select,
+textarea {
+    font-size: 16px;
+    /* Ajuste para evitar zoom en móvil */
     width: 100%;
-    max-width: 100%; /* Asegura ajuste móvil */
-    box-sizing: border-box; /* Asegura ajuste móvil */
+    max-width: 100%;
+    /* Asegura ajuste móvil */
+    box-sizing: border-box;
+    /* Asegura ajuste móvil */
     padding: 10px;
     margin: 10px 0;
     background-color: #333;
@@ -299,7 +327,8 @@ button {
     cursor: pointer;
     margin-top: 20px;
     border-radius: 5px;
-    width: 100%; /* Botón ancho en móvil */
+    width: 100%;
+    /* Botón ancho en móvil */
     max-width: 100%;
     box-sizing: border-box;
 }
@@ -315,7 +344,8 @@ button:hover {
 table {
     width: 100%;
     text-align: center;
-    font-size: 14px; /* Ajuste móvil */
+    font-size: 14px;
+    /* Ajuste móvil */
     border-collapse: collapse;
     margin: 2% 0;
     background-color: rgb(24, 23, 23);
@@ -329,8 +359,10 @@ tbody {
     color: #cccccc;
 }
 
-th, td {
-    padding: 10px; /* Padding reducido móvil */
+th,
+td {
+    padding: 10px;
+    /* Padding reducido móvil */
     border: 1px solid #444;
     word-wrap: break-word;
 }
@@ -357,9 +389,9 @@ footer a:hover {
 }
 
 footer i {
-    font-size: 18px;     
-    color: #e53935;        
-    margin-right: 10px;    
+    font-size: 18px;
+    color: #e53935;
+    margin-right: 10px;
 }
 
 /* ============================================================
@@ -367,8 +399,10 @@ footer i {
    ============================================================ */
 progress {
     width: 100%;
-    max-width: 100%; /* Ajuste móvil */
-    box-sizing: border-box; /* Ajuste móvil */
+    max-width: 100%;
+    /* Ajuste móvil */
+    box-sizing: border-box;
+    /* Ajuste móvil */
     height: 24px;
     accent-color: #e98707;
 }
@@ -401,6 +435,8 @@ progress {
 
     nav a {
         width: auto;
+        font-size: 17px;
+        /* Crece un poquito más solo en monitores grandes */
     }
 
     img {
@@ -411,12 +447,14 @@ progress {
         font-size: 15px;
     }
 
-    th, td {
+    th,
+    td {
         padding: 14px;
     }
-    
+
     button,
     progress {
-        width: auto; /* Restaura anchos naturales */
+        width: auto;
+        /* Restaura anchos naturales */
     }
 }

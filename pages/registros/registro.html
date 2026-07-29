@@ -9,8 +9,11 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <link rel="icon" href="/iconos/world.ico" type="image/x-icon">
     <link rel="stylesheet" href="../../css/general.css">
     <link rel="stylesheet" href="../../css/registro.css">
+    <!-- Estilos de Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 
 <body>
@@ -26,8 +29,8 @@
         </nav>
 
         <div>
-            <p> Cristhian (-74 kg)</p>
-            <form action="../../index.html">
+            <p id="nombre-usuario-header">Cargando...</p>
+            <form class="form-cerrar-sesion" action="../../index.html">
                 <button type="submit">Cerrar sesión</button>
             </form>
         </div>
@@ -41,7 +44,7 @@
 
         <section id="panel-registro">
 
-            <form class="formulario-entrenamiento" action="/pages/historial/historial.html" method="GET">
+            <form class="formulario-entrenamiento" id="form-entrenamiento">
 
                 <!-- Agrupación de formulario con Flexbox -->
                 <div class="grupo-formulario">
@@ -51,11 +54,17 @@
 
                 <div class="grupo-formulario">
                     <label>Selecciona el Movimiento:</label>
-                    <select name="movimiento" class="input-general" required>
+                    <select name="movimiento" id="select-movimiento" class="input-general" required>
                         <option value="">-- Elige un ejercicio --</option>
-                        <option value="squat">Low-bar Squat</option>
-                        <option value="bench">Bench Press</option>
-                        <option value="deadlift">Sumo Deadlift</option>
+                        <!-- JavaScript insertará las opciones desde el JSON -->
+                    </select>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label>Nacionalidad (Ubicación de la competencia/gimnasio):</label>
+                    <select name="nacionalidad" id="select-nacionalidad" class="input-general" required>
+                        <option value="">-- Cargando países... --</option>
+                        <!-- JavaScript insertará los países desde countries.dev -->
                     </select>
                 </div>
 
@@ -100,14 +109,31 @@
                     <input type="text" name="notas" class="input-general">
                 </div>
 
-                <button type="button" id="btn-guardar" data-bs-toggle="collapse" data-bs-target="#alertaExito"
-                    aria-expanded="false" aria-controls="alertaExito">
+                <button type="submit" id="btn-guardar">
                     Guardar Entrenamiento
                 </button>
             </form>
         </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script de SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Script de Toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- Tus scripts (ej. main.js, datos.js) van aquí abajo -->
+
+    <script src="../../js/storage.js"></script>
+    <script src="../../js/datos.js"></script>
+    <script src="../../js/componentes.js"></script>
+     <script src="../../js/auth.js"></script>
+    <script src="../../js/crud.js"></script> <!-- NUEVO -->
+    <script src="../../js/filtros.js"></script> <!-- NUEVO -->
+    <script src="../../js/api.js"></script>
+    <script src="../../js/grafico.js"></script>
+    <script src="../../js/main.js"></script>
 </body>
 
 </html>

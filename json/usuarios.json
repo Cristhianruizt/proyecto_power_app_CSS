@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "nombres": "Cristhian",
+    "apellidos": "Ruiz",
+    "correo": "cristhian.ruiz@example.com",
+    "password": "PowerLift2026!",
+    "fechaNacimiento": "1998-03-14",
+    "nacionalidad": "Ecuador",
+    "categoriaKg": "-74",
+    "contacto": {
+      "telefono": "0991234567",
+      "direccion": {
+        "ciudad": "Quito",
+        "pais": "Ecuador"
+      }
+    },
+    "preferencias": {
+      "unidadPeso": "kg",
+      "notificaciones": true
+    },
+    "terminosAceptados": true,
+    "fechaRegistro": "2026-05-10",
+    "avatar": "assets/img/usuarios/cristhian.jpg"
+  },
+  {
+    "id": 2,
+    "nombres": "Valentina",
+    "apellidos": "Torres",
+    "correo": "valentina.torres@example.com",
+    "password": "SquatQueen21",
+    "fechaNacimiento": "2000-11-02",
+    "nacionalidad": "Colombia",
+    "categoriaKg": "-63",
+    "contacto": {
+      "telefono": "3011234567",
+      "direccion": {
+        "ciudad": "Bogotá",
+        "pais": "Colombia"
+      }
+    },
+    "preferencias": {
+      "unidadPeso": "kg",
+      "notificaciones": false
+    },
+    "terminosAceptados": true,
+    "fechaRegistro": "2026-05-15",
+    "avatar": "assets/img/usuarios/valentina.jpg"
+  },
+  {
+    "id": 3,
+    "nombres": "Diego",
+    "apellidos": "Fernández",
+    "correo": "diego.fernandez@example.com",
+    "password": "DeadliftKing99",
+    "fechaNacimiento": "1995-07-22",
+    "nacionalidad": "Argentina",
+    "categoriaKg": "-93",
+    "contacto": {
+      "telefono": "1123456789",
+      "direccion": {
+        "ciudad": "Buenos Aires",
+        "pais": "Argentina"
+      }
+    },
+    "preferencias": {
+      "unidadPeso": "kg",
+      "notificaciones": true
+    },
+    "terminosAceptados": true,
+    "fechaRegistro": "2026-06-01",
+    "avatar": "assets/img/usuarios/diego.jpg"
+  },
+  {
+    "id": 4,
+    "nombres": "Camila",
+    "apellidos": "Rojas",
+    "correo": "camila.rojas@example.com",
+    "password": "Power4Lift!",
+    "fechaNacimiento": "1994-05-14",
+    "nacionalidad": "Chile",
+    "categoriaKg": "-52",
+    "contacto": {
+      "telefono": "099123404",
+      "direccion": {
+        "ciudad": "Santiago",
+        "pais": "Chile"
+      }
+    },
+    "preferencias": {
+      "unidadPeso": "kg",
+      "notificaciones": false
+    },
+    "terminosAceptados": true,
+    "fechaRegistro": "2026-05-14",
+    "avatar": "assets/img/usuarios/camila.jpg"
+  },
+  {
+    "id": 5,
+    "nombres": "Mateo",
+    "apellidos": "Gómez",
+    "correo": "mateo.gómez@example.com",
+    "password": "Power5Lift!",
+    "fechaNacimiento": "1995-06-15",
+    "nacionalidad": "Perú",
+    "categoriaKg": "-83",
+    "contacto": {
+      "telefono": "099123405",
+      "direccion": {
+        "ciudad": "Lima",
+        "pais": "Perú"
+      }
+    },
+    "preferencias": {
+      "unidadPeso": "kg",
+      "notificaciones": true
+    },
+    "terminosAceptados": true,
+    "fechaRegistro": "2026-06-15",
+    "avatar": "assets/img/usuarios/mateo.jpg"
+  },
+  {
+    "id": 6,
+    "nombres": "Sofía",
+    "apellidos": "Herrera",
+    "correo": "sofía.herrera@example.com",
+    "password": "Power6Lift!",
+    "fechaNacimiento": "1996-07-16",
+    "nacionalidad": "México",
+    "categoriaKg": "-57",
+    "contacto": {
+      "telefono": "099123406",
+      "direccion": {
+        "ciudad": "Ciudad de México",
+        "pais": "México"
+      }
+    },
+    "preferencias": {
+      "unidadPeso": "kg",
+      "notificaciones": false
+    },
+    "terminosAceptados": true,
+    "fechaRegistro": "2026-01-16",
+    "avatar": "assets/img/usuarios/sofía.jpg"
+  },
+  {
+    "id": 7,
+    "nombres": "Andrés",
+    "apellidos": "Castillo",
+    "correo": "andrés.castillo@example.com",
+    "password": "Power7Lift!",
+    "fechaNacimiento": "1997-08-17",
+    "nacionalidad": "Ecuador",
+    "categoriaKg": "-105",
+    "contacto": {
+      "telefono": "099123407",
+      "direccion": {
+        "ciudad": "Guayaquil",
+        "pais": "Ecuador"
+      }
+    },
+    "preferencias": {
+      "unidadPeso": "kg",
+      "notificaciones": true
+    },
+    "terminosAceptados": true,
+    "fechaRegistro": "2026-02-17",
+    "avatar": "assets/img/usuarios/andrés.jpg"
+  },
+  {
+    "id": 8,
+    "nombres": "Lucía",
+    "apellidos": "Paredes",
+    "correo": "lucía.paredes@example.com",
+    "password": "Power8Lift!",
+    "fechaNacimiento": "1998-09-18",
+    "nacionalidad": "Uruguay",
+    "categoriaKg": "-69",
+    "contacto": {
+      "telefono": "099123408",
+      "direccion": {
+        "ciudad": "Montevideo",
+        "pais": "Uruguay"
+      }
+    },
+    "preferencias": {
+      "unidadPeso": "kg",
+      "notificaciones": false
+    },
+    "terminosAceptados": true,
+    "fechaRegistro": "2026-03-18",
+    "avatar": "assets/img/usuarios/lucía.jpg"
+  },
+  {
+    "id": 9,
+    "nombres": "Joaquín",
+    "apellidos": "Silva",
+    "correo": "joaquín.silva@example.com",
+    "password": "Power9Lift!",
+    "fechaNacimiento": "1990-01-10",
+    "nacionalidad": "Chile",
+    "categoriaKg": "-120",
+    "contacto": {
+      "telefono": "099123409",
+      "direccion": {
+        "ciudad": "Valparaíso",
+        "pais": "Chile"
+      }
+    },
+    "preferencias": {
+      "unidadPeso": "kg",
+      "notificaciones": true
+    },
+    "terminosAceptados": true,
+    "fechaRegistro": "2026-04-19",
+    "avatar": "assets/img/usuarios/joaquín.jpg"
+  },
+  {
+    "id": 10,
+    "nombres": "Renata",
+    "apellidos": "Vargas",
+    "correo": "renata.vargas@example.com",
+    "password": "Power10Lift!",
+    "fechaNacimiento": "1991-02-11",
+    "nacionalidad": "Bolivia",
+    "categoriaKg": "-47",
+    "contacto": {
+      "telefono": "0991234010",
+      "direccion": {
+        "ciudad": "La Paz",
+        "pais": "Bolivia"
+      }
+    },
+    "preferencias": {
+      "unidadPeso": "kg",
+      "notificaciones": false
+    },
+    "terminosAceptados": true,
+    "fechaRegistro": "2026-05-20",
+    "avatar": "assets/img/usuarios/renata.jpg"
+  }
+]

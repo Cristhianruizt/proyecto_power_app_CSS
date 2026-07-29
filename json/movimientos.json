@@ -1,0 +1,242 @@
+[
+  {
+    "id": "squat",
+    "nombre": "Sentadilla (Squat)",
+    "categoria": "principal",
+    "grupoMuscular": "Cuádriceps, glúteos, espalda baja",
+    "descripcion": "Movimiento principal de competición. Se desciende hasta que la cadera queda por debajo de la línea de la rodilla y se asciende de forma controlada.",
+    "puntos_clave": [
+      "Pies a la anchura de hombros, ligera rotación externa.",
+      "Mantén el pecho arriba y la espalda neutra durante todo el recorrido.",
+      "Baja hasta que la articulación de la cadera quede por debajo de la rodilla (profundidad de competición).",
+      "Empuja el piso con toda la planta del pie al subir, sin perder la tensión abdominal."
+    ],
+    "imagen": "assets/img/movimientos/squat.jpg",
+    "video": "assets/video/movimientos/squat.mp4",
+    "estado": "activo"
+  },
+  {
+    "id": "bench",
+    "nombre": "Press de Banca (Bench Press)",
+    "categoria": "principal",
+    "grupoMuscular": "Pectoral, tríceps, hombro anterior",
+    "descripcion": "Segundo movimiento de competición. La barra baja hasta tocar el pecho con una pausa y se empuja hasta la extensión completa de brazos.",
+    "puntos_clave": [
+      "Escápulas retraídas y hundidas, arco natural en la espalda baja.",
+      "Baja la barra de forma controlada hasta tocar el pecho.",
+      "Mantén una pausa breve y estable antes de iniciar el empuje.",
+      "Empuja en línea recta hacia arriba, manteniendo los pies firmes en el piso."
+    ],
+    "imagen": "assets/img/movimientos/bench.jpg",
+    "video": "assets/video/movimientos/bench.mp4",
+    "estado": "activo"
+  },
+  {
+    "id": "deadlift",
+    "nombre": "Peso Muerto (Deadlift)",
+    "categoria": "principal",
+    "grupoMuscular": "Cadena posterior: glúteos, isquiotibiales, espalda",
+    "descripcion": "Tercer movimiento de competición. Se levanta la barra desde el piso hasta la extensión completa de cadera y rodillas.",
+    "puntos_clave": [
+      "La barra debe permanecer pegada a las piernas durante todo el recorrido.",
+      "Cadera y hombros suben a la misma velocidad al iniciar el jalón.",
+      "Espalda neutra, sin redondeo lumbar en ningún punto del levantamiento.",
+      "Bloqueo final con extensión completa de cadera, sin hiperextender la espalda."
+    ],
+    "imagen": "assets/img/movimientos/deadlift.jpg",
+    "video": "assets/video/movimientos/deadlift.mp4",
+    "estado": "activo"
+  },
+  {
+    "id": "front_squat",
+    "nombre": "Sentadilla Frontal",
+    "categoria": "accesorio",
+    "grupoMuscular": "Cuádriceps, core",
+    "descripcion": "Variante de sentadilla con la barra apoyada en la parte frontal de los hombros, usada para mejorar la posición del torso.",
+    "puntos_clave": [
+      "Codos altos para mantener la barra estable sobre los hombros.",
+      "Torso lo más vertical posible durante todo el recorrido.",
+      "Buena movilidad de tobillo para permitir profundidad completa.",
+      "Controla el descenso; evita que los codos caigan."
+    ],
+    "imagen": "assets/img/movimientos/front_squat.jpg",
+    "video": "assets/video/movimientos/front_squat.mp4",
+    "estado": "activo"
+  },
+  {
+    "id": "paused_bench",
+    "nombre": "Press de Banca con Pausa",
+    "categoria": "accesorio",
+    "grupoMuscular": "Pectoral, tríceps",
+    "descripcion": "Variante del press de banca con pausa prolongada en el pecho, ideal para fortalecer el punto muerto inicial del empuje.",
+    "puntos_clave": [
+      "Pausa de 2 a 3 segundos con la barra tocando el pecho.",
+      "Mantén la tensión en todo el cuerpo durante la pausa.",
+      "Evita rebotar la barra al finalizar la pausa.",
+      "Empuja explosivo una vez terminada la pausa."
+    ],
+    "imagen": "assets/img/movimientos/paused_bench.jpg",
+    "video": "assets/video/movimientos/paused_bench.mp4",
+    "estado": "activo"
+  },
+  {
+    "id": "romanian_deadlift",
+    "nombre": "Peso Muerto Rumano",
+    "categoria": "accesorio",
+    "grupoMuscular": "Isquiotibiales, glúteos",
+    "descripcion": "Variante de peso muerto con piernas semiflexionadas, enfocada en el trabajo excéntrico de isquiotibiales.",
+    "puntos_clave": [
+      "Rodillas ligeramente flexionadas y fijas durante todo el movimiento.",
+      "La barra se desliza pegada a las piernas al descender.",
+      "Baja hasta sentir el estiramiento completo de isquiotibiales.",
+      "Recupera la posición mediante extensión de cadera, no de espalda."
+    ],
+    "imagen": "assets/img/movimientos/romanian_deadlift.jpg",
+    "video": "assets/video/movimientos/romanian_deadlift.mp4",
+    "estado": "activo"
+  },
+  {
+    "id": "overhead_press",
+    "nombre": "Press Militar",
+    "categoria": "accesorio",
+    "grupoMuscular": "Hombro, tríceps, core",
+    "descripcion": "Empuje vertical de pie usado como accesorio para fortalecer los hombros y la estabilidad del tronco.",
+    "puntos_clave": [
+      "Glúteos y abdomen contraídos para evitar arquear la espalda.",
+      "La barra sube en línea recta pasando cerca de la cara.",
+      "Bloqueo final con la cabeza ligeramente adelantada bajo la barra.",
+      "Baja de forma controlada hasta la posición inicial en los hombros."
+    ],
+    "imagen": "assets/img/movimientos/overhead_press.jpg",
+    "video": "assets/video/movimientos/overhead_press.mp4",
+    "estado": "activo"
+  },
+  {
+    "id": "barbell_row",
+    "nombre": "Remo con Barra",
+    "categoria": "accesorio",
+    "grupoMuscular": "Espalda media, dorsales",
+    "descripcion": "Ejercicio de tracción horizontal usado para fortalecer la espalda y mejorar la posición en el peso muerto.",
+    "puntos_clave": [
+      "Torso inclinado y fijo, sin balanceo durante el jalón.",
+      "Lleva la barra hacia la parte baja del abdomen.",
+      "Escápulas se juntan al final del recorrido.",
+      "Controla el descenso sin perder la posición de la espalda."
+    ],
+    "imagen": "assets/img/movimientos/barbell_row.jpg",
+    "video": "assets/video/movimientos/barbell_row.mp4",
+    "estado": "activo"
+  },
+  {
+    "id": "pull_up",
+    "nombre": "Dominadas",
+    "categoria": "accesorio",
+    "grupoMuscular": "Dorsales, bíceps",
+    "descripcion": "Ejercicio de tracción vertical con el propio peso corporal, usado como accesorio de espalda.",
+    "puntos_clave": [
+      "Agarre firme un poco más ancho que los hombros.",
+      "Sube hasta que la barbilla supere la barra.",
+      "Evita el balanceo excesivo del cuerpo.",
+      "Controla la bajada hasta la extensión completa de brazos."
+    ],
+    "imagen": "assets/img/movimientos/pull_up.jpg",
+    "video": "assets/video/movimientos/pull_up.mp4",
+    "estado": "activo"
+  },
+  {
+    "id": "leg_press",
+    "nombre": "Prensa de Piernas",
+    "categoria": "accesorio",
+    "grupoMuscular": "Cuádriceps, glúteos",
+    "descripcion": "Ejercicio de empuje en máquina usado para acumular volumen de tren inferior sin la carga técnica de la sentadilla.",
+    "puntos_clave": [
+      "Espalda baja pegada al respaldo durante todo el recorrido.",
+      "Pies a la anchura de hombros sobre la plataforma.",
+      "No bloquees las rodillas de forma brusca al extender.",
+      "Controla el descenso hasta un ángulo cómodo de cadera."
+    ],
+    "imagen": "assets/img/movimientos/leg_press.jpg",
+    "video": "assets/video/movimientos/leg_press.mp4",
+    "estado": "activo"
+  },
+  {
+    "id": "close_grip_bench",
+    "nombre": "Press de Banca Agarre Cerrado",
+    "categoria": "accesorio",
+    "grupoMuscular": "Tríceps, pectoral",
+    "descripcion": "Variante de press de banca con agarre reducido, enfocada en el desarrollo del tríceps para el bloqueo final.",
+    "puntos_clave": [
+      "Agarre a la anchura de los hombros o ligeramente menor.",
+      "Codos cercanos al torso durante el descenso.",
+      "Barra baja hasta la parte baja del pecho.",
+      "Empuje enfocado en la extensión completa del codo."
+    ],
+    "imagen": "assets/img/movimientos/close_grip_bench.jpg",
+    "video": "assets/video/movimientos/close_grip_bench.mp4",
+    "estado": "activo"
+  },
+  {
+    "id": "deficit_deadlift",
+    "nombre": "Peso Muerto con Déficit",
+    "categoria": "accesorio",
+    "grupoMuscular": "Cadena posterior",
+    "descripcion": "Variante de peso muerto ejecutada sobre una plataforma elevada para aumentar el rango de movimiento inicial.",
+    "puntos_clave": [
+      "Déficit moderado, sin comprometer la posición neutra de la espalda.",
+      "Prioriza la posición de cadera antes que el peso levantado.",
+      "La barra se mantiene pegada a las piernas al iniciar el jalón.",
+      "Reduce la carga respecto al peso muerto convencional."
+    ],
+    "imagen": "assets/img/movimientos/deficit_deadlift.jpg",
+    "video": "assets/video/movimientos/deficit_deadlift.mp4",
+    "estado": "activo"
+  },
+  {
+    "id": "box_squat",
+    "nombre": "Sentadilla al Cajón",
+    "categoria": "accesorio",
+    "grupoMuscular": "Cuádriceps, glúteos",
+    "descripcion": "Variante de sentadilla con pausa sentada sobre un cajón, útil para trabajar la posición inicial y la potencia de salida.",
+    "puntos_clave": [
+      "Desciende de forma controlada hasta sentarte brevemente en el cajón.",
+      "Mantén la tensión abdominal durante la pausa sobre el cajón.",
+      "No relajes la posición de la espalda al tocar el cajón.",
+      "Sube con intención explosiva desde el cajón."
+    ],
+    "imagen": "assets/img/movimientos/box_squat.jpg",
+    "video": "assets/video/movimientos/box_squat.mp4",
+    "estado": "activo"
+  },
+  {
+    "id": "incline_bench",
+    "nombre": "Press Inclinado",
+    "categoria": "accesorio",
+    "grupoMuscular": "Pectoral superior, hombro",
+    "descripcion": "Variante de press en banco inclinado, usada para fortalecer la porción superior del pectoral y el hombro anterior.",
+    "puntos_clave": [
+      "Inclinación moderada del banco, entre 15 y 30 grados.",
+      "Escápulas retraídas antes de iniciar el descenso.",
+      "Baja la barra hasta la parte superior del pecho.",
+      "Empuje controlado hasta la extensión completa."
+    ],
+    "imagen": "assets/img/movimientos/incline_bench.jpg",
+    "video": "assets/video/movimientos/incline_bench.mp4",
+    "estado": "activo"
+  },
+  {
+    "id": "good_morning",
+    "nombre": "Buenos Días (Good Morning)",
+    "categoria": "accesorio",
+    "grupoMuscular": "Espalda baja, isquiotibiales",
+    "descripcion": "Ejercicio de bisagra de cadera con barra sobre los hombros, usado para fortalecer la espalda baja.",
+    "puntos_clave": [
+      "Barra apoyada sobre la parte alta de la espalda.",
+      "Rodillas ligeramente flexionadas y fijas.",
+      "Inclina el torso hacia adelante manteniendo la espalda neutra.",
+      "Recupera la posición mediante extensión de cadera."
+    ],
+    "imagen": "assets/img/movimientos/good_morning.jpg",
+    "video": "assets/video/movimientos/good_morning.mp4",
+    "estado": "activo"
+  }
+]

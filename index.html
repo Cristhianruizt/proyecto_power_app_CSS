@@ -9,53 +9,73 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/index.css">
+    <!-- Estilos de Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 
 <body class="login">
 
     <aside class="iconos-superiores">
-        <i class="fa-solid fa-house"></i> 
-        <i class="fa-solid fa-user"></i> 
-        <i class="fa-solid fa-envelope"></i> 
-        <i class="fa-solid fa-phone"></i> 
-        <i class="fa-solid fa-cart-shopping"></i> 
-        <i class="fa-solid fa-heart"></i> 
-        <i class="fa-brands fa-facebook"></i> 
-        <i class="fa-brands fa-instagram"></i> 
+        <i class="fa-solid fa-house"></i>
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-envelope"></i>
+        <i class="fa-solid fa-phone"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
     </aside>
 
     <div class="contenedor-split">
-        
+
         <header class="mitad-logo">
             <img src="img/logo.png" alt="Logo de POWER APP">
             <p>Tu plataforma de entrenamiento de powerlifting</p>
         </header>
 
         <main class="mitad-login">
-            
+
             <section id="panel-login">
                 <h2>Inicia sesión en tu cuenta</h2>
 
-                <form class="formulario-acceso" action="/pages/dashboard/dashboard.html" method="GET">
+                <form class="formulario-acceso" id="form-login-real">
                     <label>Correo Electrónico</label>
                     <input type="email" class="input-texto" name="correo" placeholder="tu@email.com" required>
-
                     <label>Contraseña</label>
                     <input type="password" class="input-texto" name="password" placeholder="********" required>
-
-                    <button type="submit" id="btn-ingreso">
-                        Ingresar
-                    </button>
+                    <button type="submit" id="btn-ingreso">Ingresar</button>
                 </form>
 
                 <p class="nota-registro">
-                    ¿No tienes cuenta? <a href="https://workspace.google.com/intl/es/gmail/" target="_blank"> Regístrate </a>
+                    ¿No tienes cuenta? <a href="/pages/registroUsuario/registroUsuario.html"> Regístrate </a>
                 </p>
             </section>
-            
+
         </main>
 
     </div>
+
+    <!-- Script de SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Script de Toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- Tus scripts (ej. main.js, datos.js) van aquí abajo -->
+
+    <!-- Tus scripts modulares -->
+    <script src="js/storage.js"></script>
+    <script src="js/datos.js"></script>
+    <script src="js/componentes.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/crud.js"></script> <!-- NUEVO -->
+    <script src="js/filtros.js"></script> <!-- NUEVO -->
+    <script src="js/api.js"></script> <!-- Aquí lo agregas en el index -->
+    <script src="js/grafico.js"></script>
+    <script src="js/main.js"></script>
+    
+
+
 
 </body>
 

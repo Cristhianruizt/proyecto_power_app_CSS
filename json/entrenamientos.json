@@ -1,0 +1,2756 @@
+[
+  {
+    "id": 1,
+    "usuarioId": 3,
+    "movimientoId": "squat",
+    "fecha": "2026-04-06",
+    "notas": "Leve fatiga, controlar volumen",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 90.0,
+        "reps": 1,
+        "rpe": 8.7
+      },
+      {
+        "numero": 2,
+        "peso_kg": 90.0,
+        "reps": 2,
+        "rpe": 7.2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "usuarioId": 1,
+    "movimientoId": "bench",
+    "fecha": "2026-04-08",
+    "notas": "Foco en técnica y velocidad",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 62.5,
+        "reps": 4,
+        "rpe": 7.8
+      },
+      {
+        "numero": 2,
+        "peso_kg": 62.5,
+        "reps": 1,
+        "rpe": 6.8
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "usuarioId": 2,
+    "movimientoId": "deadlift",
+    "fecha": "2026-04-10",
+    "notas": "Estable, sin dolor de hombro",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 115.0,
+        "reps": 4,
+        "rpe": 7.1
+      },
+      {
+        "numero": 2,
+        "peso_kg": 115.0,
+        "reps": 5,
+        "rpe": 8.6
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "usuarioId": 3,
+    "movimientoId": "close_grip_bench",
+    "fecha": "2026-04-11",
+    "notas": "Movilidad limitada, ajustar carga",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 67.5,
+        "reps": 5,
+        "rpe": 8.3
+      },
+      {
+        "numero": 2,
+        "peso_kg": 30.0,
+        "reps": 10,
+        "rpe": 7.0
+      },
+      {
+        "numero": 3,
+        "peso_kg": 30.0,
+        "reps": 8,
+        "rpe": 6.3
+      },
+      {
+        "numero": 4,
+        "peso_kg": 42.5,
+        "reps": 8,
+        "rpe": 8.5
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "usuarioId": 1,
+    "movimientoId": "front_squat",
+    "fecha": "2026-04-11",
+    "notas": "Buen control del tempo excéntrico",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 52.5,
+        "reps": 10,
+        "rpe": 6.2
+      },
+      {
+        "numero": 2,
+        "peso_kg": 37.5,
+        "reps": 12,
+        "rpe": 8.7
+      },
+      {
+        "numero": 3,
+        "peso_kg": 42.5,
+        "reps": 6,
+        "rpe": 8.1
+      },
+      {
+        "numero": 4,
+        "peso_kg": 22.5,
+        "reps": 6,
+        "rpe": 8.3
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "usuarioId": 1,
+    "movimientoId": "squat",
+    "fecha": "2026-04-13",
+    "notas": "PR de repeticiones a este peso",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 92.5,
+        "reps": 3,
+        "rpe": 7.3
+      },
+      {
+        "numero": 2,
+        "peso_kg": 92.5,
+        "reps": 5,
+        "rpe": 9.0
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "usuarioId": 3,
+    "movimientoId": "bench",
+    "fecha": "2026-04-15",
+    "notas": "Buen pull de tensión inicial",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 62.5,
+        "reps": 2,
+        "rpe": 8.5
+      },
+      {
+        "numero": 2,
+        "peso_kg": 62.5,
+        "reps": 5,
+        "rpe": 9.3
+      },
+      {
+        "numero": 3,
+        "peso_kg": 62.5,
+        "reps": 5,
+        "rpe": 6.7
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "usuarioId": 1,
+    "movimientoId": "deadlift",
+    "fecha": "2026-04-17",
+    "notas": "Sensación de fuerza estable",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 117.5,
+        "reps": 2,
+        "rpe": 7.9
+      },
+      {
+        "numero": 2,
+        "peso_kg": 117.5,
+        "reps": 3,
+        "rpe": 9.5
+      },
+      {
+        "numero": 3,
+        "peso_kg": 117.5,
+        "reps": 5,
+        "rpe": 8.6
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "usuarioId": 3,
+    "movimientoId": "front_squat",
+    "fecha": "2026-04-14",
+    "notas": "Buena sensación general",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 67.5,
+        "reps": 10,
+        "rpe": 6.8
+      },
+      {
+        "numero": 2,
+        "peso_kg": 32.5,
+        "reps": 12,
+        "rpe": 8.6
+      },
+      {
+        "numero": 3,
+        "peso_kg": 40.0,
+        "reps": 10,
+        "rpe": 7.2
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "usuarioId": 1,
+    "movimientoId": "romanian_deadlift",
+    "fecha": "2026-04-16",
+    "notas": "Buena sensación general",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 35.0,
+        "reps": 12,
+        "rpe": 7.6
+      },
+      {
+        "numero": 2,
+        "peso_kg": 65.0,
+        "reps": 10,
+        "rpe": 8.7
+      },
+      {
+        "numero": 3,
+        "peso_kg": 45.0,
+        "reps": 6,
+        "rpe": 9.0
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "usuarioId": 3,
+    "movimientoId": "squat",
+    "fecha": "2026-04-20",
+    "notas": "Nuevo PR de la temporada",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 92.5,
+        "reps": 1,
+        "rpe": 9.1
+      },
+      {
+        "numero": 2,
+        "peso_kg": 92.5,
+        "reps": 2,
+        "rpe": 8.4
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "usuarioId": 3,
+    "movimientoId": "bench",
+    "fecha": "2026-04-22",
+    "notas": "Sesión de acumulación, técnica cómoda",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 65.0,
+        "reps": 3,
+        "rpe": 7.6
+      },
+      {
+        "numero": 2,
+        "peso_kg": 65.0,
+        "reps": 3,
+        "rpe": 8.1
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "usuarioId": 2,
+    "movimientoId": "deadlift",
+    "fecha": "2026-04-24",
+    "notas": "Leve fatiga, controlar volumen",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 117.5,
+        "reps": 5,
+        "rpe": 9.2
+      },
+      {
+        "numero": 2,
+        "peso_kg": 117.5,
+        "reps": 3,
+        "rpe": 8.8
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "usuarioId": 3,
+    "movimientoId": "barbell_row",
+    "fecha": "2026-04-23",
+    "notas": "Buen control del tempo excéntrico",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 47.5,
+        "reps": 8,
+        "rpe": 8.9
+      },
+      {
+        "numero": 2,
+        "peso_kg": 65.0,
+        "reps": 12,
+        "rpe": 8.7
+      },
+      {
+        "numero": 3,
+        "peso_kg": 72.5,
+        "reps": 8,
+        "rpe": 8.5
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "usuarioId": 1,
+    "movimientoId": "romanian_deadlift",
+    "fecha": "2026-04-23",
+    "notas": "Fatiga acumulada del día anterior",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 52.5,
+        "reps": 12,
+        "rpe": 8.8
+      },
+      {
+        "numero": 2,
+        "peso_kg": 55.0,
+        "reps": 10,
+        "rpe": 6.1
+      },
+      {
+        "numero": 3,
+        "peso_kg": 75.0,
+        "reps": 8,
+        "rpe": 6.7
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "usuarioId": 3,
+    "movimientoId": "squat",
+    "fecha": "2026-04-27",
+    "notas": "Escápulas bien retraídas",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 95.0,
+        "reps": 5,
+        "rpe": 8.0
+      },
+      {
+        "numero": 2,
+        "peso_kg": 95.0,
+        "reps": 1,
+        "rpe": 9.4
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "usuarioId": 2,
+    "movimientoId": "bench",
+    "fecha": "2026-04-29",
+    "notas": "Transición a intensidad",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 67.5,
+        "reps": 5,
+        "rpe": 7.9
+      },
+      {
+        "numero": 2,
+        "peso_kg": 67.5,
+        "reps": 4,
+        "rpe": 7.0
+      },
+      {
+        "numero": 3,
+        "peso_kg": 67.5,
+        "reps": 4,
+        "rpe": 9.1
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "usuarioId": 2,
+    "movimientoId": "deadlift",
+    "fecha": "2026-05-01",
+    "notas": "Leve fatiga, controlar volumen",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 120.0,
+        "reps": 5,
+        "rpe": 7.4
+      },
+      {
+        "numero": 2,
+        "peso_kg": 120.0,
+        "reps": 5,
+        "rpe": 8.4
+      },
+      {
+        "numero": 3,
+        "peso_kg": 120.0,
+        "reps": 3,
+        "rpe": 9.2
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "usuarioId": 1,
+    "movimientoId": "overhead_press",
+    "fecha": "2026-04-28",
+    "notas": "Sesión de mantenimiento",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 40.0,
+        "reps": 12,
+        "rpe": 7.7
+      },
+      {
+        "numero": 2,
+        "peso_kg": 55.0,
+        "reps": 5,
+        "rpe": 6.2
+      },
+      {
+        "numero": 3,
+        "peso_kg": 57.5,
+        "reps": 6,
+        "rpe": 6.2
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "usuarioId": 1,
+    "movimientoId": "paused_bench",
+    "fecha": "2026-05-02",
+    "notas": "Fatiga acumulada del día anterior",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 37.5,
+        "reps": 10,
+        "rpe": 6.6
+      },
+      {
+        "numero": 2,
+        "peso_kg": 27.5,
+        "reps": 12,
+        "rpe": 7.7
+      },
+      {
+        "numero": 3,
+        "peso_kg": 35.0,
+        "reps": 10,
+        "rpe": 8.4
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "usuarioId": 3,
+    "movimientoId": "squat",
+    "fecha": "2026-05-04",
+    "notas": "Buen leg drive",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 95.0,
+        "reps": 5,
+        "rpe": 7.8
+      },
+      {
+        "numero": 2,
+        "peso_kg": 95.0,
+        "reps": 3,
+        "rpe": 7.7
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "usuarioId": 1,
+    "movimientoId": "bench",
+    "fecha": "2026-05-06",
+    "notas": "Estable, sin dolor de hombro",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 67.5,
+        "reps": 1,
+        "rpe": 7.7
+      },
+      {
+        "numero": 2,
+        "peso_kg": 67.5,
+        "reps": 3,
+        "rpe": 8.9
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "usuarioId": 1,
+    "movimientoId": "deadlift",
+    "fecha": "2026-05-08",
+    "notas": "Simulación de competencia exitosa",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 120.0,
+        "reps": 2,
+        "rpe": 8.1
+      },
+      {
+        "numero": 2,
+        "peso_kg": 120.0,
+        "reps": 2,
+        "rpe": 7.8
+      },
+      {
+        "numero": 3,
+        "peso_kg": 120.0,
+        "reps": 3,
+        "rpe": 7.9
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "usuarioId": 1,
+    "movimientoId": "deficit_deadlift",
+    "fecha": "2026-05-05",
+    "notas": "Enfoque en el rango de movimiento completo",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 60.0,
+        "reps": 12,
+        "rpe": 8.5
+      },
+      {
+        "numero": 2,
+        "peso_kg": 77.5,
+        "reps": 6,
+        "rpe": 6.5
+      },
+      {
+        "numero": 3,
+        "peso_kg": 50.0,
+        "reps": 6,
+        "rpe": 8.6
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "usuarioId": 1,
+    "movimientoId": "leg_press",
+    "fecha": "2026-05-05",
+    "notas": "Sesión de mantenimiento",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 35.0,
+        "reps": 10,
+        "rpe": 6.9
+      },
+      {
+        "numero": 2,
+        "peso_kg": 62.5,
+        "reps": 12,
+        "rpe": 8.0
+      },
+      {
+        "numero": 3,
+        "peso_kg": 50.0,
+        "reps": 6,
+        "rpe": 6.9
+      },
+      {
+        "numero": 4,
+        "peso_kg": 77.5,
+        "reps": 12,
+        "rpe": 8.2
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "usuarioId": 3,
+    "movimientoId": "squat",
+    "fecha": "2026-05-11",
+    "notas": "Buen pull de tensión inicial",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 97.5,
+        "reps": 1,
+        "rpe": 8.3
+      },
+      {
+        "numero": 2,
+        "peso_kg": 97.5,
+        "reps": 4,
+        "rpe": 9.3
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "usuarioId": 1,
+    "movimientoId": "bench",
+    "fecha": "2026-05-13",
+    "notas": "Estable, sin dolor de hombro",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 70.0,
+        "reps": 4,
+        "rpe": 6.7
+      },
+      {
+        "numero": 2,
+        "peso_kg": 70.0,
+        "reps": 2,
+        "rpe": 6.7
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "usuarioId": 3,
+    "movimientoId": "deadlift",
+    "fecha": "2026-05-15",
+    "notas": "Foco en técnica y velocidad",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 122.5,
+        "reps": 1,
+        "rpe": 9.3
+      },
+      {
+        "numero": 2,
+        "peso_kg": 122.5,
+        "reps": 4,
+        "rpe": 7.2
+      },
+      {
+        "numero": 3,
+        "peso_kg": 122.5,
+        "reps": 4,
+        "rpe": 6.6
+      },
+      {
+        "numero": 4,
+        "peso_kg": 122.5,
+        "reps": 1,
+        "rpe": 7.8
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "usuarioId": 3,
+    "movimientoId": "pull_up",
+    "fecha": "2026-05-14",
+    "notas": "Fatiga acumulada del día anterior",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 60.0,
+        "reps": 8,
+        "rpe": 6.7
+      },
+      {
+        "numero": 2,
+        "peso_kg": 42.5,
+        "reps": 8,
+        "rpe": 7.4
+      },
+      {
+        "numero": 3,
+        "peso_kg": 75.0,
+        "reps": 5,
+        "rpe": 6.0
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "usuarioId": 3,
+    "movimientoId": "paused_bench",
+    "fecha": "2026-05-16",
+    "notas": "Trabajo de accesorios, buena conexión muscular",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 50.0,
+        "reps": 6,
+        "rpe": 8.8
+      },
+      {
+        "numero": 2,
+        "peso_kg": 72.5,
+        "reps": 6,
+        "rpe": 7.1
+      },
+      {
+        "numero": 3,
+        "peso_kg": 30.0,
+        "reps": 12,
+        "rpe": 8.1
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "usuarioId": 1,
+    "movimientoId": "squat",
+    "fecha": "2026-05-18",
+    "notas": "Cuidar redondeo lumbar",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 100.0,
+        "reps": 5,
+        "rpe": 6.8
+      },
+      {
+        "numero": 2,
+        "peso_kg": 100.0,
+        "reps": 2,
+        "rpe": 7.3
+      },
+      {
+        "numero": 3,
+        "peso_kg": 100.0,
+        "reps": 1,
+        "rpe": 8.7
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "usuarioId": 3,
+    "movimientoId": "bench",
+    "fecha": "2026-05-20",
+    "notas": "Inicio de nuevo bloque, volumen bajo",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 70.0,
+        "reps": 4,
+        "rpe": 7.1
+      },
+      {
+        "numero": 2,
+        "peso_kg": 70.0,
+        "reps": 3,
+        "rpe": 7.1
+      },
+      {
+        "numero": 3,
+        "peso_kg": 70.0,
+        "reps": 5,
+        "rpe": 9.1
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "usuarioId": 1,
+    "movimientoId": "deadlift",
+    "fecha": "2026-05-22",
+    "notas": "Cuidar redondeo lumbar",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 125.0,
+        "reps": 1,
+        "rpe": 6.8
+      },
+      {
+        "numero": 2,
+        "peso_kg": 125.0,
+        "reps": 3,
+        "rpe": 9.0
+      },
+      {
+        "numero": 3,
+        "peso_kg": 125.0,
+        "reps": 1,
+        "rpe": 6.5
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "usuarioId": 1,
+    "movimientoId": "romanian_deadlift",
+    "fecha": "2026-05-23",
+    "notas": "Sesión de mantenimiento",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 52.5,
+        "reps": 10,
+        "rpe": 7.7
+      },
+      {
+        "numero": 2,
+        "peso_kg": 27.5,
+        "reps": 6,
+        "rpe": 7.6
+      },
+      {
+        "numero": 3,
+        "peso_kg": 70.0,
+        "reps": 12,
+        "rpe": 7.7
+      },
+      {
+        "numero": 4,
+        "peso_kg": 45.0,
+        "reps": 5,
+        "rpe": 6.9
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "usuarioId": 1,
+    "movimientoId": "overhead_press",
+    "fecha": "2026-05-23",
+    "notas": "Progresión lenta pero constante",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 60.0,
+        "reps": 8,
+        "rpe": 8.3
+      },
+      {
+        "numero": 2,
+        "peso_kg": 72.5,
+        "reps": 10,
+        "rpe": 8.9
+      },
+      {
+        "numero": 3,
+        "peso_kg": 65.0,
+        "reps": 6,
+        "rpe": 8.6
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "usuarioId": 2,
+    "movimientoId": "squat",
+    "fecha": "2026-05-25",
+    "notas": "Estable, sin dolor de hombro",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 100.0,
+        "reps": 2,
+        "rpe": 8.7
+      },
+      {
+        "numero": 2,
+        "peso_kg": 100.0,
+        "reps": 3,
+        "rpe": 8.8
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "usuarioId": 1,
+    "movimientoId": "bench",
+    "fecha": "2026-05-27",
+    "notas": "Transición a intensidad",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 72.5,
+        "reps": 2,
+        "rpe": 8.9
+      },
+      {
+        "numero": 2,
+        "peso_kg": 72.5,
+        "reps": 1,
+        "rpe": 7.6
+      },
+      {
+        "numero": 3,
+        "peso_kg": 72.5,
+        "reps": 1,
+        "rpe": 9.1
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "usuarioId": 1,
+    "movimientoId": "deadlift",
+    "fecha": "2026-05-29",
+    "notas": "Cuidar redondeo lumbar",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 125.0,
+        "reps": 3,
+        "rpe": 7.4
+      },
+      {
+        "numero": 2,
+        "peso_kg": 125.0,
+        "reps": 2,
+        "rpe": 7.2
+      },
+      {
+        "numero": 3,
+        "peso_kg": 125.0,
+        "reps": 5,
+        "rpe": 7.1
+      },
+      {
+        "numero": 4,
+        "peso_kg": 125.0,
+        "reps": 3,
+        "rpe": 7.3
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "usuarioId": 2,
+    "movimientoId": "pull_up",
+    "fecha": "2026-05-30",
+    "notas": "Progresión lenta pero constante",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 60.0,
+        "reps": 12,
+        "rpe": 7.0
+      },
+      {
+        "numero": 2,
+        "peso_kg": 22.5,
+        "reps": 8,
+        "rpe": 6.5
+      },
+      {
+        "numero": 3,
+        "peso_kg": 77.5,
+        "reps": 8,
+        "rpe": 6.1
+      },
+      {
+        "numero": 4,
+        "peso_kg": 55.0,
+        "reps": 8,
+        "rpe": 8.2
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "usuarioId": 3,
+    "movimientoId": "box_squat",
+    "fecha": "2026-05-30",
+    "notas": "Buen control del tempo excéntrico",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 42.5,
+        "reps": 12,
+        "rpe": 6.6
+      },
+      {
+        "numero": 2,
+        "peso_kg": 22.5,
+        "reps": 10,
+        "rpe": 6.0
+      },
+      {
+        "numero": 3,
+        "peso_kg": 75.0,
+        "reps": 12,
+        "rpe": 8.1
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "usuarioId": 1,
+    "movimientoId": "squat",
+    "fecha": "2026-06-01",
+    "notas": "Triples pesados, buena velocidad de barra",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 102.5,
+        "reps": 3,
+        "rpe": 6.7
+      },
+      {
+        "numero": 2,
+        "peso_kg": 102.5,
+        "reps": 5,
+        "rpe": 9.3
+      },
+      {
+        "numero": 3,
+        "peso_kg": 102.5,
+        "reps": 4,
+        "rpe": 7.4
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "usuarioId": 2,
+    "movimientoId": "bench",
+    "fecha": "2026-06-03",
+    "notas": "Técnica sólida pese a la intensidad",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 75.0,
+        "reps": 5,
+        "rpe": 7.7
+      },
+      {
+        "numero": 2,
+        "peso_kg": 75.0,
+        "reps": 3,
+        "rpe": 8.6
+      },
+      {
+        "numero": 3,
+        "peso_kg": 75.0,
+        "reps": 4,
+        "rpe": 6.9
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "usuarioId": 1,
+    "movimientoId": "deadlift",
+    "fecha": "2026-06-05",
+    "notas": "Nuevo PR de la temporada",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 127.5,
+        "reps": 4,
+        "rpe": 8.2
+      },
+      {
+        "numero": 2,
+        "peso_kg": 127.5,
+        "reps": 3,
+        "rpe": 8.1
+      },
+      {
+        "numero": 3,
+        "peso_kg": 127.5,
+        "reps": 1,
+        "rpe": 7.4
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "usuarioId": 1,
+    "movimientoId": "box_squat",
+    "fecha": "2026-06-06",
+    "notas": "Buen control del tempo excéntrico",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 47.5,
+        "reps": 10,
+        "rpe": 8.0
+      },
+      {
+        "numero": 2,
+        "peso_kg": 50.0,
+        "reps": 6,
+        "rpe": 8.0
+      },
+      {
+        "numero": 3,
+        "peso_kg": 37.5,
+        "reps": 12,
+        "rpe": 7.0
+      },
+      {
+        "numero": 4,
+        "peso_kg": 70.0,
+        "reps": 6,
+        "rpe": 8.0
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "usuarioId": 2,
+    "movimientoId": "romanian_deadlift",
+    "fecha": "2026-06-02",
+    "notas": "Buena sensación general",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 35.0,
+        "reps": 10,
+        "rpe": 7.8
+      },
+      {
+        "numero": 2,
+        "peso_kg": 65.0,
+        "reps": 10,
+        "rpe": 7.2
+      },
+      {
+        "numero": 3,
+        "peso_kg": 57.5,
+        "reps": 6,
+        "rpe": 8.2
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "usuarioId": 3,
+    "movimientoId": "squat",
+    "fecha": "2026-06-08",
+    "notas": "Foco en técnica y velocidad",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 102.5,
+        "reps": 2,
+        "rpe": 6.9
+      },
+      {
+        "numero": 2,
+        "peso_kg": 102.5,
+        "reps": 5,
+        "rpe": 6.5
+      },
+      {
+        "numero": 3,
+        "peso_kg": 102.5,
+        "reps": 1,
+        "rpe": 8.8
+      },
+      {
+        "numero": 4,
+        "peso_kg": 102.5,
+        "reps": 2,
+        "rpe": 7.0
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "usuarioId": 2,
+    "movimientoId": "bench",
+    "fecha": "2026-06-10",
+    "notas": "Foco en técnica y velocidad",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 75.0,
+        "reps": 1,
+        "rpe": 8.2
+      },
+      {
+        "numero": 2,
+        "peso_kg": 75.0,
+        "reps": 1,
+        "rpe": 7.9
+      },
+      {
+        "numero": 3,
+        "peso_kg": 75.0,
+        "reps": 3,
+        "rpe": 8.5
+      },
+      {
+        "numero": 4,
+        "peso_kg": 75.0,
+        "reps": 4,
+        "rpe": 8.3
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "usuarioId": 2,
+    "movimientoId": "deadlift",
+    "fecha": "2026-06-12",
+    "notas": "Foco en técnica y velocidad",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 127.5,
+        "reps": 4,
+        "rpe": 7.8
+      },
+      {
+        "numero": 2,
+        "peso_kg": 127.5,
+        "reps": 2,
+        "rpe": 8.7
+      },
+      {
+        "numero": 3,
+        "peso_kg": 127.5,
+        "reps": 3,
+        "rpe": 7.9
+      },
+      {
+        "numero": 4,
+        "peso_kg": 127.5,
+        "reps": 2,
+        "rpe": 9.0
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "usuarioId": 2,
+    "movimientoId": "close_grip_bench",
+    "fecha": "2026-06-13",
+    "notas": "Enfoque en el rango de movimiento completo",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 37.5,
+        "reps": 5,
+        "rpe": 8.1
+      },
+      {
+        "numero": 2,
+        "peso_kg": 35.0,
+        "reps": 8,
+        "rpe": 7.0
+      },
+      {
+        "numero": 3,
+        "peso_kg": 52.5,
+        "reps": 6,
+        "rpe": 6.5
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "usuarioId": 1,
+    "movimientoId": "good_morning",
+    "fecha": "2026-06-09",
+    "notas": "Progresión lenta pero constante",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 45.0,
+        "reps": 8,
+        "rpe": 7.6
+      },
+      {
+        "numero": 2,
+        "peso_kg": 45.0,
+        "reps": 6,
+        "rpe": 8.5
+      },
+      {
+        "numero": 3,
+        "peso_kg": 42.5,
+        "reps": 12,
+        "rpe": 8.8
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "usuarioId": 3,
+    "movimientoId": "squat",
+    "fecha": "2026-06-15",
+    "notas": "Estable, sin dolor de hombro",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 105.0,
+        "reps": 1,
+        "rpe": 9.3
+      },
+      {
+        "numero": 2,
+        "peso_kg": 105.0,
+        "reps": 3,
+        "rpe": 8.8
+      },
+      {
+        "numero": 3,
+        "peso_kg": 105.0,
+        "reps": 3,
+        "rpe": 8.1
+      },
+      {
+        "numero": 4,
+        "peso_kg": 105.0,
+        "reps": 5,
+        "rpe": 8.1
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "usuarioId": 2,
+    "movimientoId": "bench",
+    "fecha": "2026-06-17",
+    "notas": "Escápulas bien retraídas",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 77.5,
+        "reps": 2,
+        "rpe": 7.3
+      },
+      {
+        "numero": 2,
+        "peso_kg": 77.5,
+        "reps": 3,
+        "rpe": 6.6
+      },
+      {
+        "numero": 3,
+        "peso_kg": 77.5,
+        "reps": 3,
+        "rpe": 8.5
+      },
+      {
+        "numero": 4,
+        "peso_kg": 77.5,
+        "reps": 3,
+        "rpe": 8.7
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "usuarioId": 3,
+    "movimientoId": "deadlift",
+    "fecha": "2026-06-19",
+    "notas": "Nuevo PR de la temporada",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 130.0,
+        "reps": 3,
+        "rpe": 8.3
+      },
+      {
+        "numero": 2,
+        "peso_kg": 130.0,
+        "reps": 5,
+        "rpe": 6.6
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "usuarioId": 1,
+    "movimientoId": "romanian_deadlift",
+    "fecha": "2026-06-18",
+    "notas": "Buena sensación general",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 22.5,
+        "reps": 10,
+        "rpe": 7.0
+      },
+      {
+        "numero": 2,
+        "peso_kg": 47.5,
+        "reps": 8,
+        "rpe": 8.3
+      },
+      {
+        "numero": 3,
+        "peso_kg": 42.5,
+        "reps": 10,
+        "rpe": 6.8
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "usuarioId": 3,
+    "movimientoId": "front_squat",
+    "fecha": "2026-06-20",
+    "notas": "Enfoque en el rango de movimiento completo",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 80.0,
+        "reps": 8,
+        "rpe": 6.7
+      },
+      {
+        "numero": 2,
+        "peso_kg": 25.0,
+        "reps": 5,
+        "rpe": 8.3
+      },
+      {
+        "numero": 3,
+        "peso_kg": 77.5,
+        "reps": 6,
+        "rpe": 8.5
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "usuarioId": 2,
+    "movimientoId": "squat",
+    "fecha": "2026-06-22",
+    "notas": "PR de repeticiones a este peso",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 107.5,
+        "reps": 2,
+        "rpe": 7.9
+      },
+      {
+        "numero": 2,
+        "peso_kg": 107.5,
+        "reps": 1,
+        "rpe": 8.2
+      },
+      {
+        "numero": 3,
+        "peso_kg": 107.5,
+        "reps": 2,
+        "rpe": 7.9
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "usuarioId": 1,
+    "movimientoId": "bench",
+    "fecha": "2026-06-24",
+    "notas": "Sesión de acumulación, técnica cómoda",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 77.5,
+        "reps": 4,
+        "rpe": 8.3
+      },
+      {
+        "numero": 2,
+        "peso_kg": 77.5,
+        "reps": 5,
+        "rpe": 8.7
+      },
+      {
+        "numero": 3,
+        "peso_kg": 77.5,
+        "reps": 2,
+        "rpe": 9.4
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "usuarioId": 3,
+    "movimientoId": "deadlift",
+    "fecha": "2026-06-26",
+    "notas": "Estable, sin dolor de hombro",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 132.5,
+        "reps": 4,
+        "rpe": 8.5
+      },
+      {
+        "numero": 2,
+        "peso_kg": 132.5,
+        "reps": 3,
+        "rpe": 7.7
+      },
+      {
+        "numero": 3,
+        "peso_kg": 132.5,
+        "reps": 5,
+        "rpe": 7.1
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "usuarioId": 2,
+    "movimientoId": "paused_bench",
+    "fecha": "2026-06-27",
+    "notas": "Buena sensación general",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 70.0,
+        "reps": 12,
+        "rpe": 8.4
+      },
+      {
+        "numero": 2,
+        "peso_kg": 67.5,
+        "reps": 12,
+        "rpe": 8.3
+      },
+      {
+        "numero": 3,
+        "peso_kg": 40.0,
+        "reps": 10,
+        "rpe": 8.0
+      },
+      {
+        "numero": 4,
+        "peso_kg": 25.0,
+        "reps": 8,
+        "rpe": 6.0
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "usuarioId": 1,
+    "movimientoId": "paused_bench",
+    "fecha": "2026-06-25",
+    "notas": "Fatiga acumulada del día anterior",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 57.5,
+        "reps": 10,
+        "rpe": 8.1
+      },
+      {
+        "numero": 2,
+        "peso_kg": 45.0,
+        "reps": 12,
+        "rpe": 8.9
+      },
+      {
+        "numero": 3,
+        "peso_kg": 35.0,
+        "reps": 12,
+        "rpe": 8.3
+      },
+      {
+        "numero": 4,
+        "peso_kg": 47.5,
+        "reps": 12,
+        "rpe": 6.8
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "usuarioId": 1,
+    "movimientoId": "squat",
+    "fecha": "2026-06-29",
+    "notas": "Inicio de nuevo bloque, volumen bajo",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 107.5,
+        "reps": 3,
+        "rpe": 7.2
+      },
+      {
+        "numero": 2,
+        "peso_kg": 107.5,
+        "reps": 3,
+        "rpe": 8.2
+      },
+      {
+        "numero": 3,
+        "peso_kg": 107.5,
+        "reps": 5,
+        "rpe": 7.6
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "usuarioId": 3,
+    "movimientoId": "bench",
+    "fecha": "2026-07-01",
+    "notas": "Cuidar redondeo lumbar",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 80.0,
+        "reps": 2,
+        "rpe": 8.0
+      },
+      {
+        "numero": 2,
+        "peso_kg": 80.0,
+        "reps": 3,
+        "rpe": 8.9
+      },
+      {
+        "numero": 3,
+        "peso_kg": 80.0,
+        "reps": 3,
+        "rpe": 7.3
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "usuarioId": 2,
+    "movimientoId": "deadlift",
+    "fecha": "2026-07-03",
+    "notas": "Inicio de nuevo bloque, volumen bajo",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 132.5,
+        "reps": 4,
+        "rpe": 9.3
+      },
+      {
+        "numero": 2,
+        "peso_kg": 132.5,
+        "reps": 1,
+        "rpe": 7.2
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "usuarioId": 2,
+    "movimientoId": "deficit_deadlift",
+    "fecha": "2026-06-30",
+    "notas": "Sesión de mantenimiento",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 60.0,
+        "reps": 10,
+        "rpe": 7.3
+      },
+      {
+        "numero": 2,
+        "peso_kg": 20.0,
+        "reps": 8,
+        "rpe": 6.7
+      },
+      {
+        "numero": 3,
+        "peso_kg": 62.5,
+        "reps": 8,
+        "rpe": 8.0
+      },
+      {
+        "numero": 4,
+        "peso_kg": 42.5,
+        "reps": 12,
+        "rpe": 7.6
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "usuarioId": 3,
+    "movimientoId": "pull_up",
+    "fecha": "2026-07-04",
+    "notas": "Movilidad limitada, ajustar carga",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 37.5,
+        "reps": 8,
+        "rpe": 6.7
+      },
+      {
+        "numero": 2,
+        "peso_kg": 62.5,
+        "reps": 8,
+        "rpe": 6.4
+      },
+      {
+        "numero": 3,
+        "peso_kg": 52.5,
+        "reps": 6,
+        "rpe": 6.6
+      },
+      {
+        "numero": 4,
+        "peso_kg": 65.0,
+        "reps": 8,
+        "rpe": 8.2
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "usuarioId": 1,
+    "movimientoId": "squat",
+    "fecha": "2026-07-06",
+    "notas": "Trabajo de posición desde déficit",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 110.0,
+        "reps": 2,
+        "rpe": 7.4
+      },
+      {
+        "numero": 2,
+        "peso_kg": 110.0,
+        "reps": 3,
+        "rpe": 7.0
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "usuarioId": 3,
+    "movimientoId": "bench",
+    "fecha": "2026-07-08",
+    "notas": "Inicio de nuevo bloque, volumen bajo",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 82.5,
+        "reps": 3,
+        "rpe": 6.6
+      },
+      {
+        "numero": 2,
+        "peso_kg": 82.5,
+        "reps": 1,
+        "rpe": 8.2
+      },
+      {
+        "numero": 3,
+        "peso_kg": 82.5,
+        "reps": 5,
+        "rpe": 9.3
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "usuarioId": 2,
+    "movimientoId": "deadlift",
+    "fecha": "2026-07-10",
+    "notas": "Buen pull de tensión inicial",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 135.0,
+        "reps": 1,
+        "rpe": 8.2
+      },
+      {
+        "numero": 2,
+        "peso_kg": 135.0,
+        "reps": 3,
+        "rpe": 7.9
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "usuarioId": 3,
+    "movimientoId": "front_squat",
+    "fecha": "2026-07-09",
+    "notas": "Buen control del tempo excéntrico",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 27.5,
+        "reps": 5,
+        "rpe": 7.2
+      },
+      {
+        "numero": 2,
+        "peso_kg": 25.0,
+        "reps": 5,
+        "rpe": 6.5
+      },
+      {
+        "numero": 3,
+        "peso_kg": 67.5,
+        "reps": 8,
+        "rpe": 6.3
+      },
+      {
+        "numero": 4,
+        "peso_kg": 35.0,
+        "reps": 12,
+        "rpe": 8.3
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "usuarioId": 1,
+    "movimientoId": "deficit_deadlift",
+    "fecha": "2026-07-09",
+    "notas": "Enfoque en el rango de movimiento completo",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 75.0,
+        "reps": 8,
+        "rpe": 8.6
+      },
+      {
+        "numero": 2,
+        "peso_kg": 80.0,
+        "reps": 8,
+        "rpe": 7.7
+      },
+      {
+        "numero": 3,
+        "peso_kg": 22.5,
+        "reps": 5,
+        "rpe": 8.8
+      },
+      {
+        "numero": 4,
+        "peso_kg": 32.5,
+        "reps": 6,
+        "rpe": 6.8
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "usuarioId": 2,
+    "movimientoId": "squat",
+    "fecha": "2026-07-13",
+    "notas": "Triples pesados, buena velocidad de barra",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 110.0,
+        "reps": 2,
+        "rpe": 8.2
+      },
+      {
+        "numero": 2,
+        "peso_kg": 110.0,
+        "reps": 2,
+        "rpe": 6.5
+      },
+      {
+        "numero": 3,
+        "peso_kg": 110.0,
+        "reps": 3,
+        "rpe": 8.6
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "usuarioId": 2,
+    "movimientoId": "bench",
+    "fecha": "2026-07-15",
+    "notas": "Sumo, buena posición de cadera",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 82.5,
+        "reps": 2,
+        "rpe": 7.4
+      },
+      {
+        "numero": 2,
+        "peso_kg": 82.5,
+        "reps": 3,
+        "rpe": 8.6
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "usuarioId": 3,
+    "movimientoId": "deadlift",
+    "fecha": "2026-07-17",
+    "notas": "Estable, sin dolor de hombro",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 135.0,
+        "reps": 3,
+        "rpe": 8.9
+      },
+      {
+        "numero": 2,
+        "peso_kg": 135.0,
+        "reps": 5,
+        "rpe": 8.3
+      },
+      {
+        "numero": 3,
+        "peso_kg": 135.0,
+        "reps": 2,
+        "rpe": 7.8
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "usuarioId": 2,
+    "movimientoId": "incline_bench",
+    "fecha": "2026-07-14",
+    "notas": "Buena sensación general",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 70.0,
+        "reps": 5,
+        "rpe": 6.2
+      },
+      {
+        "numero": 2,
+        "peso_kg": 67.5,
+        "reps": 12,
+        "rpe": 8.2
+      },
+      {
+        "numero": 3,
+        "peso_kg": 55.0,
+        "reps": 8,
+        "rpe": 7.3
+      },
+      {
+        "numero": 4,
+        "peso_kg": 47.5,
+        "reps": 8,
+        "rpe": 8.1
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "usuarioId": 1,
+    "movimientoId": "close_grip_bench",
+    "fecha": "2026-07-14",
+    "notas": "Movilidad limitada, ajustar carga",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 72.5,
+        "reps": 8,
+        "rpe": 7.8
+      },
+      {
+        "numero": 2,
+        "peso_kg": 22.5,
+        "reps": 6,
+        "rpe": 8.9
+      },
+      {
+        "numero": 3,
+        "peso_kg": 70.0,
+        "reps": 12,
+        "rpe": 7.8
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "usuarioId": 2,
+    "movimientoId": "squat",
+    "fecha": "2026-07-20",
+    "notas": "Buen pull de tensión inicial",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 112.5,
+        "reps": 2,
+        "rpe": 7.9
+      },
+      {
+        "numero": 2,
+        "peso_kg": 112.5,
+        "reps": 5,
+        "rpe": 7.8
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "usuarioId": 1,
+    "movimientoId": "bench",
+    "fecha": "2026-07-22",
+    "notas": "Sensación de fuerza estable",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 85.0,
+        "reps": 5,
+        "rpe": 8.9
+      },
+      {
+        "numero": 2,
+        "peso_kg": 85.0,
+        "reps": 1,
+        "rpe": 7.9
+      },
+      {
+        "numero": 3,
+        "peso_kg": 85.0,
+        "reps": 3,
+        "rpe": 7.5
+      },
+      {
+        "numero": 4,
+        "peso_kg": 85.0,
+        "reps": 5,
+        "rpe": 6.8
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "usuarioId": 2,
+    "movimientoId": "deadlift",
+    "fecha": "2026-07-24",
+    "notas": "Leve fatiga, controlar volumen",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 137.5,
+        "reps": 5,
+        "rpe": 8.0
+      },
+      {
+        "numero": 2,
+        "peso_kg": 137.5,
+        "reps": 5,
+        "rpe": 9.3
+      },
+      {
+        "numero": 3,
+        "peso_kg": 137.5,
+        "reps": 4,
+        "rpe": 6.6
+      },
+      {
+        "numero": 4,
+        "peso_kg": 137.5,
+        "reps": 1,
+        "rpe": 7.4
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "usuarioId": 1,
+    "movimientoId": "leg_press",
+    "fecha": "2026-07-25",
+    "notas": "Movilidad limitada, ajustar carga",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 60.0,
+        "reps": 12,
+        "rpe": 7.4
+      },
+      {
+        "numero": 2,
+        "peso_kg": 22.5,
+        "reps": 12,
+        "rpe": 7.1
+      },
+      {
+        "numero": 3,
+        "peso_kg": 65.0,
+        "reps": 10,
+        "rpe": 8.3
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "usuarioId": 1,
+    "movimientoId": "deficit_deadlift",
+    "fecha": "2026-07-21",
+    "notas": "Buena sensación general",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 47.5,
+        "reps": 10,
+        "rpe": 6.4
+      },
+      {
+        "numero": 2,
+        "peso_kg": 77.5,
+        "reps": 12,
+        "rpe": 8.4
+      },
+      {
+        "numero": 3,
+        "peso_kg": 62.5,
+        "reps": 8,
+        "rpe": 7.7
+      },
+      {
+        "numero": 4,
+        "peso_kg": 52.5,
+        "reps": 5,
+        "rpe": 6.7
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "usuarioId": 2,
+    "movimientoId": "squat",
+    "fecha": "2026-07-27",
+    "notas": "Foco en técnica y velocidad",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 115.0,
+        "reps": 5,
+        "rpe": 9.0
+      },
+      {
+        "numero": 2,
+        "peso_kg": 115.0,
+        "reps": 3,
+        "rpe": 9.3
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "usuarioId": 1,
+    "movimientoId": "bench",
+    "fecha": "2026-07-29",
+    "notas": "Foco en técnica y velocidad",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 85.0,
+        "reps": 3,
+        "rpe": 9.0
+      },
+      {
+        "numero": 2,
+        "peso_kg": 85.0,
+        "reps": 3,
+        "rpe": 7.2
+      },
+      {
+        "numero": 3,
+        "peso_kg": 85.0,
+        "reps": 4,
+        "rpe": 6.9
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "usuarioId": 1,
+    "movimientoId": "deadlift",
+    "fecha": "2026-07-31",
+    "notas": "Triples pesados, buena velocidad de barra",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 140.0,
+        "reps": 1,
+        "rpe": 7.3
+      },
+      {
+        "numero": 2,
+        "peso_kg": 140.0,
+        "reps": 3,
+        "rpe": 7.5
+      },
+      {
+        "numero": 3,
+        "peso_kg": 140.0,
+        "reps": 4,
+        "rpe": 7.3
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "usuarioId": 1,
+    "movimientoId": "good_morning",
+    "fecha": "2026-07-30",
+    "notas": "Progresión lenta pero constante",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 72.5,
+        "reps": 10,
+        "rpe": 7.6
+      },
+      {
+        "numero": 2,
+        "peso_kg": 40.0,
+        "reps": 12,
+        "rpe": 8.3
+      },
+      {
+        "numero": 3,
+        "peso_kg": 42.5,
+        "reps": 8,
+        "rpe": 8.6
+      },
+      {
+        "numero": 4,
+        "peso_kg": 80.0,
+        "reps": 6,
+        "rpe": 7.7
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "usuarioId": 2,
+    "movimientoId": "front_squat",
+    "fecha": "2026-07-30",
+    "notas": "Fatiga acumulada del día anterior",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 62.5,
+        "reps": 10,
+        "rpe": 7.2
+      },
+      {
+        "numero": 2,
+        "peso_kg": 60.0,
+        "reps": 6,
+        "rpe": 7.5
+      },
+      {
+        "numero": 3,
+        "peso_kg": 22.5,
+        "reps": 12,
+        "rpe": 8.9
+      },
+      {
+        "numero": 4,
+        "peso_kg": 40.0,
+        "reps": 5,
+        "rpe": 8.6
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "usuarioId": 3,
+    "movimientoId": "squat",
+    "fecha": "2026-08-03",
+    "notas": "Técnica sólida pese a la intensidad",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 115.0,
+        "reps": 1,
+        "rpe": 8.7
+      },
+      {
+        "numero": 2,
+        "peso_kg": 115.0,
+        "reps": 3,
+        "rpe": 9.1
+      },
+      {
+        "numero": 3,
+        "peso_kg": 115.0,
+        "reps": 2,
+        "rpe": 6.7
+      },
+      {
+        "numero": 4,
+        "peso_kg": 115.0,
+        "reps": 3,
+        "rpe": 7.5
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "usuarioId": 2,
+    "movimientoId": "bench",
+    "fecha": "2026-08-05",
+    "notas": "Inicio de nuevo bloque, volumen bajo",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 87.5,
+        "reps": 3,
+        "rpe": 9.1
+      },
+      {
+        "numero": 2,
+        "peso_kg": 87.5,
+        "reps": 4,
+        "rpe": 7.6
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "usuarioId": 2,
+    "movimientoId": "deadlift",
+    "fecha": "2026-08-07",
+    "notas": "Estable, sin dolor de hombro",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 140.0,
+        "reps": 4,
+        "rpe": 6.7
+      },
+      {
+        "numero": 2,
+        "peso_kg": 140.0,
+        "reps": 5,
+        "rpe": 8.6
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "usuarioId": 3,
+    "movimientoId": "good_morning",
+    "fecha": "2026-08-04",
+    "notas": "Enfoque en el rango de movimiento completo",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 77.5,
+        "reps": 5,
+        "rpe": 7.3
+      },
+      {
+        "numero": 2,
+        "peso_kg": 62.5,
+        "reps": 5,
+        "rpe": 6.1
+      },
+      {
+        "numero": 3,
+        "peso_kg": 67.5,
+        "reps": 8,
+        "rpe": 7.1
+      },
+      {
+        "numero": 4,
+        "peso_kg": 45.0,
+        "reps": 6,
+        "rpe": 7.6
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "usuarioId": 3,
+    "movimientoId": "romanian_deadlift",
+    "fecha": "2026-08-04",
+    "notas": "Trabajo de accesorios, buena conexión muscular",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 57.5,
+        "reps": 10,
+        "rpe": 7.9
+      },
+      {
+        "numero": 2,
+        "peso_kg": 35.0,
+        "reps": 12,
+        "rpe": 6.4
+      },
+      {
+        "numero": 3,
+        "peso_kg": 47.5,
+        "reps": 8,
+        "rpe": 7.4
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "usuarioId": 2,
+    "movimientoId": "squat",
+    "fecha": "2026-08-10",
+    "notas": "Cuidar redondeo lumbar",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 117.5,
+        "reps": 3,
+        "rpe": 8.5
+      },
+      {
+        "numero": 2,
+        "peso_kg": 117.5,
+        "reps": 2,
+        "rpe": 6.7
+      },
+      {
+        "numero": 3,
+        "peso_kg": 117.5,
+        "reps": 3,
+        "rpe": 9.5
+      },
+      {
+        "numero": 4,
+        "peso_kg": 117.5,
+        "reps": 3,
+        "rpe": 8.4
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "usuarioId": 2,
+    "movimientoId": "bench",
+    "fecha": "2026-08-12",
+    "notas": "Triples pesados, buena velocidad de barra",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 90.0,
+        "reps": 3,
+        "rpe": 7.1
+      },
+      {
+        "numero": 2,
+        "peso_kg": 90.0,
+        "reps": 3,
+        "rpe": 9.1
+      },
+      {
+        "numero": 3,
+        "peso_kg": 90.0,
+        "reps": 1,
+        "rpe": 7.2
+      },
+      {
+        "numero": 4,
+        "peso_kg": 90.0,
+        "reps": 4,
+        "rpe": 7.6
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "usuarioId": 3,
+    "movimientoId": "deadlift",
+    "fecha": "2026-08-14",
+    "notas": "Buen leg drive",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 142.5,
+        "reps": 5,
+        "rpe": 7.7
+      },
+      {
+        "numero": 2,
+        "peso_kg": 142.5,
+        "reps": 1,
+        "rpe": 8.2
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "usuarioId": 3,
+    "movimientoId": "box_squat",
+    "fecha": "2026-08-15",
+    "notas": "Trabajo de accesorios, buena conexión muscular",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 70.0,
+        "reps": 8,
+        "rpe": 8.3
+      },
+      {
+        "numero": 2,
+        "peso_kg": 35.0,
+        "reps": 8,
+        "rpe": 6.7
+      },
+      {
+        "numero": 3,
+        "peso_kg": 32.5,
+        "reps": 8,
+        "rpe": 8.0
+      },
+      {
+        "numero": 4,
+        "peso_kg": 62.5,
+        "reps": 6,
+        "rpe": 7.9
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "usuarioId": 2,
+    "movimientoId": "barbell_row",
+    "fecha": "2026-08-13",
+    "notas": "Movilidad limitada, ajustar carga",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 55.0,
+        "reps": 6,
+        "rpe": 6.3
+      },
+      {
+        "numero": 2,
+        "peso_kg": 37.5,
+        "reps": 10,
+        "rpe": 6.5
+      },
+      {
+        "numero": 3,
+        "peso_kg": 27.5,
+        "reps": 12,
+        "rpe": 8.6
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "usuarioId": 2,
+    "movimientoId": "squat",
+    "fecha": "2026-08-17",
+    "notas": "Leve fatiga, controlar volumen",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 117.5,
+        "reps": 3,
+        "rpe": 9.2
+      },
+      {
+        "numero": 2,
+        "peso_kg": 117.5,
+        "reps": 3,
+        "rpe": 9.4
+      },
+      {
+        "numero": 3,
+        "peso_kg": 117.5,
+        "reps": 3,
+        "rpe": 8.7
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "usuarioId": 3,
+    "movimientoId": "bench",
+    "fecha": "2026-08-19",
+    "notas": "PR de repeticiones a este peso",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 90.0,
+        "reps": 1,
+        "rpe": 6.9
+      },
+      {
+        "numero": 2,
+        "peso_kg": 90.0,
+        "reps": 2,
+        "rpe": 9.1
+      },
+      {
+        "numero": 3,
+        "peso_kg": 90.0,
+        "reps": 5,
+        "rpe": 8.5
+      },
+      {
+        "numero": 4,
+        "peso_kg": 90.0,
+        "reps": 3,
+        "rpe": 9.4
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "usuarioId": 2,
+    "movimientoId": "deadlift",
+    "fecha": "2026-08-21",
+    "notas": "Cuidar redondeo lumbar",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 142.5,
+        "reps": 3,
+        "rpe": 6.5
+      },
+      {
+        "numero": 2,
+        "peso_kg": 142.5,
+        "reps": 4,
+        "rpe": 6.9
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "usuarioId": 1,
+    "movimientoId": "box_squat",
+    "fecha": "2026-08-20",
+    "notas": "Enfoque en el rango de movimiento completo",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 27.5,
+        "reps": 6,
+        "rpe": 7.4
+      },
+      {
+        "numero": 2,
+        "peso_kg": 57.5,
+        "reps": 12,
+        "rpe": 7.0
+      },
+      {
+        "numero": 3,
+        "peso_kg": 57.5,
+        "reps": 5,
+        "rpe": 7.9
+      },
+      {
+        "numero": 4,
+        "peso_kg": 47.5,
+        "reps": 8,
+        "rpe": 7.9
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "usuarioId": 3,
+    "movimientoId": "front_squat",
+    "fecha": "2026-08-18",
+    "notas": "Fatiga acumulada del día anterior",
+    "series": [
+      {
+        "numero": 1,
+        "peso_kg": 80.0,
+        "reps": 5,
+        "rpe": 6.3
+      },
+      {
+        "numero": 2,
+        "peso_kg": 72.5,
+        "reps": 6,
+        "rpe": 7.2
+      },
+      {
+        "numero": 3,
+        "peso_kg": 42.5,
+        "reps": 12,
+        "rpe": 7.3
+      },
+      {
+        "numero": 4,
+        "peso_kg": 65.0,
+        "reps": 6,
+        "rpe": 8.7
+      }
+    ]
+  }
+]

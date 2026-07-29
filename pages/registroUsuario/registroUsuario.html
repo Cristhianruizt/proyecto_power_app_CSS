@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta - POWER APP</title>
+    <link rel="icon" href="/iconos/world.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/general.css">
+    <link rel="stylesheet" href="../../css/registro-usuario.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>POWER APP</h1>
+        <p>Crea tu cuenta de atleta</p>
+    </header>
+
+    <main>
+        <section id="panel-registro-usuario">
+
+            <h2>Registro de nuevo usuario</h2>
+
+            <form id="form-registro-usuario" class="formulario-usuario" novalidate>
+
+                <div class="grupo-formulario">
+                    <label for="ru-nombres">Nombres</label>
+                    <input type="text" id="ru-nombres" name="nombres" class="input-general" required minlength="2">
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="ru-apellidos">Apellidos</label>
+                    <input type="text" id="ru-apellidos" name="apellidos" class="input-general" required minlength="2">
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="ru-correo">Correo electrónico</label>
+                    <input type="email" id="ru-correo" name="correo" class="input-general" required>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="ru-password">Contraseña</label>
+                    <input type="password" id="ru-password" name="password" class="input-general" required minlength="8">
+                    <small style="color:#999; font-size:12px;">Mínimo 8 caracteres, con al menos una letra y un número.</small>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="ru-password2">Confirmar contraseña</label>
+                    <input type="password" id="ru-password2" name="password2" class="input-general" required>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="ru-fecha-nacimiento">Fecha de nacimiento</label>
+                    <input type="date" id="ru-fecha-nacimiento" name="fechaNacimiento" class="input-general" required>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="ru-telefono">Teléfono</label>
+                    <input type="tel" id="ru-telefono" name="telefono" class="input-general" placeholder="0991234567">
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="ru-categoria">Categoría de peso (kg)</label>
+                    <input type="text" id="ru-categoria" name="categoriaKg" class="input-general" placeholder="-74">
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="buscador-pais">Nacionalidad</label>
+                    <input type="text" id="buscador-pais" class="input-general" placeholder="Escribe para buscar tu país...">
+                    <select id="select-nacionalidad-usuario" name="nacionalidad" class="input-general" required>
+                        <option value="">-- Cargando países... --</option>
+                    </select>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="ru-avatar">Avatar (URL de imagen, opcional)</label>
+                    <input type="url" id="ru-avatar" name="avatar" class="input-general" placeholder="https://...">
+                </div>
+
+                <div class="grupo-formulario grupo-checkbox">
+                    <label class="label-checkbox">
+                        <input type="checkbox" id="ru-terminos" name="terminos" required>
+                        Acepto los términos y condiciones
+                    </label>
+                </div>
+
+                <button type="submit" id="btn-crear-cuenta">Crear cuenta</button>
+            </form>
+
+            <p class="nota-registro">
+                ¿Ya tienes cuenta? <a href="../../index.html">Inicia sesión</a>
+            </p>
+
+        </section>
+    </main>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="../../js/storage.js"></script>
+    <script src="../../js/validaciones.js"></script>
+    <script src="../../js/componentes.js"></script>
+     <script src="../../js/auth.js"></script>
+    <script src="../../js/api.js"></script>
+    <script src="../../js/usuarios.js"></script>
+
+</body>
+
+</html>

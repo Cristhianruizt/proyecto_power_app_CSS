@@ -67,3 +67,19 @@
         font-size: 15px;
     }
 }
+
+.btn-restablecer {
+    background-color: #333333;
+    color: #cccccc;
+    border: 1px solid #555555;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    width: auto;
+}
+
+.btn-restablecer:hover {
+    background-color: #e53935;
+    color: #ffffff;
+}
